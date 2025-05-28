@@ -1,0 +1,10 @@
+#Core Libraries
+numpy
+pillow
+opencv-python
+
+#Background Removal
+rembg
+
+#Web-Scraping
+bing_image_downloader
