@@ -30,7 +30,8 @@ Skin-Cancer-Data-Augmentation/
 │       │   └── cropped_nobg/               # Cropped images after background removal
 │       │
 │       └── output/
-│           └── composites/                 # Final composite images
+│           ├── composites/                 # Final composite images
+│           └── annotations/                # New annotations 
 │                         
 │
 ├── scripts/
