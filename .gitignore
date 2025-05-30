@@ -1,3 +1,7 @@
 *.tempcoderunner
 
 __pycache__/
+
+yolo_to_bbox.py
+
+tempCodeRunnerFile.py

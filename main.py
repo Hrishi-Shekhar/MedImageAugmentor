@@ -1,55 +1,117 @@
+import os
+import logging
 from scripts.cropping_imgs import process_dataset
 from scripts.bg_removal import remove_bg_batch
 from scripts.bg_extraction_web_scraping import download_backgrounds
 from scripts.overlay import overlay_foreground_on_background
-from scripts.json_to_yolo import convert_json_to_yolo  # Import your JSON-to-YOLO function
-from scripts.yolo_to_json import convert_dataset_to_coco  # Import your YOLO-to-COCO function
-import os
-import glob
+from scripts.label_conversion import convert_json_to_yolo, convert_pascal_voc_to_yolo
+from scripts.yolo_to_json import convert_dataset_to_coco
 
+# -----------------------------
+# CONFIGURATION
+# -----------------------------
+DATA_ROOT = r"data/dataset-1_augmentation"
+
+IMAGES_DIR = os.path.join(DATA_ROOT, "input", "images")
+LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
+CROPPED_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped")
+CROPPED_NOBG_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped_nobg")
+
+# Background folders
+BACKGROUND_ROOT = os.path.join(DATA_ROOT, "backgrounds")
+WEBSCRAPE_BG_DIR = os.path.join(BACKGROUND_ROOT, "Web_scraping")
+USER_BG_DIR = os.path.join(BACKGROUND_ROOT, "user_generated_bgs")
+
+# Output folders
+OUTPUT_ROOT = os.path.join(DATA_ROOT, "output")
+COCO_JSON_PATH = os.path.join(OUTPUT_ROOT, "coco_annotations.json")
+
+# Annotation sources
+JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT,"input","json_input")
+XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT,"input","xml_input")
+
+# Classes
+#CLASS_NAMES = ["apple", "banana", "orange"]
+CLASS_NAMES = ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis', 'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
+CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
+
+# Background Search
+SEARCH_KEYWORD = "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
+NUM_BACKGROUNDS = 20
+
+# -----------------------------
+# LOGGING SETUP
+# -----------------------------
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(filename)s | %(message)s",
+    handlers=[
+        logging.FileHandler("pipeline.log"),
+        logging.StreamHandler()
+    ]
+)
+log = logging.getLogger(__name__)
+
+# -----------------------------
+# MAIN PIPELINE
+# -----------------------------
+def main():
+    try:
+        # Step 1: Convert Annotations (JSON or XML) -> YOLO
+        if os.path.exists(JSON_ANNOTATIONS_DIR) and any(f.endswith(".jsonl") for f in os.listdir(JSON_ANNOTATIONS_DIR)):
+            log.info("JSON annotations found. Converting to YOLO format...")
+            convert_json_to_yolo(JSON_ANNOTATIONS_DIR, LABELS_DIR, CLASS_MAP)
+        elif os.path.exists(XML_ANNOTATIONS_DIR) and any(f.endswith(".xml") for f in os.listdir(XML_ANNOTATIONS_DIR)):
+            log.info("XML annotations found. Converting to YOLO format...")
+            convert_pascal_voc_to_yolo(XML_ANNOTATIONS_DIR, LABELS_DIR, CLASS_NAMES)
+        else:
+            log.warning("No JSON or XML annotations found. Skipping annotation conversion.")
+
+        # Step 2: Crop images based on YOLO annotations
+        log.info("Cropping images based on YOLO annotations...")
+        process_dataset(IMAGES_DIR, LABELS_DIR, CROPPED_DIR, CLASS_NAMES)
+
+        # Step 3: Background removal
+        log.info("Removing backgrounds from cropped images...")
+        remove_bg_batch(CROPPED_DIR, CROPPED_NOBG_DIR)
+
+        # Step 4: Download backgrounds
+        log.info(f"Downloading {NUM_BACKGROUNDS} background images for search: '{SEARCH_KEYWORD}'")
+        download_backgrounds(SEARCH_KEYWORD, NUM_BACKGROUNDS, WEBSCRAPE_BG_DIR)
+
+        # Step 5: Overlay foregrounds on backgrounds
+
+        # Use Web-scraped + User-provided backgrounds
+        for bg_source in [os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD), USER_BG_DIR]:
+            if not os.path.exists(bg_source):
+                log.warning(f"Background folder not found: {bg_source}. Skipping...")
+                continue
+
+            log.info(f"Overlaying cropped foregrounds onto backgrounds in: {bg_source}")
+            overlay_foreground_on_background(
+                foregrounds_dir=CROPPED_NOBG_DIR,
+                backgrounds_dir=bg_source,
+                output_dir=OUTPUT_ROOT,
+                class_names=CLASS_NAMES
+            )
+
+        # Step 6: Convert YOLO annotations to COCO format
+        log.info("Converting YOLO annotations to COCO format...")
+        convert_dataset_to_coco(
+            images_dir=IMAGES_DIR,
+            labels_dir=LABELS_DIR,
+            output_json=COCO_JSON_PATH,
+            label_format="yolo",
+            class_names=CLASS_NAMES
+        )
+
+        log.info("Pipeline completed successfully!")
+
+    except Exception as e:
+        log.exception(f"Pipeline failed with error: {e}")
+
+# -----------------------------
+# ENTRY POINT
+# -----------------------------
 if __name__ == "__main__":
-
-    images_dir = r"data/dataset-1_augmentation/input/images"
-    labels_dir = r"data/dataset-1_augmentation/input/labels"
-    cropped_dir = r"data/dataset-1_augmentation/intermediate/cropped"
-
-    class_names= ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis', 'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
-    class_map = {name: idx for idx, name in enumerate(class_names)}
-
-    # Check if JSON annotations are available
-    json_input_dir = r"data/dataset-1_augmentation/input/json_input"
-    if os.path.exists(json_input_dir) and any(f.endswith(".json") for f in os.listdir(json_input_dir)):
-        print("[INFO] JSON annotations found. Converting to YOLO format...")
-        convert_json_to_yolo(json_input_dir, labels_dir, class_map)
-    else:
-        print("[INFO] No JSON annotations found. Skipping JSON to YOLO conversion.")
-
-    # Step 1: Crop images based on YOLO annotations
-    process_dataset(images_dir, labels_dir, cropped_dir, class_names)
-
-    # Step 2: Background removal
-    cropped_nobg_dir = r"data/dataset-1_augmentation/intermediate/cropped_nobg"
-    remove_bg_batch(cropped_dir, cropped_nobg_dir)
-
-    # Step 3: Download backgrounds
-    search_keyword = "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
-    background_folder = r"data/dataset-1_augmentation/backgrounds/Web_scraping"
-    num_images = 20
-
-    download_backgrounds(search_keyword, num_images, background_folder)
-
-    # Step 4: Overlay foreground on backgrounds
-    overlay_foreground_on_background(
-        cropped_nobg_dir,
-        backgrounds_dir=os.path.join(background_folder, search_keyword),
-        output_dir=r"data/dataset-1_augmentation/output"
-    )
-
-    # Step 5: Convert YOLO labels to COCO format
-    images_dir = 'data/dataset-1_augmentation/input/images'
-    labels_dir = 'data/dataset-1_augmentation/input/labels'  # or 'xml'
-    output_json = 'data/dataset-1_augmentation/output/coco_annotations.json'
-    label_format = 'yolo'  # or 'voc'
-
-    # Run conversion
-    convert_dataset_to_coco(images_dir, labels_dir, output_json, label_format, class_names)
+    main()

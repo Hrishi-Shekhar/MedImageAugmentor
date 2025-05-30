@@ -1,45 +1,58 @@
 import os
 import cv2
 from PIL import Image
-import numpy as np
+import shutil
+import logging
+from typing import List, Tuple
 
-def yolo_to_pixel_bbox(x_center, y_center, width, height, img_width, img_height):
+log = logging.getLogger(__name__)
+
+def yolo_to_pixel_bbox(
+    x_center: float, y_center: float, width: float, height: float,
+    img_width: int, img_height: int
+) -> Tuple[int, int, int, int]:
     x_center *= img_width
     y_center *= img_height
     width *= img_width
     height *= img_height
+
     xmin = int(x_center - width / 2)
     ymin = int(y_center - height / 2)
     xmax = int(x_center + width / 2)
     ymax = int(y_center + height / 2)
+
     return xmin, ymin, xmax, ymax
 
-def find_mask_for_image(image_filename):
+def find_mask_for_image(image_filename: str) -> str:
     name, ext = os.path.splitext(image_filename)
     return f"{name}_superpixels.png"
 
-def crop_using_mask(image_path, mask_path, output_dir, base_name):
+def crop_using_mask(
+    image_path: str, mask_path: str, output_dir: str, base_name: str
+) -> None:
     image = cv2.imread(image_path)
     mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
 
     if image is None or mask is None:
-        print(f"Skipping {image_path} - missing image or mask")
+        log.warning(f"Skipping {image_path} - missing image or mask")
         return
 
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
-    if len(contours) == 0:
-        print(f"No object found in {image_path}")
+    if not contours:
+        log.warning(f"No objects found in mask for {image_path}")
         return
 
     for i, contour in enumerate(contours):
         x, y, w, h = cv2.boundingRect(contour)
-        cropped_img = image[y:y+h, x:x+w]
+        cropped_img = image[y:y + h, x:x + w]
         output_filename = f"{base_name}_mask_{i}.jpg"
-        cv2.imwrite(os.path.join(output_dir, output_filename), cropped_img)
-        print(f"Saved {output_filename}")
+        output_path = os.path.join(output_dir, output_filename)
+        cv2.imwrite(output_path, cropped_img)
+        log.info(f"Saved {output_path}")
 
-def crop_yolo_objects(image_path, label_path, output_dir, class_names):
+def crop_yolo_objects(
+    image_path: str, label_path: str, output_dir: str, class_names: List[str]
+) -> None:
     img = Image.open(image_path)
     img_width, img_height = img.size
 
@@ -51,7 +64,7 @@ def crop_yolo_objects(image_path, label_path, output_dir, class_names):
     for idx, line in enumerate(lines):
         parts = line.strip().split()
         if len(parts) != 5:
-            print(f"Skipping malformed line in {label_path}: {line}")
+            log.warning(f"Skipping malformed line in {label_path}: {line.strip()}")
             continue
 
         class_id = int(parts[0])
@@ -66,14 +79,20 @@ def crop_yolo_objects(image_path, label_path, output_dir, class_names):
         cropped = img.crop((xmin, ymin, xmax, ymax))
         class_name = class_names[class_id]
         output_filename = f"{base_name}_{class_name}_{idx}.jpg"
-        cropped.save(os.path.join(output_dir, output_filename))
-        print(f"Saved {output_filename}")
+        output_path = os.path.join(output_dir, output_filename)
+        cropped.save(output_path)
+        log.info(f"Saved {output_path}")
 
-def process_dataset(images_dir, labels_dir, output_dir, class_names):
+def process_dataset(
+    images_dir: str, labels_dir: str, output_dir: str, class_names: List[str]
+) -> None:
+    if os.path.exists(output_dir):
+        log.info(f"Clearing previous outputs in {output_dir}...")
+        shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
 
     for filename in os.listdir(images_dir):
-        if not (filename.endswith(".jpg") or filename.endswith(".png")):
+        if not filename.lower().endswith((".jpg", ".png")):
             continue
 
         image_path = os.path.join(images_dir, filename)
@@ -86,4 +105,4 @@ def process_dataset(images_dir, labels_dir, output_dir, class_names):
         elif os.path.exists(mask_path):
             crop_using_mask(image_path, mask_path, output_dir, base_name)
         else:
-            print(f"No YOLO label or mask found for {filename}")
+            log.warning(f"No YOLO label or mask found for {filename}")
