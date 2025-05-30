@@ -9,15 +9,15 @@ import glob
 
 if __name__ == "__main__":
 
-    images_dir = r"data/Skin_cancer_augmentation/input/images"
-    labels_dir = r"data/Skin_cancer_augmentation/input/labels"
-    cropped_dir = r"data/Skin_cancer_augmentation/intermediate/cropped"
+    images_dir = r"data/dataset-1_augmentation/input/images"
+    labels_dir = r"data/dataset-1_augmentation/input/labels"
+    cropped_dir = r"data/dataset-1_augmentation/intermediate/cropped"
 
-    class_names = ['polyp']
+    class_names= ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis', 'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
     class_map = {name: idx for idx, name in enumerate(class_names)}
 
     # Check if JSON annotations are available
-    json_input_dir = r"data/Skin_cancer_augmentation/input/json_input"
+    json_input_dir = r"data/dataset-1_augmentation/input/json_input"
     if os.path.exists(json_input_dir) and any(f.endswith(".json") for f in os.listdir(json_input_dir)):
         print("[INFO] JSON annotations found. Converting to YOLO format...")
         convert_json_to_yolo(json_input_dir, labels_dir, class_map)
@@ -28,12 +28,12 @@ if __name__ == "__main__":
     process_dataset(images_dir, labels_dir, cropped_dir, class_names)
 
     # Step 2: Background removal
-    cropped_nobg_dir = r"data/Skin_cancer_augmentation/intermediate/cropped_nobg"
+    cropped_nobg_dir = r"data/dataset-1_augmentation/intermediate/cropped_nobg"
     remove_bg_batch(cropped_dir, cropped_nobg_dir)
 
     # Step 3: Download backgrounds
-    search_keyword = "macro close-up of human internal organ textures under endoscopy"
-    background_folder = r"data/Skin_cancer_augmentation/backgrounds/Web_scraping"
+    search_keyword = "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
+    background_folder = r"data/dataset-1_augmentation/backgrounds/Web_scraping"
     num_images = 20
 
     download_backgrounds(search_keyword, num_images, background_folder)
@@ -42,13 +42,13 @@ if __name__ == "__main__":
     overlay_foreground_on_background(
         cropped_nobg_dir,
         backgrounds_dir=os.path.join(background_folder, search_keyword),
-        output_dir=r"data/Skin_cancer_augmentation/output"
+        output_dir=r"data/dataset-1_augmentation/output"
     )
 
     # Step 5: Convert YOLO labels to COCO format
-    images_dir = 'data/Skin_cancer_augmentation/input/images'
-    labels_dir = 'data/Skin_cancer_augmentation/input/labels'  # or 'xml'
-    output_json = 'data/Skin_cancer_augmentation/output/coco_annotations.json'
+    images_dir = 'data/dataset-1_augmentation/input/images'
+    labels_dir = 'data/dataset-1_augmentation/input/labels'  # or 'xml'
+    output_json = 'data/dataset-1_augmentation/output/coco_annotations.json'
     label_format = 'yolo'  # or 'voc'
 
     # Run conversion

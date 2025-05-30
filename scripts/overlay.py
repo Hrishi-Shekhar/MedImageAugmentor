@@ -6,7 +6,7 @@ def overlay_foreground_on_background(
     foregrounds_dir,
     backgrounds_dir,
     output_dir,
-    lesions_per_image=10
+    lesions_per_image=4
 ):
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs(os.path.join(output_dir, "composites"), exist_ok=True)
@@ -30,6 +30,7 @@ def overlay_foreground_on_background(
         for batch_num, lesion_batch in enumerate(lesion_batches):
             composite = bg_img.copy()
             annotation_lines = []
+            occupied_boxes = []
 
             for lesion_file in lesion_batch:
                 fg_path = os.path.join(foregrounds_dir, lesion_file)
@@ -39,11 +40,32 @@ def overlay_foreground_on_background(
                 scale_factor = random.uniform(0.3, 0.6)
                 new_w = min(int(fg_img.width * scale_factor), int(bg_width * 0.5))
                 new_h = min(int(fg_img.height * scale_factor), int(bg_height * 0.5))
+                new_w = max(1, new_w)
+                new_h = max(1, new_h)
+
                 fg_img = fg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
 
-                # Random position (no overlap constraint for simplicity)
-                x = random.randint(0, max(bg_width - fg_img.width, 1))
-                y = random.randint(0, max(bg_height - fg_img.height, 1))
+                max_attempts = 20
+                placed = False
+                for _ in range(max_attempts):
+                    x = random.randint(0,max(bg_width - fg_img.width,1))
+                    y = random.randint(0,max(bg_height - fg_img.height,1))
+                    new_box = (x,y,x + fg_img.width,y + fg_img.height)
+
+                    overlap = False
+                    for existing_box in occupied_boxes:
+                        if not (new_box[2] <= existing_box[0] or new_box[0] >= existing_box[2] or
+                                new_box[3] <= existing_box[1] or new_box[1] >= existing_box[3]):
+                            overlap = True
+                            break
+
+                    if not overlap:
+                        occupied_boxes.append(new_box)
+                        placed = True
+                        break
+
+                if not placed:
+                    print(f"Could not place {lesion_file} without overlap after {max_attempts} attempts")
 
                 composite.alpha_composite(fg_img, dest=(x, y))
 
