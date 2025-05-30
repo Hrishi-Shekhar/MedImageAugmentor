@@ -14,9 +14,9 @@ A complete data augmentation pipeline for skin cancer images, including:
 
 Folder structure-
 
-Skin-Cancer-Data-Augmentation/
+MedImageAugmentor/
 ├── data/
-│   └── Skin_cancer_augmentation/
+│   └── dataset-1_augmentation/
 │       ├── input/
 │       │   ├── images/                     # Original input images
 │       │   └── labels/                     # YOLO annotations (txt files)
@@ -31,7 +31,8 @@ Skin-Cancer-Data-Augmentation/
 │       │
 │       └── output/
 │           ├── composites/                 # Final composite images
-│           └── annotations/                # New annotations 
+│           ├── annotations/                # New annotations 
+|           └── coco_annotations.json       # Annotations in json format
 │                         
 │
 ├── scripts/
