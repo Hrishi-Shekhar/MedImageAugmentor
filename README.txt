@@ -39,7 +39,9 @@ MedImageAugmentor/
 │   ├── cropping_imgs.py                    # Cropping logic (YOLO/mask)
 │   ├── bg_removal.py                       # Background removal
 |   ├── bg_extraction_web_scraping.py       # Web Scraping
-│   └── overlay.py                          # Overlay cropped objects on backgrounds
+│   ├── overlay.py                          # Overlay cropped objects on backgrounds
+|   ├── json_to_yolo.py                     # Converting json input to yolo format
+|   └── yolo_to_json.py                     # Converting yolo output to json format
 │
 ├── main.py                                 # Main orchestrator script  
 │
