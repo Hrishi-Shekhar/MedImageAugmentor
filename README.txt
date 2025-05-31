@@ -14,11 +14,12 @@ A complete data augmentation pipeline for skin cancer images, including:
 
 Folder structure-
 
-MedImageAugmentor/
+synthetic-image-augmentation/
 ├── data/
 │   └── dataset-1_augmentation/
 │       ├── input/
 │       │   ├── images/                     # Original input images
+|       |   ├── json_input/                 # Json annotations
 │       │   └── labels/                     # YOLO annotations (txt files)
 │       │
 │       ├── backgrounds/
@@ -40,12 +41,13 @@ MedImageAugmentor/
 │   ├── bg_removal.py                       # Background removal
 |   ├── bg_extraction_web_scraping.py       # Web Scraping
 │   ├── overlay.py                          # Overlay cropped objects on backgrounds
-|   ├── json_to_yolo.py                     # Converting json input to yolo format
+|   ├── label_conversion.py                 # Converting json/xml input to yolo format
 |   └── yolo_to_json.py                     # Converting yolo output to json format
 │
 ├── main.py                                 # Main orchestrator script  
 │
 ├── README.md                               # Project documentation
+├── pipeline.log                            # Logs of the entire pipeline
 ├── requirements.txt                        # List of dependencies
 └── .gitignore                              # Files/folders to ignore in Git
 
