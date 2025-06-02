@@ -29,15 +29,16 @@ def find_class_id(filename: str, class_names: List[str]) -> int:
 def overlay_foreground_on_background(
     foregrounds_dir: str,
     backgrounds_dir: str,
-    output_dir: str,
+    composites_dir: str,
+    annotations_dir: str,
     class_names: List[str],
     lesions_per_image: int = 4,
     scale_range: tuple = (0.3, 0.6),
     max_attempts: int = 20,
 ) -> None:
-    ensure_dir(output_dir)
-    composites_dir = os.path.join(output_dir, "composites")
-    annotations_dir = os.path.join(output_dir, "annotations")
+    #ensure_dir(output_dir)
+    # composites_dir = os.path.join(output_dir, "composites")
+    # annotations_dir = os.path.join(output_dir, "annotations")
     ensure_dir(composites_dir)
     ensure_dir(annotations_dir)
 

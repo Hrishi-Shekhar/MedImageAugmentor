@@ -6,6 +6,7 @@ from scripts.bg_extraction_web_scraping import download_backgrounds
 from scripts.overlay import overlay_foreground_on_background
 from scripts.label_conversion import convert_json_to_yolo, convert_pascal_voc_to_yolo
 from scripts.yolo_to_json import convert_dataset_to_coco
+from scripts.yolo_to_mask import yolo_to_masks
 
 # -----------------------------
 # CONFIGURATION
@@ -24,7 +25,10 @@ USER_BG_DIR = os.path.join(BACKGROUND_ROOT, "user_generated_bgs")
 
 # Output folders
 OUTPUT_ROOT = os.path.join(DATA_ROOT, "output")
+COMPOSITES_DIR = os.path.join(OUTPUT_ROOT,"composites")
+ANNOTATIONS_DIR = os.path.join(OUTPUT_ROOT,"annotations")
 COCO_JSON_PATH = os.path.join(OUTPUT_ROOT, "coco_annotations.json")
+MASKS_DIR = os.path.join(OUTPUT_ROOT,"masks")
 
 # Annotation sources
 JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT,"input","json_input")
@@ -91,18 +95,27 @@ def main():
             overlay_foreground_on_background(
                 foregrounds_dir=CROPPED_NOBG_DIR,
                 backgrounds_dir=bg_source,
-                output_dir=OUTPUT_ROOT,
+                composites_dir=COMPOSITES_DIR,
+                annotations_dir=ANNOTATIONS_DIR,
                 class_names=CLASS_NAMES
             )
 
-        # Step 6: Convert YOLO annotations to COCO format
+        # Step 6: Convert output YOLO annotations to COCO format
         log.info("Converting YOLO annotations to COCO format...")
         convert_dataset_to_coco(
-            images_dir=IMAGES_DIR,
-            labels_dir=LABELS_DIR,
+            images_dir=COMPOSITES_DIR,
+            labels_dir=ANNOTATIONS_DIR,
             output_json=COCO_JSON_PATH,
             label_format="yolo",
             class_names=CLASS_NAMES
+        )
+
+        # Step 7: Convert output YOLO annotations to masks
+        log.info("Converting YOLO annotations to masks...")
+        yolo_to_masks(
+            images_dir=COMPOSITES_DIR,
+            labels_dir=ANNOTATIONS_DIR,
+            masks_dir=MASKS_DIR,
         )
 
         log.info("Pipeline completed successfully!")
