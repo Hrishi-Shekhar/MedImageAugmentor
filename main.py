@@ -60,7 +60,14 @@ log = logging.getLogger(__name__)
 # Ensure required directories exist
 # -----------------------------
 def ensure_directories():
-    required_dirs = [
+    # Ensure all parent folders up to data/ are created
+    base_dirs = [
+        "data",
+        os.path.join("data", "dataset-1_augmentation"),
+    ]
+    
+    # Add specific required subdirectories
+    required_dirs = base_dirs + [
         IMAGES_DIR,
         LABELS_DIR,
         CROPPED_DIR,
@@ -70,11 +77,13 @@ def ensure_directories():
         COMPOSITES_DIR,
         ANNOTATIONS_DIR,
         MASKS_DIR,
-        os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD)
+        os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD),
     ]
+    
     for d in required_dirs:
         os.makedirs(d, exist_ok=True)
         log.info(f"Ensured directory exists: {d}")
+
 
 # -----------------------------
 # MAIN PIPELINE
