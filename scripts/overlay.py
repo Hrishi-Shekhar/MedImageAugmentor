@@ -48,7 +48,6 @@ def overlay_foreground_on_background(
     annotations_dir: str,
     class_names: List[str],
     lesions_per_image: int = 4,
-    scale_range: tuple = (0.3, 0.6),
     max_attempts: int = 20,
 ) -> None:
     ensure_dir(composites_dir)
@@ -78,33 +77,25 @@ def overlay_foreground_on_background(
             annotation_lines = []
             occupied_boxes = []
 
+            placed_count = 0
             for fg_file in lesion_batch:
                 fg_path = os.path.join(foregrounds_dir, fg_file)
                 fg_img = Image.open(fg_path).convert("RGBA")
+                fg_width, fg_height = fg_img.size
+
+                if fg_width > bg_width or fg_height > bg_height:
+                    log.warning("Skipping %s because it is larger than the background.", fg_file)
+                    continue
 
                 class_id = find_class_id(fg_file, class_names)
 
-                scale_factor = random.uniform(*scale_range)
-                new_w = min(int(fg_img.width * scale_factor), int(bg_width * 0.5))
-                new_h = min(int(fg_img.height * scale_factor), int(bg_height * 0.5))
-                new_w = max(1, new_w)
-                new_h = max(1, new_h)
-
-                fg_img = fg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
-
                 placed = False
                 for _ in range(max_attempts):
-                    x = random.randint(0, max(bg_width - fg_img.width, 0))
-                    y = random.randint(0, max(bg_height - fg_img.height, 0))
-                    new_box = (x, y, x + fg_img.width, y + fg_img.height)
+                    x = random.randint(0, max(bg_width - fg_width, 0))
+                    y = random.randint(0, max(bg_height - fg_height, 0))
+                    new_box = (x, y, x + fg_width, y + fg_height)
 
-                    overlap = False
-                    for box in occupied_boxes:
-                        iou = calculate_iou(new_box, box)
-                        if iou > 0.1:  
-                            overlap = True
-                            break
-
+                    overlap = any(calculate_iou(new_box, box) > 0.1 for box in occupied_boxes)
                     if not overlap:
                         occupied_boxes.append(new_box)
                         placed = True
@@ -116,11 +107,16 @@ def overlay_foreground_on_background(
 
                 composite.alpha_composite(fg_img, dest=(x, y))
 
-                x_center = (x + fg_img.width / 2) / bg_width
-                y_center = (y + fg_img.height / 2) / bg_height
-                width_norm = fg_img.width / bg_width
-                height_norm = fg_img.height / bg_height
+                x_center = (x + fg_width / 2) / bg_width
+                y_center = (y + fg_height / 2) / bg_height
+                width_norm = fg_width / bg_width
+                height_norm = fg_height / bg_height
                 annotation_lines.append(f"{class_id} {x_center:.6f} {y_center:.6f} {width_norm:.6f} {height_norm:.6f}")
+                placed_count += 1
+
+            if placed_count == 0:
+                log.info("No lesions placed on background %s, skipping composite.", bg_file)
+                continue
 
             composite_filename = f"composite_{composite_count}.jpg"
             composite_path = os.path.join(composites_dir, composite_filename)

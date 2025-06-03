@@ -8889,3 +8889,1001 @@ IndexError: list index out of range
 2025-06-03 17:40:22,104 | INFO | main.py | Generating masks from YOLO annotations...
 2025-06-03 17:40:29,715 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\dataset_005\output\masks
 2025-06-03 17:40:29,715 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 18:16:17,036 | INFO | main.py | Ensured directory exists: data
+2025-06-03 18:16:17,036 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005
+2025-06-03 18:16:17,037 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\input\images
+2025-06-03 18:16:17,037 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\input\labels
+2025-06-03 18:16:17,037 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\intermediate\cropped
+2025-06-03 18:16:17,037 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\intermediate\cropped_nobg
+2025-06-03 18:16:17,038 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 18:16:17,038 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\backgrounds\user_generated
+2025-06-03 18:16:17,038 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\output\composites
+2025-06-03 18:16:17,038 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\output\annotations
+2025-06-03 18:16:17,038 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_005\output\masks
+2025-06-03 18:16:17,041 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 18:16:17,041 | INFO | main.py | Cropping objects from input images...
+2025-06-03 18:16:17,041 | INFO | cropping_imgs.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_005\intermediate\cropped...
+2025-06-03 18:16:17,149 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_0.jpg
+2025-06-03 18:16:17,149 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_1.jpg
+2025-06-03 18:16:17,150 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_2.jpg
+2025-06-03 18:16:17,151 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_3.jpg
+2025-06-03 18:16:17,151 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_4.jpg
+2025-06-03 18:16:17,152 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_5.jpg
+2025-06-03 18:16:17,152 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_6.jpg
+2025-06-03 18:16:17,153 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_7.jpg
+2025-06-03 18:16:17,153 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_8.jpg
+2025-06-03 18:16:17,154 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_9.jpg
+2025-06-03 18:16:17,154 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_10.jpg
+2025-06-03 18:16:17,155 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_11.jpg
+2025-06-03 18:16:17,155 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_12.jpg
+2025-06-03 18:16:17,156 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_13.jpg
+2025-06-03 18:16:17,157 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_14.jpg
+2025-06-03 18:16:17,157 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_15.jpg
+2025-06-03 18:16:17,158 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_16.jpg
+2025-06-03 18:16:17,158 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_17.jpg
+2025-06-03 18:16:17,159 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_18.jpg
+2025-06-03 18:16:17,160 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_19.jpg
+2025-06-03 18:16:17,160 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_20.jpg
+2025-06-03 18:16:17,161 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_21.jpg
+2025-06-03 18:16:17,161 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_22.jpg
+2025-06-03 18:16:17,162 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_23.jpg
+2025-06-03 18:16:17,162 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_24.jpg
+2025-06-03 18:16:17,162 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_25.jpg
+2025-06-03 18:16:17,164 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_26.jpg
+2025-06-03 18:16:17,165 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_27.jpg
+2025-06-03 18:16:17,166 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_28.jpg
+2025-06-03 18:16:17,166 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_29.jpg
+2025-06-03 18:16:17,171 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_0.jpg
+2025-06-03 18:16:17,171 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_1.jpg
+2025-06-03 18:16:17,172 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_2.jpg
+2025-06-03 18:16:17,173 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_3.jpg
+2025-06-03 18:16:17,173 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_4.jpg
+2025-06-03 18:16:17,174 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_5.jpg
+2025-06-03 18:16:17,175 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_6.jpg
+2025-06-03 18:16:17,175 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_7.jpg
+2025-06-03 18:16:17,176 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_8.jpg
+2025-06-03 18:16:17,176 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_9.jpg
+2025-06-03 18:16:17,176 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_10.jpg
+2025-06-03 18:16:17,177 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_11.jpg
+2025-06-03 18:16:17,178 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_12.jpg
+2025-06-03 18:16:17,178 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_13.jpg
+2025-06-03 18:16:17,179 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_14.jpg
+2025-06-03 18:16:17,179 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_15.jpg
+2025-06-03 18:16:17,181 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_16.jpg
+2025-06-03 18:16:17,181 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_17.jpg
+2025-06-03 18:16:17,182 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_18.jpg
+2025-06-03 18:16:17,183 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_19.jpg
+2025-06-03 18:16:17,183 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_20.jpg
+2025-06-03 18:16:17,183 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_21.jpg
+2025-06-03 18:16:17,184 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_22.jpg
+2025-06-03 18:16:17,184 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_23.jpg
+2025-06-03 18:16:17,184 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_24.jpg
+2025-06-03 18:16:17,185 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_25.jpg
+2025-06-03 18:16:17,186 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_26.jpg
+2025-06-03 18:16:17,186 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_27.jpg
+2025-06-03 18:16:17,187 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_28.jpg
+2025-06-03 18:16:17,188 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_29.jpg
+2025-06-03 18:16:17,192 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_0.jpg
+2025-06-03 18:16:17,193 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_1.jpg
+2025-06-03 18:16:17,193 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_2.jpg
+2025-06-03 18:16:17,194 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_3.jpg
+2025-06-03 18:16:17,195 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_4.jpg
+2025-06-03 18:16:17,195 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_5.jpg
+2025-06-03 18:16:17,196 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_6.jpg
+2025-06-03 18:16:17,196 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_7.jpg
+2025-06-03 18:16:17,198 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_8.jpg
+2025-06-03 18:16:17,198 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_9.jpg
+2025-06-03 18:16:17,199 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_10.jpg
+2025-06-03 18:16:17,200 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_11.jpg
+2025-06-03 18:16:17,201 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_12.jpg
+2025-06-03 18:16:17,201 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_13.jpg
+2025-06-03 18:16:17,202 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_14.jpg
+2025-06-03 18:16:17,202 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_15.jpg
+2025-06-03 18:16:17,203 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_16.jpg
+2025-06-03 18:16:17,203 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_17.jpg
+2025-06-03 18:16:17,205 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_18.jpg
+2025-06-03 18:16:17,205 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_19.jpg
+2025-06-03 18:16:17,205 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_20.jpg
+2025-06-03 18:16:17,206 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_21.jpg
+2025-06-03 18:16:17,207 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_22.jpg
+2025-06-03 18:16:17,207 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_23.jpg
+2025-06-03 18:16:17,208 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_24.jpg
+2025-06-03 18:16:17,208 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_25.jpg
+2025-06-03 18:16:17,209 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_26.jpg
+2025-06-03 18:16:17,209 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_27.jpg
+2025-06-03 18:16:17,210 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_28.jpg
+2025-06-03 18:16:17,210 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_29.jpg
+2025-06-03 18:16:17,223 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_0.jpg
+2025-06-03 18:16:17,224 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_1.jpg
+2025-06-03 18:16:17,224 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_2.jpg
+2025-06-03 18:16:17,225 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_3.jpg
+2025-06-03 18:16:17,225 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_4.jpg
+2025-06-03 18:16:17,225 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_5.jpg
+2025-06-03 18:16:17,226 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_6.jpg
+2025-06-03 18:16:17,227 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_7.jpg
+2025-06-03 18:16:17,228 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_8.jpg
+2025-06-03 18:16:17,228 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_9.jpg
+2025-06-03 18:16:17,229 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_10.jpg
+2025-06-03 18:16:17,229 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_11.jpg
+2025-06-03 18:16:17,230 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_12.jpg
+2025-06-03 18:16:17,230 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_13.jpg
+2025-06-03 18:16:17,232 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_14.jpg
+2025-06-03 18:16:17,232 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_15.jpg
+2025-06-03 18:16:17,233 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_16.jpg
+2025-06-03 18:16:17,233 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_17.jpg
+2025-06-03 18:16:17,234 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_18.jpg
+2025-06-03 18:16:17,235 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_19.jpg
+2025-06-03 18:16:17,235 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_20.jpg
+2025-06-03 18:16:17,236 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_21.jpg
+2025-06-03 18:16:17,236 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_22.jpg
+2025-06-03 18:16:17,237 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_23.jpg
+2025-06-03 18:16:17,237 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_24.jpg
+2025-06-03 18:16:17,238 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_25.jpg
+2025-06-03 18:16:17,239 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_26.jpg
+2025-06-03 18:16:17,239 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_27.jpg
+2025-06-03 18:16:17,239 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_28.jpg
+2025-06-03 18:16:17,240 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_29.jpg
+2025-06-03 18:16:17,245 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_0.jpg
+2025-06-03 18:16:17,246 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_1.jpg
+2025-06-03 18:16:17,246 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_2.jpg
+2025-06-03 18:16:17,247 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_3.jpg
+2025-06-03 18:16:17,247 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_4.jpg
+2025-06-03 18:16:17,248 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_5.jpg
+2025-06-03 18:16:17,248 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_6.jpg
+2025-06-03 18:16:17,249 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_7.jpg
+2025-06-03 18:16:17,250 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_8.jpg
+2025-06-03 18:16:17,250 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_9.jpg
+2025-06-03 18:16:17,250 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_10.jpg
+2025-06-03 18:16:17,252 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_11.jpg
+2025-06-03 18:16:17,252 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_12.jpg
+2025-06-03 18:16:17,253 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_13.jpg
+2025-06-03 18:16:17,253 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_14.jpg
+2025-06-03 18:16:17,254 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_15.jpg
+2025-06-03 18:16:17,254 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_16.jpg
+2025-06-03 18:16:17,255 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_17.jpg
+2025-06-03 18:16:17,256 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_18.jpg
+2025-06-03 18:16:17,256 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_19.jpg
+2025-06-03 18:16:17,257 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_20.jpg
+2025-06-03 18:16:17,257 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_21.jpg
+2025-06-03 18:16:17,260 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_22.jpg
+2025-06-03 18:16:17,262 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_23.jpg
+2025-06-03 18:16:17,263 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_24.jpg
+2025-06-03 18:16:17,264 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_25.jpg
+2025-06-03 18:16:17,265 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_26.jpg
+2025-06-03 18:16:17,265 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_27.jpg
+2025-06-03 18:16:17,267 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_28.jpg
+2025-06-03 18:16:17,267 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_29.jpg
+2025-06-03 18:16:17,272 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_0.jpg
+2025-06-03 18:16:17,272 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_1.jpg
+2025-06-03 18:16:17,273 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_2.jpg
+2025-06-03 18:16:17,274 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_3.jpg
+2025-06-03 18:16:17,274 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_4.jpg
+2025-06-03 18:16:17,275 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_5.jpg
+2025-06-03 18:16:17,275 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_6.jpg
+2025-06-03 18:16:17,277 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_7.jpg
+2025-06-03 18:16:17,278 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_8.jpg
+2025-06-03 18:16:17,278 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_9.jpg
+2025-06-03 18:16:17,279 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_10.jpg
+2025-06-03 18:16:17,279 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_11.jpg
+2025-06-03 18:16:17,280 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_12.jpg
+2025-06-03 18:16:17,280 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_13.jpg
+2025-06-03 18:16:17,281 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_14.jpg
+2025-06-03 18:16:17,281 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_15.jpg
+2025-06-03 18:16:17,281 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_16.jpg
+2025-06-03 18:16:17,282 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_17.jpg
+2025-06-03 18:16:17,283 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_18.jpg
+2025-06-03 18:16:17,283 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_19.jpg
+2025-06-03 18:16:17,285 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_20.jpg
+2025-06-03 18:16:17,285 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_21.jpg
+2025-06-03 18:16:17,285 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_22.jpg
+2025-06-03 18:16:17,286 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_23.jpg
+2025-06-03 18:16:17,286 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_24.jpg
+2025-06-03 18:16:17,287 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_25.jpg
+2025-06-03 18:16:17,287 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_26.jpg
+2025-06-03 18:16:17,287 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_27.jpg
+2025-06-03 18:16:17,288 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_28.jpg
+2025-06-03 18:16:17,288 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_29.jpg
+2025-06-03 18:16:17,302 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_0.jpg
+2025-06-03 18:16:17,303 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_1.jpg
+2025-06-03 18:16:17,304 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_2.jpg
+2025-06-03 18:16:17,304 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_3.jpg
+2025-06-03 18:16:17,305 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_4.jpg
+2025-06-03 18:16:17,306 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_5.jpg
+2025-06-03 18:16:17,306 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_6.jpg
+2025-06-03 18:16:17,307 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_7.jpg
+2025-06-03 18:16:17,307 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_8.jpg
+2025-06-03 18:16:17,307 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_9.jpg
+2025-06-03 18:16:17,309 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_10.jpg
+2025-06-03 18:16:17,310 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_11.jpg
+2025-06-03 18:16:17,311 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_12.jpg
+2025-06-03 18:16:17,311 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_13.jpg
+2025-06-03 18:16:17,312 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_14.jpg
+2025-06-03 18:16:17,312 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_15.jpg
+2025-06-03 18:16:17,313 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_16.jpg
+2025-06-03 18:16:17,313 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_17.jpg
+2025-06-03 18:16:17,314 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_18.jpg
+2025-06-03 18:16:17,315 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_19.jpg
+2025-06-03 18:16:17,315 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_20.jpg
+2025-06-03 18:16:17,316 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_21.jpg
+2025-06-03 18:16:17,316 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.269295758cb3436e2071a3708663961c_mask_22.jpg
+2025-06-03 18:16:17,321 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_0.jpg
+2025-06-03 18:16:17,322 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_1.jpg
+2025-06-03 18:16:17,323 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_2.jpg
+2025-06-03 18:16:17,323 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_3.jpg
+2025-06-03 18:16:17,324 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_4.jpg
+2025-06-03 18:16:17,324 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_5.jpg
+2025-06-03 18:16:17,325 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_6.jpg
+2025-06-03 18:16:17,326 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_7.jpg
+2025-06-03 18:16:17,326 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_8.jpg
+2025-06-03 18:16:17,327 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_9.jpg
+2025-06-03 18:16:17,327 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_10.jpg
+2025-06-03 18:16:17,328 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_11.jpg
+2025-06-03 18:16:17,328 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_12.jpg
+2025-06-03 18:16:17,328 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_13.jpg
+2025-06-03 18:16:17,330 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_14.jpg
+2025-06-03 18:16:17,330 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_15.jpg
+2025-06-03 18:16:17,331 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_16.jpg
+2025-06-03 18:16:17,332 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_17.jpg
+2025-06-03 18:16:17,332 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_18.jpg
+2025-06-03 18:16:17,333 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_19.jpg
+2025-06-03 18:16:17,334 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_20.jpg
+2025-06-03 18:16:17,334 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_21.jpg
+2025-06-03 18:16:17,334 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.3297d73182e64b0625c8bc4151def750_mask_22.jpg
+2025-06-03 18:16:17,338 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_0.jpg
+2025-06-03 18:16:17,340 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_1.jpg
+2025-06-03 18:16:17,340 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_2.jpg
+2025-06-03 18:16:17,341 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_3.jpg
+2025-06-03 18:16:17,341 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_4.jpg
+2025-06-03 18:16:17,342 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_5.jpg
+2025-06-03 18:16:17,342 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_6.jpg
+2025-06-03 18:16:17,343 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_7.jpg
+2025-06-03 18:16:17,343 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_8.jpg
+2025-06-03 18:16:17,344 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_9.jpg
+2025-06-03 18:16:17,344 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_10.jpg
+2025-06-03 18:16:17,345 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_11.jpg
+2025-06-03 18:16:17,346 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_12.jpg
+2025-06-03 18:16:17,346 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_13.jpg
+2025-06-03 18:16:17,348 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_14.jpg
+2025-06-03 18:16:17,348 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_15.jpg
+2025-06-03 18:16:17,349 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_16.jpg
+2025-06-03 18:16:17,349 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_17.jpg
+2025-06-03 18:16:17,350 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_18.jpg
+2025-06-03 18:16:17,350 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_19.jpg
+2025-06-03 18:16:17,350 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_20.jpg
+2025-06-03 18:16:17,351 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_21.jpg
+2025-06-03 18:16:17,352 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_03_jpeg.rf.df1d05f382416f67231b2eae5500c253_mask_22.jpg
+2025-06-03 18:16:17,357 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_0.jpg
+2025-06-03 18:16:17,358 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_1.jpg
+2025-06-03 18:16:17,358 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_2.jpg
+2025-06-03 18:16:17,359 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_3.jpg
+2025-06-03 18:16:17,360 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_4.jpg
+2025-06-03 18:16:17,361 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_5.jpg
+2025-06-03 18:16:17,361 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_6.jpg
+2025-06-03 18:16:17,362 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_7.jpg
+2025-06-03 18:16:17,362 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_8.jpg
+2025-06-03 18:16:17,362 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_9.jpg
+2025-06-03 18:16:17,363 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_10.jpg
+2025-06-03 18:16:17,363 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_11.jpg
+2025-06-03 18:16:17,364 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_12.jpg
+2025-06-03 18:16:17,364 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_13.jpg
+2025-06-03 18:16:17,365 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_14.jpg
+2025-06-03 18:16:17,365 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_15.jpg
+2025-06-03 18:16:17,366 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_16.jpg
+2025-06-03 18:16:17,366 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_17.jpg
+2025-06-03 18:16:17,367 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_18.jpg
+2025-06-03 18:16:17,368 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_19.jpg
+2025-06-03 18:16:17,368 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_20.jpg
+2025-06-03 18:16:17,369 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_21.jpg
+2025-06-03 18:16:17,369 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_22.jpg
+2025-06-03 18:16:17,370 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_23.jpg
+2025-06-03 18:16:17,370 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_24.jpg
+2025-06-03 18:16:17,370 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_25.jpg
+2025-06-03 18:16:17,372 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_26.jpg
+2025-06-03 18:16:17,372 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_27.jpg
+2025-06-03 18:16:17,373 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_28.jpg
+2025-06-03 18:16:17,374 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.0b4766f994e909e209ee8469162f91be_mask_29.jpg
+2025-06-03 18:16:17,378 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_0.jpg
+2025-06-03 18:16:17,379 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_1.jpg
+2025-06-03 18:16:17,379 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_2.jpg
+2025-06-03 18:16:17,380 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_3.jpg
+2025-06-03 18:16:17,380 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_4.jpg
+2025-06-03 18:16:17,381 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_5.jpg
+2025-06-03 18:16:17,381 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_6.jpg
+2025-06-03 18:16:17,382 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_7.jpg
+2025-06-03 18:16:17,382 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_8.jpg
+2025-06-03 18:16:17,383 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_9.jpg
+2025-06-03 18:16:17,383 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_10.jpg
+2025-06-03 18:16:17,384 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_11.jpg
+2025-06-03 18:16:17,384 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_12.jpg
+2025-06-03 18:16:17,386 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_13.jpg
+2025-06-03 18:16:17,386 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_14.jpg
+2025-06-03 18:16:17,387 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_15.jpg
+2025-06-03 18:16:17,388 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_16.jpg
+2025-06-03 18:16:17,388 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_17.jpg
+2025-06-03 18:16:17,389 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_18.jpg
+2025-06-03 18:16:17,389 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_19.jpg
+2025-06-03 18:16:17,389 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_20.jpg
+2025-06-03 18:16:17,390 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_21.jpg
+2025-06-03 18:16:17,390 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_22.jpg
+2025-06-03 18:16:17,390 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_23.jpg
+2025-06-03 18:16:17,392 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_24.jpg
+2025-06-03 18:16:17,393 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_25.jpg
+2025-06-03 18:16:17,393 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_26.jpg
+2025-06-03 18:16:17,394 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_27.jpg
+2025-06-03 18:16:17,395 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_28.jpg
+2025-06-03 18:16:17,396 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.3fa660dba30f9215180f1433b38a66c8_mask_29.jpg
+2025-06-03 18:16:17,400 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_0.jpg
+2025-06-03 18:16:17,401 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_1.jpg
+2025-06-03 18:16:17,403 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_2.jpg
+2025-06-03 18:16:17,403 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_3.jpg
+2025-06-03 18:16:17,404 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_4.jpg
+2025-06-03 18:16:17,404 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_5.jpg
+2025-06-03 18:16:17,405 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_6.jpg
+2025-06-03 18:16:17,405 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_7.jpg
+2025-06-03 18:16:17,406 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_8.jpg
+2025-06-03 18:16:17,406 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_9.jpg
+2025-06-03 18:16:17,407 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_10.jpg
+2025-06-03 18:16:17,408 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_11.jpg
+2025-06-03 18:16:17,408 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_12.jpg
+2025-06-03 18:16:17,409 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_13.jpg
+2025-06-03 18:16:17,410 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_14.jpg
+2025-06-03 18:16:17,410 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_15.jpg
+2025-06-03 18:16:17,410 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_16.jpg
+2025-06-03 18:16:17,412 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_17.jpg
+2025-06-03 18:16:17,412 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_18.jpg
+2025-06-03 18:16:17,413 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_19.jpg
+2025-06-03 18:16:17,413 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_20.jpg
+2025-06-03 18:16:17,414 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_21.jpg
+2025-06-03 18:16:17,415 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_22.jpg
+2025-06-03 18:16:17,415 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_23.jpg
+2025-06-03 18:16:17,416 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_24.jpg
+2025-06-03 18:16:17,417 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_25.jpg
+2025-06-03 18:16:17,417 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_26.jpg
+2025-06-03 18:16:17,418 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_27.jpg
+2025-06-03 18:16:17,418 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_28.jpg
+2025-06-03 18:16:17,419 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_04_jpeg.rf.68d1963e427009968bdad556f91d05b3_mask_29.jpg
+2025-06-03 18:16:17,425 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_0.jpg
+2025-06-03 18:16:17,426 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_1.jpg
+2025-06-03 18:16:17,426 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_2.jpg
+2025-06-03 18:16:17,427 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_3.jpg
+2025-06-03 18:16:17,427 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_4.jpg
+2025-06-03 18:16:17,428 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_5.jpg
+2025-06-03 18:16:17,428 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_6.jpg
+2025-06-03 18:16:17,429 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_7.jpg
+2025-06-03 18:16:17,430 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_8.jpg
+2025-06-03 18:16:17,431 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_9.jpg
+2025-06-03 18:16:17,431 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_10.jpg
+2025-06-03 18:16:17,432 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_11.jpg
+2025-06-03 18:16:17,433 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_12.jpg
+2025-06-03 18:16:17,433 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_13.jpg
+2025-06-03 18:16:17,433 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_14.jpg
+2025-06-03 18:16:17,434 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_15.jpg
+2025-06-03 18:16:17,435 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_16.jpg
+2025-06-03 18:16:17,435 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_17.jpg
+2025-06-03 18:16:17,436 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_18.jpg
+2025-06-03 18:16:17,437 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_19.jpg
+2025-06-03 18:16:17,438 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_20.jpg
+2025-06-03 18:16:17,438 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_21.jpg
+2025-06-03 18:16:17,439 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_22.jpg
+2025-06-03 18:16:17,439 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_23.jpg
+2025-06-03 18:16:17,440 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_24.jpg
+2025-06-03 18:16:17,440 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.002ea398b157870b0acef6053ce51654_mask_25.jpg
+2025-06-03 18:16:17,445 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_0.jpg
+2025-06-03 18:16:17,446 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_1.jpg
+2025-06-03 18:16:17,446 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_2.jpg
+2025-06-03 18:16:17,447 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_3.jpg
+2025-06-03 18:16:17,448 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_4.jpg
+2025-06-03 18:16:17,448 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_5.jpg
+2025-06-03 18:16:17,449 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_6.jpg
+2025-06-03 18:16:17,449 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_7.jpg
+2025-06-03 18:16:17,450 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_8.jpg
+2025-06-03 18:16:17,450 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_9.jpg
+2025-06-03 18:16:17,452 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_10.jpg
+2025-06-03 18:16:17,452 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_11.jpg
+2025-06-03 18:16:17,453 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_12.jpg
+2025-06-03 18:16:17,453 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_13.jpg
+2025-06-03 18:16:17,454 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_14.jpg
+2025-06-03 18:16:17,454 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_15.jpg
+2025-06-03 18:16:17,454 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_16.jpg
+2025-06-03 18:16:17,456 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_17.jpg
+2025-06-03 18:16:17,457 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_18.jpg
+2025-06-03 18:16:17,458 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_19.jpg
+2025-06-03 18:16:17,458 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_20.jpg
+2025-06-03 18:16:17,458 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_21.jpg
+2025-06-03 18:16:17,459 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_22.jpg
+2025-06-03 18:16:17,459 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_23.jpg
+2025-06-03 18:16:17,460 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_24.jpg
+2025-06-03 18:16:17,460 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.2667b396d53b99ee30ee0366d85db55c_mask_25.jpg
+2025-06-03 18:16:17,466 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_0.jpg
+2025-06-03 18:16:17,467 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_1.jpg
+2025-06-03 18:16:17,467 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_2.jpg
+2025-06-03 18:16:17,467 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_3.jpg
+2025-06-03 18:16:17,468 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_4.jpg
+2025-06-03 18:16:17,469 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_5.jpg
+2025-06-03 18:16:17,469 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_6.jpg
+2025-06-03 18:16:17,470 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_7.jpg
+2025-06-03 18:16:17,470 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_8.jpg
+2025-06-03 18:16:17,471 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_9.jpg
+2025-06-03 18:16:17,471 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_10.jpg
+2025-06-03 18:16:17,473 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_11.jpg
+2025-06-03 18:16:17,473 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_12.jpg
+2025-06-03 18:16:17,473 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_13.jpg
+2025-06-03 18:16:17,474 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_14.jpg
+2025-06-03 18:16:17,474 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_15.jpg
+2025-06-03 18:16:17,475 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_16.jpg
+2025-06-03 18:16:17,475 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_17.jpg
+2025-06-03 18:16:17,476 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_18.jpg
+2025-06-03 18:16:17,476 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_19.jpg
+2025-06-03 18:16:17,478 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_20.jpg
+2025-06-03 18:16:17,479 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_21.jpg
+2025-06-03 18:16:17,479 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_22.jpg
+2025-06-03 18:16:17,480 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_23.jpg
+2025-06-03 18:16:17,480 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_24.jpg
+2025-06-03 18:16:17,480 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_005\intermediate\cropped\coins_05_jpeg.rf.38fdc5dab7f4ebdf7bfb3434f2d4976b_mask_25.jpg
+2025-06-03 18:16:17,481 | INFO | main.py | Removing background from cropped images...
+2025-06-03 18:16:17,481 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_005\intermediate\cropped_nobg...
+2025-06-03 18:16:18,883 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_0.jpg
+2025-06-03 18:16:20,004 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_1.jpg
+2025-06-03 18:16:21,006 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_10.jpg
+2025-06-03 18:16:21,955 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_11.jpg
+2025-06-03 18:16:22,934 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_12.jpg
+2025-06-03 18:16:23,945 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_13.jpg
+2025-06-03 18:16:24,894 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_14.jpg
+2025-06-03 18:16:25,815 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_15.jpg
+2025-06-03 18:16:26,749 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_16.jpg
+2025-06-03 18:16:27,706 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_17.jpg
+2025-06-03 18:16:28,657 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_18.jpg
+2025-06-03 18:16:29,612 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_19.jpg
+2025-06-03 18:16:30,542 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_2.jpg
+2025-06-03 18:16:31,509 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_20.jpg
+2025-06-03 18:16:32,452 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_21.jpg
+2025-06-03 18:16:33,401 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_22.jpg
+2025-06-03 18:16:34,314 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_23.jpg
+2025-06-03 18:16:35,238 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_24.jpg
+2025-06-03 18:16:36,183 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_25.jpg
+2025-06-03 18:16:37,108 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_26.jpg
+2025-06-03 18:16:38,046 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_27.jpg
+2025-06-03 18:16:39,008 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_28.jpg
+2025-06-03 18:16:39,943 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_29.jpg
+2025-06-03 18:16:40,876 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_3.jpg
+2025-06-03 18:16:41,828 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_4.jpg
+2025-06-03 18:16:42,819 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_5.jpg
+2025-06-03 18:16:43,768 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_6.jpg
+2025-06-03 18:16:44,723 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_7.jpg
+2025-06-03 18:16:45,679 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_8.jpg
+2025-06-03 18:16:46,625 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.1110d26eb3f8386d36b37e941ccf497f_mask_9.jpg
+2025-06-03 18:16:47,672 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_0.jpg
+2025-06-03 18:16:48,674 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_1.jpg
+2025-06-03 18:16:49,676 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_10.jpg
+2025-06-03 18:16:50,653 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_11.jpg
+2025-06-03 18:16:51,632 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_12.jpg
+2025-06-03 18:16:52,562 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_13.jpg
+2025-06-03 18:16:53,480 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_14.jpg
+2025-06-03 18:16:54,431 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_15.jpg
+2025-06-03 18:16:55,379 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_16.jpg
+2025-06-03 18:16:56,340 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_17.jpg
+2025-06-03 18:16:57,307 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_18.jpg
+2025-06-03 18:16:58,273 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_19.jpg
+2025-06-03 18:16:59,188 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_2.jpg
+2025-06-03 18:17:00,157 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_20.jpg
+2025-06-03 18:17:01,143 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_21.jpg
+2025-06-03 18:17:02,089 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_22.jpg
+2025-06-03 18:17:03,027 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_23.jpg
+2025-06-03 18:17:03,987 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_24.jpg
+2025-06-03 18:17:04,920 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_25.jpg
+2025-06-03 18:17:05,893 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_26.jpg
+2025-06-03 18:17:06,841 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_27.jpg
+2025-06-03 18:17:07,792 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_28.jpg
+2025-06-03 18:17:08,748 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_29.jpg
+2025-06-03 18:17:09,711 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_3.jpg
+2025-06-03 18:17:10,666 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_4.jpg
+2025-06-03 18:17:11,630 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_5.jpg
+2025-06-03 18:17:12,586 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_6.jpg
+2025-06-03 18:17:13,541 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_7.jpg
+2025-06-03 18:17:14,504 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_8.jpg
+2025-06-03 18:17:15,447 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.132d0706c20c0601d5c1cae1b90846a8_mask_9.jpg
+2025-06-03 18:17:16,376 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_0.jpg
+2025-06-03 18:17:17,301 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_1.jpg
+2025-06-03 18:17:18,236 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_10.jpg
+2025-06-03 18:17:19,177 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_11.jpg
+2025-06-03 18:17:20,134 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_12.jpg
+2025-06-03 18:17:21,068 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_13.jpg
+2025-06-03 18:17:22,033 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_14.jpg
+2025-06-03 18:17:22,966 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_15.jpg
+2025-06-03 18:17:23,908 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_16.jpg
+2025-06-03 18:17:24,864 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_17.jpg
+2025-06-03 18:17:25,820 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_18.jpg
+2025-06-03 18:17:26,782 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_19.jpg
+2025-06-03 18:17:27,739 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_2.jpg
+2025-06-03 18:17:28,679 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_20.jpg
+2025-06-03 18:17:29,621 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_21.jpg
+2025-06-03 18:17:30,592 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_22.jpg
+2025-06-03 18:17:31,517 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_23.jpg
+2025-06-03 18:17:32,454 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_24.jpg
+2025-06-03 18:17:33,399 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_25.jpg
+2025-06-03 18:17:34,343 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_26.jpg
+2025-06-03 18:17:35,300 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_27.jpg
+2025-06-03 18:17:36,237 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_28.jpg
+2025-06-03 18:17:37,176 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_29.jpg
+2025-06-03 18:17:38,111 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_3.jpg
+2025-06-03 18:17:39,059 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_4.jpg
+2025-06-03 18:17:39,989 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_5.jpg
+2025-06-03 18:17:40,926 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_6.jpg
+2025-06-03 18:17:41,857 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_7.jpg
+2025-06-03 18:17:42,774 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_8.jpg
+2025-06-03 18:17:43,707 | INFO | bg_removal.py | Processed: coins_01_jpeg.rf.7cfecdd0aed488090b2f371bdd6548f1_mask_9.jpg
+2025-06-03 18:17:44,652 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_0.jpg
+2025-06-03 18:17:45,637 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_1.jpg
+2025-06-03 18:17:46,700 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_10.jpg
+2025-06-03 18:17:47,769 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_11.jpg
+2025-06-03 18:17:48,848 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_12.jpg
+2025-06-03 18:17:49,961 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_13.jpg
+2025-06-03 18:17:51,047 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_14.jpg
+2025-06-03 18:17:52,139 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_15.jpg
+2025-06-03 18:17:53,208 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_16.jpg
+2025-06-03 18:17:54,247 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_17.jpg
+2025-06-03 18:17:55,242 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_18.jpg
+2025-06-03 18:17:56,299 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_19.jpg
+2025-06-03 18:17:57,368 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_2.jpg
+2025-06-03 18:17:58,404 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_20.jpg
+2025-06-03 18:17:59,497 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_21.jpg
+2025-06-03 18:18:00,556 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_22.jpg
+2025-06-03 18:18:01,575 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_23.jpg
+2025-06-03 18:18:02,535 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_24.jpg
+2025-06-03 18:18:03,558 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_25.jpg
+2025-06-03 18:18:04,497 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_26.jpg
+2025-06-03 18:18:05,500 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_27.jpg
+2025-06-03 18:18:06,434 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_28.jpg
+2025-06-03 18:18:07,402 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_29.jpg
+2025-06-03 18:18:08,335 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_3.jpg
+2025-06-03 18:18:09,301 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_4.jpg
+2025-06-03 18:18:10,311 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_5.jpg
+2025-06-03 18:18:11,315 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_6.jpg
+2025-06-03 18:18:12,271 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_7.jpg
+2025-06-03 18:18:13,218 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_8.jpg
+2025-06-03 18:18:14,152 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.18221e05cbb7788158feda822f824df6_mask_9.jpg
+2025-06-03 18:18:15,093 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_0.jpg
+2025-06-03 18:18:16,044 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_1.jpg
+2025-06-03 18:18:16,985 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_10.jpg
+2025-06-03 18:18:17,948 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_11.jpg
+2025-06-03 18:18:18,884 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_12.jpg
+2025-06-03 18:18:19,834 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_13.jpg
+2025-06-03 18:18:20,788 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_14.jpg
+2025-06-03 18:18:21,763 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_15.jpg
+2025-06-03 18:18:22,678 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_16.jpg
+2025-06-03 18:18:23,658 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_17.jpg
+2025-06-03 18:18:24,675 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_18.jpg
+2025-06-03 18:18:25,704 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_19.jpg
+2025-06-03 18:18:26,650 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_2.jpg
+2025-06-03 18:18:27,655 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_20.jpg
+2025-06-03 18:18:28,672 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_21.jpg
+2025-06-03 18:18:29,653 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_22.jpg
+2025-06-03 18:18:30,635 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_23.jpg
+2025-06-03 18:18:31,599 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_24.jpg
+2025-06-03 18:18:32,543 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_25.jpg
+2025-06-03 18:18:33,528 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_26.jpg
+2025-06-03 18:18:34,534 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_27.jpg
+2025-06-03 18:18:35,543 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_28.jpg
+2025-06-03 18:18:36,556 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_29.jpg
+2025-06-03 18:18:37,558 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_3.jpg
+2025-06-03 18:18:38,594 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_4.jpg
+2025-06-03 18:18:39,595 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_5.jpg
+2025-06-03 18:18:40,637 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_6.jpg
+2025-06-03 18:18:41,757 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_7.jpg
+2025-06-03 18:18:42,782 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_8.jpg
+2025-06-03 18:18:43,901 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.362cf98e55e1ec0f2c56966395ed84b6_mask_9.jpg
+2025-06-03 18:18:45,020 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_0.jpg
+2025-06-03 18:18:46,129 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_1.jpg
+2025-06-03 18:18:47,208 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_10.jpg
+2025-06-03 18:18:48,290 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_11.jpg
+2025-06-03 18:18:49,375 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_12.jpg
+2025-06-03 18:18:50,430 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_13.jpg
+2025-06-03 18:18:51,466 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_14.jpg
+2025-06-03 18:18:52,420 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_15.jpg
+2025-06-03 18:18:53,433 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_16.jpg
+2025-06-03 18:18:54,406 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_17.jpg
+2025-06-03 18:18:55,386 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_18.jpg
+2025-06-03 18:18:56,412 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_19.jpg
+2025-06-03 18:18:57,463 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_2.jpg
+2025-06-03 18:18:58,447 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_20.jpg
+2025-06-03 18:18:59,462 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_21.jpg
+2025-06-03 18:19:00,488 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_22.jpg
+2025-06-03 18:19:01,516 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_23.jpg
+2025-06-03 18:19:02,560 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_24.jpg
+2025-06-03 18:19:03,620 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_25.jpg
+2025-06-03 18:19:04,692 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_26.jpg
+2025-06-03 18:19:05,791 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_27.jpg
+2025-06-03 18:19:06,871 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_28.jpg
+2025-06-03 18:19:07,989 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_29.jpg
+2025-06-03 18:19:09,069 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_3.jpg
+2025-06-03 18:19:10,237 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_4.jpg
+2025-06-03 18:19:11,330 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_5.jpg
+2025-06-03 18:19:12,387 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_6.jpg
+2025-06-03 18:19:13,424 | INFO | bg_removal.py | Processed: coins_02_jpeg.rf.e2b6d0443890a3912456716243e06873_mask_7.jpg
+2025-06-03 18:19:21,217 | INFO | main.py | Ensured directory exists: data
+2025-06-03 18:19:21,218 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003
+2025-06-03 18:19:21,218 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\input\images
+2025-06-03 18:19:21,219 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\input\labels
+2025-06-03 18:19:21,220 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\intermediate\cropped
+2025-06-03 18:19:21,220 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\intermediate\cropped_nobg
+2025-06-03 18:19:21,221 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 18:19:21,222 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\backgrounds\user_generated
+2025-06-03 18:19:21,222 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\output\composites
+2025-06-03 18:19:21,223 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\output\annotations
+2025-06-03 18:19:21,223 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\output\masks
+2025-06-03 18:19:21,223 | INFO | main.py | Copying images from C:\Users\hrish\Desktop\dataset_003\images to C:\Users\hrish\Desktop\dataset_003\input\images
+2025-06-03 18:19:21,236 | INFO | main.py | Images copied.
+2025-06-03 18:19:21,237 | INFO | main.py | Copying labels from C:\Users\hrish\Desktop\dataset_003\labels to C:\Users\hrish\Desktop\dataset_003\input\labels
+2025-06-03 18:19:21,327 | INFO | main.py | Labels copied.
+2025-06-03 18:19:21,335 | INFO | main.py | Copied class names to C:\Users\hrish\Desktop\dataset_003\input\class_names.txt
+2025-06-03 18:19:21,335 | INFO | main.py | Copying test data from C:\Users\hrish\Desktop\dataset_003\test to C:\Users\hrish\Desktop\dataset_003\input\test
+2025-06-03 18:19:21,672 | INFO | main.py | Test data copied.
+2025-06-03 18:19:21,674 | INFO | main.py | Removed original images directory: C:\Users\hrish\Desktop\dataset_003\images
+2025-06-03 18:19:21,677 | INFO | main.py | Removed original labels directory: C:\Users\hrish\Desktop\dataset_003\labels
+2025-06-03 18:19:21,677 | INFO | main.py | Removed original class names file: C:\Users\hrish\Desktop\dataset_003\class_names.txt
+2025-06-03 18:19:21,684 | INFO | main.py | Removed original test directory: C:\Users\hrish\Desktop\dataset_003\test
+2025-06-03 18:19:21,684 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 18:19:21,684 | INFO | main.py | Cropping objects from input images...
+2025-06-03 18:19:21,684 | INFO | cropping_imgs.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_003\intermediate\cropped...
+2025-06-03 18:19:21,707 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_0.jpg
+2025-06-03 18:19:21,708 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_1.jpg
+2025-06-03 18:19:21,719 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_0.jpg
+2025-06-03 18:19:21,719 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_1.jpg
+2025-06-03 18:19:21,731 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_0.jpg
+2025-06-03 18:19:21,731 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_1.jpg
+2025-06-03 18:19:21,742 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_0.jpg
+2025-06-03 18:19:21,743 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_1.jpg
+2025-06-03 18:19:21,754 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.c5f551008966064ae4c370591c971d83_mask_0.jpg
+2025-06-03 18:19:21,755 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.c5f551008966064ae4c370591c971d83_mask_1.jpg
+2025-06-03 18:19:21,766 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_0.jpg
+2025-06-03 18:19:21,766 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_1.jpg
+2025-06-03 18:19:21,777 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_0.jpg
+2025-06-03 18:19:21,778 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_1.jpg
+2025-06-03 18:19:21,789 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_0.jpg
+2025-06-03 18:19:21,790 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_1.jpg
+2025-06-03 18:19:21,801 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_0.jpg
+2025-06-03 18:19:21,802 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_1.jpg
+2025-06-03 18:19:21,814 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_0.jpg
+2025-06-03 18:19:21,815 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_1.jpg
+2025-06-03 18:19:21,827 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_0.jpg
+2025-06-03 18:19:21,828 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_1.jpg
+2025-06-03 18:19:21,841 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_0.jpg
+2025-06-03 18:19:21,841 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_1.jpg
+2025-06-03 18:19:21,853 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_0.jpg
+2025-06-03 18:19:21,855 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_1.jpg
+2025-06-03 18:19:21,866 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_0.jpg
+2025-06-03 18:19:21,868 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_1.jpg
+2025-06-03 18:19:21,880 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_0.jpg
+2025-06-03 18:19:21,881 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_1.jpg
+2025-06-03 18:19:21,881 | INFO | main.py | Removing background from cropped images...
+2025-06-03 18:19:21,881 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_003\intermediate\cropped_nobg...
+2025-06-03 18:19:22,968 | INFO | bg_removal.py | Processed: 0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_0.jpg
+2025-06-03 18:19:24,014 | INFO | bg_removal.py | Processed: 0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_1.jpg
+2025-06-03 18:19:25,056 | INFO | bg_removal.py | Processed: 0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_0.jpg
+2025-06-03 18:19:26,122 | INFO | bg_removal.py | Processed: 0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_1.jpg
+2025-06-03 18:19:27,153 | INFO | bg_removal.py | Processed: 0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_0.jpg
+2025-06-03 18:19:28,195 | INFO | bg_removal.py | Processed: 0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_1.jpg
+2025-06-03 18:19:29,272 | INFO | bg_removal.py | Processed: 0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_0.jpg
+2025-06-03 18:19:30,315 | INFO | bg_removal.py | Processed: 0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_1.jpg
+2025-06-03 18:19:31,355 | INFO | bg_removal.py | Processed: 0003_png.rf.c5f551008966064ae4c370591c971d83_mask_0.jpg
+2025-06-03 18:19:32,413 | INFO | bg_removal.py | Processed: 0003_png.rf.c5f551008966064ae4c370591c971d83_mask_1.jpg
+2025-06-03 18:19:33,483 | INFO | bg_removal.py | Processed: 0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_0.jpg
+2025-06-03 18:19:34,534 | INFO | bg_removal.py | Processed: 0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_1.jpg
+2025-06-03 18:19:35,578 | INFO | bg_removal.py | Processed: 0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_0.jpg
+2025-06-03 18:19:36,614 | INFO | bg_removal.py | Processed: 0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_1.jpg
+2025-06-03 18:19:37,665 | INFO | bg_removal.py | Processed: 0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_0.jpg
+2025-06-03 18:19:38,716 | INFO | bg_removal.py | Processed: 0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_1.jpg
+2025-06-03 18:19:39,775 | INFO | bg_removal.py | Processed: 0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_0.jpg
+2025-06-03 18:19:40,869 | INFO | bg_removal.py | Processed: 0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_1.jpg
+2025-06-03 18:19:41,924 | INFO | bg_removal.py | Processed: 0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_0.jpg
+2025-06-03 18:19:42,982 | INFO | bg_removal.py | Processed: 0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_1.jpg
+2025-06-03 18:19:44,016 | INFO | bg_removal.py | Processed: 0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_0.jpg
+2025-06-03 18:19:45,135 | INFO | bg_removal.py | Processed: 0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_1.jpg
+2025-06-03 18:19:46,168 | INFO | bg_removal.py | Processed: 0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_0.jpg
+2025-06-03 18:19:47,234 | INFO | bg_removal.py | Processed: 0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_1.jpg
+2025-06-03 18:19:48,301 | INFO | bg_removal.py | Processed: 0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_0.jpg
+2025-06-03 18:19:49,356 | INFO | bg_removal.py | Processed: 0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_1.jpg
+2025-06-03 18:19:50,354 | INFO | bg_removal.py | Processed: 0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_0.jpg
+2025-06-03 18:19:51,392 | INFO | bg_removal.py | Processed: 0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_1.jpg
+2025-06-03 18:19:52,398 | INFO | bg_removal.py | Processed: 0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_0.jpg
+2025-06-03 18:19:53,432 | INFO | bg_removal.py | Processed: 0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_1.jpg
+2025-06-03 18:19:53,434 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 18:19:53,436 | INFO | main.py | Average image dimensions: 640x640
+2025-06-03 18:19:53,436 | ERROR | main.py | Pipeline failed: download_backgrounds() got an unexpected keyword argument 'query'
+Traceback (most recent call last):
+  File "c:\Users\hrish\Desktop\synthetic-image-augmentation\main.py", line 178, in main
+    download_backgrounds(
+TypeError: download_backgrounds() got an unexpected keyword argument 'query'
+2025-06-03 18:21:53,131 | INFO | main.py | Ensured directory exists: data
+2025-06-03 18:21:53,131 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003
+2025-06-03 18:21:53,131 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\input\images
+2025-06-03 18:21:53,131 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\input\labels
+2025-06-03 18:21:53,132 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\intermediate\cropped
+2025-06-03 18:21:53,132 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\intermediate\cropped_nobg
+2025-06-03 18:21:53,132 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 18:21:53,132 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\backgrounds\user_generated
+2025-06-03 18:21:53,132 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\output\composites
+2025-06-03 18:21:53,132 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\output\annotations
+2025-06-03 18:21:53,133 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_003\output\masks
+2025-06-03 18:21:53,133 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 18:21:53,133 | INFO | main.py | Cropping objects from input images...
+2025-06-03 18:21:53,135 | INFO | cropping_imgs.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_003\intermediate\cropped...
+2025-06-03 18:21:53,151 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_0.jpg
+2025-06-03 18:21:53,153 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_1.jpg
+2025-06-03 18:21:53,155 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_0.jpg
+2025-06-03 18:21:53,155 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_1.jpg
+2025-06-03 18:21:53,158 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_0.jpg
+2025-06-03 18:21:53,158 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_1.jpg
+2025-06-03 18:21:53,161 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_0.jpg
+2025-06-03 18:21:53,161 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_1.jpg
+2025-06-03 18:21:53,163 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.c5f551008966064ae4c370591c971d83_mask_0.jpg
+2025-06-03 18:21:53,164 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.c5f551008966064ae4c370591c971d83_mask_1.jpg
+2025-06-03 18:21:53,167 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_0.jpg
+2025-06-03 18:21:53,167 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_1.jpg
+2025-06-03 18:21:53,169 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_0.jpg
+2025-06-03 18:21:53,170 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_1.jpg
+2025-06-03 18:21:53,173 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_0.jpg
+2025-06-03 18:21:53,174 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_1.jpg
+2025-06-03 18:21:53,176 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_0.jpg
+2025-06-03 18:21:53,176 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_1.jpg
+2025-06-03 18:21:53,179 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_0.jpg
+2025-06-03 18:21:53,179 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_1.jpg
+2025-06-03 18:21:53,182 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_0.jpg
+2025-06-03 18:21:53,183 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_1.jpg
+2025-06-03 18:21:53,185 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_0.jpg
+2025-06-03 18:21:53,186 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_1.jpg
+2025-06-03 18:21:53,188 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_0.jpg
+2025-06-03 18:21:53,188 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_1.jpg
+2025-06-03 18:21:53,191 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_0.jpg
+2025-06-03 18:21:53,192 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_1.jpg
+2025-06-03 18:21:53,194 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_0.jpg
+2025-06-03 18:21:53,196 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_003\intermediate\cropped\0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_1.jpg
+2025-06-03 18:21:53,196 | INFO | main.py | Removing background from cropped images...
+2025-06-03 18:21:53,196 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_003\intermediate\cropped_nobg...
+2025-06-03 18:21:54,353 | INFO | bg_removal.py | Processed: 0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_0.jpg
+2025-06-03 18:21:55,429 | INFO | bg_removal.py | Processed: 0001_png.rf.5e009a9ec5fbf7a8e856ba7f413996af_mask_1.jpg
+2025-06-03 18:21:56,377 | INFO | bg_removal.py | Processed: 0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_0.jpg
+2025-06-03 18:21:57,352 | INFO | bg_removal.py | Processed: 0001_png.rf.5e22fcd367ffc26ff60b1c51ad0f660c_mask_1.jpg
+2025-06-03 18:21:58,309 | INFO | bg_removal.py | Processed: 0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_0.jpg
+2025-06-03 18:21:59,260 | INFO | bg_removal.py | Processed: 0001_png.rf.b7e30e943e30c208a0a0bcf446e6cce4_mask_1.jpg
+2025-06-03 18:22:00,214 | INFO | bg_removal.py | Processed: 0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_0.jpg
+2025-06-03 18:22:01,163 | INFO | bg_removal.py | Processed: 0003_png.rf.9bcfca705d67775d244ac7f85110d31d_mask_1.jpg
+2025-06-03 18:22:02,127 | INFO | bg_removal.py | Processed: 0003_png.rf.c5f551008966064ae4c370591c971d83_mask_0.jpg
+2025-06-03 18:22:03,064 | INFO | bg_removal.py | Processed: 0003_png.rf.c5f551008966064ae4c370591c971d83_mask_1.jpg
+2025-06-03 18:22:04,023 | INFO | bg_removal.py | Processed: 0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_0.jpg
+2025-06-03 18:22:04,947 | INFO | bg_removal.py | Processed: 0003_png.rf.d043c66e183b950e98b6d7ad83e1b246_mask_1.jpg
+2025-06-03 18:22:05,917 | INFO | bg_removal.py | Processed: 0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_0.jpg
+2025-06-03 18:22:06,861 | INFO | bg_removal.py | Processed: 0005_png.rf.3cb60cd33cc6ed3af59f256523aa86a0_mask_1.jpg
+2025-06-03 18:22:07,814 | INFO | bg_removal.py | Processed: 0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_0.jpg
+2025-06-03 18:22:08,758 | INFO | bg_removal.py | Processed: 0005_png.rf.4bd207a17e14f20535ed748eae1200b3_mask_1.jpg
+2025-06-03 18:22:09,707 | INFO | bg_removal.py | Processed: 0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_0.jpg
+2025-06-03 18:22:10,669 | INFO | bg_removal.py | Processed: 0005_png.rf.d38e0525d3784ed9847cd72b77d1d5d9_mask_1.jpg
+2025-06-03 18:22:11,636 | INFO | bg_removal.py | Processed: 0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_0.jpg
+2025-06-03 18:22:12,625 | INFO | bg_removal.py | Processed: 0007_png.rf.0b6136efce71b802acb1d1d689d44720_mask_1.jpg
+2025-06-03 18:22:13,578 | INFO | bg_removal.py | Processed: 0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_0.jpg
+2025-06-03 18:22:14,543 | INFO | bg_removal.py | Processed: 0028_png.rf.3c8e3c77f9a696dadedc988dfe2d9ca4_mask_1.jpg
+2025-06-03 18:22:15,519 | INFO | bg_removal.py | Processed: 0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_0.jpg
+2025-06-03 18:22:16,529 | INFO | bg_removal.py | Processed: 0028_png.rf.c604740d43243199416811e5d9ae69aa_mask_1.jpg
+2025-06-03 18:22:17,569 | INFO | bg_removal.py | Processed: 0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_0.jpg
+2025-06-03 18:22:18,675 | INFO | bg_removal.py | Processed: 0028_png.rf.ea0f814950102c68e6369635625abdc1_mask_1.jpg
+2025-06-03 18:22:19,751 | INFO | bg_removal.py | Processed: 0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_0.jpg
+2025-06-03 18:22:20,801 | INFO | bg_removal.py | Processed: 0029_png.rf.493a51b8f56e216e554df56393c87c8c_mask_1.jpg
+2025-06-03 18:22:21,864 | INFO | bg_removal.py | Processed: 0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_0.jpg
+2025-06-03 18:22:22,921 | INFO | bg_removal.py | Processed: 0029_png.rf.7a0887d3fb0e907e1fc84b345f981945_mask_1.jpg
+2025-06-03 18:22:22,922 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 18:22:22,925 | INFO | main.py | Average image dimensions: 640x640
+2025-06-03 18:22:30,605 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 18:22:30,618 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_1.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,628 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_10.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,637 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_11.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,652 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_12.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,671 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_13.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,682 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_14.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,694 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_15.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,706 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_16.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,716 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_17.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,727 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_18.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,741 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_19.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,752 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_2.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,767 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_20.png: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,778 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_3.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,788 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_4.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,799 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_5.png: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,812 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_6.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,828 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_7.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,839 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_8.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,848 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_9.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 18:22:30,848 | INFO | bg_extraction_web_scraping.py | Resized all images in 'C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.' to 640x640
+2025-06-03 18:22:30,848 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:\Users\hrish\Desktop\dataset_003\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 18:22:30,851 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-03 18:22:30,883 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_1.jpg
+2025-06-03 18:22:30,917 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_2.jpg
+2025-06-03 18:22:30,947 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_3.jpg
+2025-06-03 18:22:30,978 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_4.jpg
+2025-06-03 18:22:31,009 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_5.jpg
+2025-06-03 18:22:31,039 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_6.jpg
+2025-06-03 18:22:31,070 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_7.jpg
+2025-06-03 18:22:31,086 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_8.jpg
+2025-06-03 18:22:31,089 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-03 18:22:31,092 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_9.jpg
+2025-06-03 18:22:31,097 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_10.jpg
+2025-06-03 18:22:31,101 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_11.jpg
+2025-06-03 18:22:31,105 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_12.jpg
+2025-06-03 18:22:31,108 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_13.jpg
+2025-06-03 18:22:31,112 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_14.jpg
+2025-06-03 18:22:31,115 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_15.jpg
+2025-06-03 18:22:31,119 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_16.jpg
+2025-06-03 18:22:31,122 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-03 18:22:31,125 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_17.jpg
+2025-06-03 18:22:31,130 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_18.jpg
+2025-06-03 18:22:31,133 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_19.jpg
+2025-06-03 18:22:31,138 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_20.jpg
+2025-06-03 18:22:31,142 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_21.jpg
+2025-06-03 18:22:31,145 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_22.jpg
+2025-06-03 18:22:31,148 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_23.jpg
+2025-06-03 18:22:31,151 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_24.jpg
+2025-06-03 18:22:31,156 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-03 18:22:31,160 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_25.jpg
+2025-06-03 18:22:31,166 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_26.jpg
+2025-06-03 18:22:31,170 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_27.jpg
+2025-06-03 18:22:31,176 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_28.jpg
+2025-06-03 18:22:31,181 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_29.jpg
+2025-06-03 18:22:31,185 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_30.jpg
+2025-06-03 18:22:31,190 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_31.jpg
+2025-06-03 18:22:31,194 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_32.jpg
+2025-06-03 18:22:31,208 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-03 18:22:31,218 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_33.jpg
+2025-06-03 18:22:31,228 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_34.jpg
+2025-06-03 18:22:31,239 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_35.jpg
+2025-06-03 18:22:31,250 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_36.jpg
+2025-06-03 18:22:31,261 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_37.jpg
+2025-06-03 18:22:31,272 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_38.jpg
+2025-06-03 18:22:31,282 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_39.jpg
+2025-06-03 18:22:31,291 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_40.jpg
+2025-06-03 18:22:31,295 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-03 18:22:31,300 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_41.jpg
+2025-06-03 18:22:31,305 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_42.jpg
+2025-06-03 18:22:31,310 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_43.jpg
+2025-06-03 18:22:31,315 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_44.jpg
+2025-06-03 18:22:31,319 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_45.jpg
+2025-06-03 18:22:31,324 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_46.jpg
+2025-06-03 18:22:31,328 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_47.jpg
+2025-06-03 18:22:31,331 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_48.jpg
+2025-06-03 18:22:31,336 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-03 18:22:31,342 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_49.jpg
+2025-06-03 18:22:31,347 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_50.jpg
+2025-06-03 18:22:31,353 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_51.jpg
+2025-06-03 18:22:31,359 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_52.jpg
+2025-06-03 18:22:31,366 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_53.jpg
+2025-06-03 18:22:31,371 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_54.jpg
+2025-06-03 18:22:31,377 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_55.jpg
+2025-06-03 18:22:31,382 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_56.jpg
+2025-06-03 18:22:31,387 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-03 18:22:31,392 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_57.jpg
+2025-06-03 18:22:31,397 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_58.jpg
+2025-06-03 18:22:31,402 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_59.jpg
+2025-06-03 18:22:31,406 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_60.jpg
+2025-06-03 18:22:31,411 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_61.jpg
+2025-06-03 18:22:31,417 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_62.jpg
+2025-06-03 18:22:31,421 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_63.jpg
+2025-06-03 18:22:31,425 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_64.jpg
+2025-06-03 18:22:31,429 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-03 18:22:31,435 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_65.jpg
+2025-06-03 18:22:31,440 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_66.jpg
+2025-06-03 18:22:31,444 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_67.jpg
+2025-06-03 18:22:31,449 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_68.jpg
+2025-06-03 18:22:31,454 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_69.jpg
+2025-06-03 18:22:31,459 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_70.jpg
+2025-06-03 18:22:31,464 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_71.jpg
+2025-06-03 18:22:31,467 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_72.jpg
+2025-06-03 18:22:31,471 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-03 18:22:31,476 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_73.jpg
+2025-06-03 18:22:31,481 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_74.jpg
+2025-06-03 18:22:31,486 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_75.jpg
+2025-06-03 18:22:31,490 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_76.jpg
+2025-06-03 18:22:31,497 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_77.jpg
+2025-06-03 18:22:31,502 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_78.jpg
+2025-06-03 18:22:31,507 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_79.jpg
+2025-06-03 18:22:31,511 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_80.jpg
+2025-06-03 18:22:31,518 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-03 18:22:31,528 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_81.jpg
+2025-06-03 18:22:31,537 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_82.jpg
+2025-06-03 18:22:31,545 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_83.jpg
+2025-06-03 18:22:31,553 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_84.jpg
+2025-06-03 18:22:31,562 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_85.jpg
+2025-06-03 18:22:31,570 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_86.jpg
+2025-06-03 18:22:31,577 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_87.jpg
+2025-06-03 18:22:31,588 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_88.jpg
+2025-06-03 18:22:31,591 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-03 18:22:31,596 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_89.jpg
+2025-06-03 18:22:31,602 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_90.jpg
+2025-06-03 18:22:31,607 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_91.jpg
+2025-06-03 18:22:31,613 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_92.jpg
+2025-06-03 18:22:31,619 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_93.jpg
+2025-06-03 18:22:31,624 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_94.jpg
+2025-06-03 18:22:31,628 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_95.jpg
+2025-06-03 18:22:31,632 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_96.jpg
+2025-06-03 18:22:31,638 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-03 18:22:31,649 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_97.jpg
+2025-06-03 18:22:31,659 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_98.jpg
+2025-06-03 18:22:31,670 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_99.jpg
+2025-06-03 18:22:31,681 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_100.jpg
+2025-06-03 18:22:31,690 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_101.jpg
+2025-06-03 18:22:31,700 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_102.jpg
+2025-06-03 18:22:31,709 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_103.jpg
+2025-06-03 18:22:31,719 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_104.jpg
+2025-06-03 18:22:31,723 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-03 18:22:31,727 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_105.jpg
+2025-06-03 18:22:31,732 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_106.jpg
+2025-06-03 18:22:31,736 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_107.jpg
+2025-06-03 18:22:31,740 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_108.jpg
+2025-06-03 18:22:31,745 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_109.jpg
+2025-06-03 18:22:31,748 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_110.jpg
+2025-06-03 18:22:31,752 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_111.jpg
+2025-06-03 18:22:31,756 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_112.jpg
+2025-06-03 18:22:31,759 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-03 18:22:31,763 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_113.jpg
+2025-06-03 18:22:31,767 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_114.jpg
+2025-06-03 18:22:31,772 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_115.jpg
+2025-06-03 18:22:31,775 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_116.jpg
+2025-06-03 18:22:31,779 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_117.jpg
+2025-06-03 18:22:31,783 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_118.jpg
+2025-06-03 18:22:31,787 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_119.jpg
+2025-06-03 18:22:31,790 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_120.jpg
+2025-06-03 18:22:31,794 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-03 18:22:31,797 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_121.jpg
+2025-06-03 18:22:31,802 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_122.jpg
+2025-06-03 18:22:31,806 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_123.jpg
+2025-06-03 18:22:31,810 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_124.jpg
+2025-06-03 18:22:31,813 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_125.jpg
+2025-06-03 18:22:31,816 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_126.jpg
+2025-06-03 18:22:31,821 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_127.jpg
+2025-06-03 18:22:31,824 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_128.jpg
+2025-06-03 18:22:31,829 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-03 18:22:31,834 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_129.jpg
+2025-06-03 18:22:31,840 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_130.jpg
+2025-06-03 18:22:31,845 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_131.jpg
+2025-06-03 18:22:31,851 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_132.jpg
+2025-06-03 18:22:31,857 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_133.jpg
+2025-06-03 18:22:31,863 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_134.jpg
+2025-06-03 18:22:31,868 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_135.jpg
+2025-06-03 18:22:31,873 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_136.jpg
+2025-06-03 18:22:31,884 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-03 18:22:31,894 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_137.jpg
+2025-06-03 18:22:31,907 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_138.jpg
+2025-06-03 18:22:31,919 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_139.jpg
+2025-06-03 18:22:31,931 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_140.jpg
+2025-06-03 18:22:31,942 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_141.jpg
+2025-06-03 18:22:31,953 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_142.jpg
+2025-06-03 18:22:31,964 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_143.jpg
+2025-06-03 18:22:31,975 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_144.jpg
+2025-06-03 18:22:31,978 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-03 18:22:31,984 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_145.jpg
+2025-06-03 18:22:31,991 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_146.jpg
+2025-06-03 18:22:31,995 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_147.jpg
+2025-06-03 18:22:32,002 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_148.jpg
+2025-06-03 18:22:32,007 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_149.jpg
+2025-06-03 18:22:32,012 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_150.jpg
+2025-06-03 18:22:32,017 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_151.jpg
+2025-06-03 18:22:32,022 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_152.jpg
+2025-06-03 18:22:32,024 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-03 18:22:32,028 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_153.jpg
+2025-06-03 18:22:32,032 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_154.jpg
+2025-06-03 18:22:32,037 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_155.jpg
+2025-06-03 18:22:32,041 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_156.jpg
+2025-06-03 18:22:32,046 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_157.jpg
+2025-06-03 18:22:32,050 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_158.jpg
+2025-06-03 18:22:32,053 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_159.jpg
+2025-06-03 18:22:32,057 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_003\output\composites\composite_160.jpg
+2025-06-03 18:22:32,057 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-03 18:22:32,057 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:\Users\hrish\Desktop\dataset_003\backgrounds\user_generated
+2025-06-03 18:22:32,059 | ERROR | overlay.py | No background images found in C:\Users\hrish\Desktop\dataset_003\backgrounds\user_generated
+2025-06-03 18:22:32,059 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-03 18:22:34,282 | INFO | yolo_to_json.py | COCO JSON saved to C:\Users\hrish\Desktop\dataset_003\output\coco_annotations.json
+2025-06-03 18:22:34,282 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-03 18:22:34,807 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\dataset_003\output\masks
+2025-06-03 18:22:34,807 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 18:22:34,822 | INFO | main.py | Original images copied to composites folder.
+2025-06-03 18:22:34,834 | INFO | main.py | Original labels copied to annotations folder.
+2025-06-03 18:22:34,886 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\dataset_003\intermediate\orig_masks
+2025-06-03 18:22:35,009 | INFO | main.py | Original masks copied to masks folder.

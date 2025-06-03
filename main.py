@@ -2,6 +2,8 @@ import os
 import shutil
 import logging
 from pathlib import Path
+import numpy as np
+from PIL import Image
 
 from scripts.cropping_imgs import process_dataset
 from scripts.bg_removal import remove_bg_batch
@@ -14,7 +16,7 @@ from scripts.yolo_to_mask import yolo_to_masks
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
-DATA_ROOT = r"C:\Users\hrish\Desktop\dataset_005"
+DATA_ROOT = r"C:\Users\hrish\Desktop\dataset_003"
 
 IMAGES_DIR = os.path.join(DATA_ROOT, "input", "images")
 LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
@@ -56,6 +58,21 @@ log = logging.getLogger(__name__)
 # -----------------------------
 # SETUP: Ensure folders exist and data is moved if needed
 # -----------------------------
+
+def get_average_image_dimensions(images_dir):
+    widths, heights = [], []
+    for img_file in Path(images_dir).glob("*.[jp][pn]g"):
+        try:
+            with Image.open(img_file) as img:
+                widths.append(img.width)
+                heights.append(img.height)
+        except Exception as e:
+            log.warning(f"Skipping {img_file}: {e}")
+    avg_width = int(np.mean(widths)) if widths else 512
+    avg_height = int(np.mean(heights)) if heights else 512
+    log.info(f"Average image dimensions: {avg_width}x{avg_height}")
+    return avg_width, avg_height
+
 def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None, original_class_name_file=None, original_test_dir=None):
     required_dirs = [
         "data",
@@ -157,7 +174,14 @@ def main():
 
         # Step 4: Background download
         log.info(f"Downloading {NUM_BACKGROUNDS} backgrounds for: {SEARCH_KEYWORD}")
-        download_backgrounds(SEARCH_KEYWORD, NUM_BACKGROUNDS, WEBSCRAPE_BG_DIR)
+        avg_w, avg_h = get_average_image_dimensions(IMAGES_DIR)
+        download_backgrounds(
+            keyword=SEARCH_KEYWORD,
+            limit=NUM_BACKGROUNDS,
+            output_dir=WEBSCRAPE_BG_DIR,
+            width=avg_w,
+            height=avg_h
+        )
 
         # Step 5: Overlay
         for bg_source in [os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD), USER_BG_DIR]:
@@ -186,6 +210,32 @@ def main():
         yolo_to_masks(COMPOSITES_DIR, ANNOTATIONS_DIR, MASKS_DIR)
 
         log.info("Pipeline completed successfully!")
+
+        # Copy original images to composites folder
+        for img_file in Path(IMAGES_DIR).glob("*.[jp][pn]g"):
+            dst = Path(COMPOSITES_DIR) / f"orig_{img_file.name}"
+            shutil.copy(img_file, dst)
+        log.info("Original images copied to composites folder.")
+
+        # Copy original labels to annotations folder
+        for label_file in Path(LABELS_DIR).glob("*.txt"):
+            dst = Path(ANNOTATIONS_DIR) / f"orig_{label_file.name}"
+            shutil.copy(label_file, dst)
+        log.info("Original labels copied to annotations folder.")
+
+        # Generate masks for original images too
+        temp_mask_dir = os.path.join(DATA_ROOT, "intermediate", "orig_masks")
+        os.makedirs(temp_mask_dir, exist_ok=True)
+        yolo_to_masks(IMAGES_DIR, LABELS_DIR, temp_mask_dir)
+
+        # Copy masks to final output
+        for mask_file in Path(temp_mask_dir).glob("*.png"):
+            dst = Path(MASKS_DIR) / f"orig_{mask_file.name}"
+            shutil.copy(mask_file, dst)
+        log.info("Original masks copied to masks folder.")
+
+
+
 
     except Exception as e:
         log.exception(f"Pipeline failed: {e}")
