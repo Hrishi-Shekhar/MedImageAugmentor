@@ -14,7 +14,7 @@ from scripts.yolo_to_mask import yolo_to_masks
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
-DATA_ROOT = r"data/dataset_001"
+DATA_ROOT = r"C:\Users\hrish\Desktop\dataset_005"
 
 IMAGES_DIR = os.path.join(DATA_ROOT, "input", "images")
 LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
