@@ -34,8 +34,8 @@ MASKS_DIR = os.path.join(OUTPUT_ROOT, "masks")
 JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "json_input")
 XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "xml_input")
 
-CLASS_NAMES = ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis', 'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
-CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
+# CLASS_NAMES = os.path.join(DATA_ROOT,"class_names")
+# CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
 
 SEARCH_KEYWORD = "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
 NUM_BACKGROUNDS = 20
@@ -60,6 +60,7 @@ def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None
     required_dirs = [
         "data",
         DATA_ROOT,
+        # CLASS_NAMES,
         IMAGES_DIR,
         LABELS_DIR,
         CROPPED_DIR,
@@ -99,6 +100,9 @@ def main():
         # Provide these if images/labels are not already in input/
         original_images_dir = "data/dataset_001/images"
         original_labels_dir = "data/dataset_001/labels"
+        CLASS_NAMES = "data/dataset_001/class_names"
+        CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
+
 
         setup_and_prepare_dataset(original_images_dir, original_labels_dir)
 

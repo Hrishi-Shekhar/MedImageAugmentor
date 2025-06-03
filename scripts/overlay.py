@@ -26,6 +26,21 @@ def find_class_id(filename: str, class_names: List[str]) -> int:
     log.warning(f"Class not found in filename '{filename}', defaulting to class 0")
     return 0
 
+def calculate_iou(boxA, boxB):
+    xA = max(boxA[0], boxB[0])
+    yA = max(boxA[1], boxB[1])
+    xB = min(boxA[2], boxB[2])
+    yB = min(boxA[3], boxB[3])
+
+    interArea = max(0, xB - xA) * max(0, yB - yA)
+    if interArea == 0:
+        return 0.0
+
+    boxAArea = (boxA[2] - boxA[0]) * (boxA[3] - boxA[1])
+    boxBArea = (boxB[2] - boxB[0]) * (boxB[3] - boxB[1])
+    iou = interArea / float(boxAArea + boxBArea - interArea)
+    return iou
+
 def overlay_foreground_on_background(
     foregrounds_dir: str,
     backgrounds_dir: str,
@@ -36,9 +51,6 @@ def overlay_foreground_on_background(
     scale_range: tuple = (0.3, 0.6),
     max_attempts: int = 20,
 ) -> None:
-    #ensure_dir(output_dir)
-    # composites_dir = os.path.join(output_dir, "composites")
-    # annotations_dir = os.path.join(output_dir, "annotations")
     ensure_dir(composites_dir)
     ensure_dir(annotations_dir)
 
@@ -88,8 +100,8 @@ def overlay_foreground_on_background(
 
                     overlap = False
                     for box in occupied_boxes:
-                        if not (new_box[2] <= box[0] or new_box[0] >= box[2] or
-                                new_box[3] <= box[1] or new_box[1] >= box[3]):
+                        iou = calculate_iou(new_box, box)
+                        if iou > 0.1:  
                             overlap = True
                             break
 
@@ -99,7 +111,8 @@ def overlay_foreground_on_background(
                         break
 
                 if not placed:
-                    log.warning("Could not place %s without overlap after %d attempts", fg_file, max_attempts)
+                    log.warning("Could not place %s without excessive overlap after %d attempts", fg_file, max_attempts)
+                    continue
 
                 composite.alpha_composite(fg_img, dest=(x, y))
 

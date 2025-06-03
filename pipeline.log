@@ -2373,3 +2373,564 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data
 2025-06-03 11:44:58,137 | INFO | main.py | Generating masks from YOLO annotations...
 2025-06-03 11:44:59,431 | INFO | yolo_to_mask.py | Masks generated in: data\dataset_001\output\masks
 2025-06-03 11:44:59,432 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 12:00:07,351 | INFO | main.py | Ensured directory exists: data
+2025-06-03 12:00:07,354 | INFO | main.py | Ensured directory exists: data/dataset_001
+2025-06-03 12:00:07,356 | INFO | main.py | Ensured directory exists: data/dataset_001\input\images
+2025-06-03 12:00:07,357 | INFO | main.py | Ensured directory exists: data/dataset_001\input\labels
+2025-06-03 12:00:07,362 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped
+2025-06-03 12:00:07,363 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped_nobg
+2025-06-03 12:00:07,366 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:00:07,368 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\user_generated
+2025-06-03 12:00:07,370 | INFO | main.py | Ensured directory exists: data/dataset_001\output\composites
+2025-06-03 12:00:07,373 | INFO | main.py | Ensured directory exists: data/dataset_001\output\annotations
+2025-06-03 12:00:07,375 | INFO | main.py | Ensured directory exists: data/dataset_001\output\masks
+2025-06-03 12:00:07,377 | INFO | main.py | Copying images from data/dataset_001/images to data/dataset_001\input\images
+2025-06-03 12:00:07,644 | INFO | main.py | Images copied.
+2025-06-03 12:00:07,646 | INFO | main.py | Copying labels from data/dataset_001/labels to data/dataset_001\input\labels
+2025-06-03 12:00:07,735 | INFO | main.py | Labels copied.
+2025-06-03 12:00:07,736 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 12:00:07,736 | INFO | main.py | Cropping objects from input images...
+2025-06-03 12:00:07,737 | INFO | cropping_imgs.py | Clearing previous outputs in data/dataset_001\intermediate\cropped...
+2025-06-03 12:00:07,813 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_d_0.jpg
+2025-06-03 12:00:07,826 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_0.jpg
+2025-06-03 12:00:07,829 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_1.jpg
+2025-06-03 12:00:07,841 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_d_0.jpg
+2025-06-03 12:00:07,881 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_d_0.jpg
+2025-06-03 12:00:07,935 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0.jpg
+2025-06-03 12:00:07,976 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_d_0.jpg
+2025-06-03 12:00:08,010 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0.jpg
+2025-06-03 12:00:08,043 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_d_0.jpg
+2025-06-03 12:00:08,084 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_0.jpg
+2025-06-03 12:00:08,090 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1.jpg
+2025-06-03 12:00:08,145 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0.jpg
+2025-06-03 12:00:08,183 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_a_0.jpg
+2025-06-03 12:00:08,195 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_a_0.jpg
+2025-06-03 12:00:08,229 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_a_0.jpg
+2025-06-03 12:00:08,244 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_a_0.jpg
+2025-06-03 12:00:08,256 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_a_0.jpg
+2025-06-03 12:00:08,257 | INFO | main.py | Removing background from cropped images...
+2025-06-03 12:00:08,257 | INFO | bg_removal.py | Clearing previous outputs in data\dataset_001\intermediate\cropped_nobg...
+2025-06-03 12:00:12,789 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_d_0.jpg
+2025-06-03 12:00:16,726 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_0.jpg
+2025-06-03 12:00:20,765 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_1.jpg
+2025-06-03 12:00:24,856 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_d_0.jpg
+2025-06-03 12:00:29,001 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_d_0.jpg
+2025-06-03 12:00:33,641 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0.jpg
+2025-06-03 12:00:37,863 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_d_0.jpg
+2025-06-03 12:00:42,061 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0.jpg
+2025-06-03 12:00:46,291 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_d_0.jpg
+2025-06-03 12:00:50,491 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_0.jpg
+2025-06-03 12:00:54,327 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1.jpg
+2025-06-03 12:00:58,307 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0.jpg
+2025-06-03 12:01:02,031 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_a_0.jpg
+2025-06-03 12:01:05,625 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_a_0.jpg
+2025-06-03 12:01:09,472 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_a_0.jpg
+2025-06-03 12:01:13,392 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_a_0.jpg
+2025-06-03 12:01:17,159 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_a_0.jpg
+2025-06-03 12:01:17,160 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:01:23,341 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 12:01:23,342 | INFO | main.py | Overlaying foregrounds on backgrounds from: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:01:23,376 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-03 12:01:23,449 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_1.jpg
+2025-06-03 12:01:23,676 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_2.jpg
+2025-06-03 12:01:23,785 | WARNING | overlay.py | Could not place Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:23,854 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:23,863 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_3.jpg
+2025-06-03 12:01:23,961 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_4.jpg
+2025-06-03 12:01:23,997 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_5.jpg
+2025-06-03 12:01:24,030 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-03 12:01:24,053 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_6.jpg
+2025-06-03 12:01:24,202 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_7.jpg
+2025-06-03 12:01:24,310 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_8.jpg
+2025-06-03 12:01:24,331 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_9.jpg
+2025-06-03 12:01:24,345 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_10.jpg
+2025-06-03 12:01:24,380 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-03 12:01:24,406 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_11.jpg
+2025-06-03 12:01:24,539 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_12.jpg
+2025-06-03 12:01:24,628 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:24,634 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_13.jpg
+2025-06-03 12:01:24,662 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_14.jpg
+2025-06-03 12:01:24,674 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_15.jpg
+2025-06-03 12:01:24,719 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-03 12:01:24,747 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_16.jpg
+2025-06-03 12:01:24,889 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_17.jpg
+2025-06-03 12:01:24,977 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:24,991 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_18.jpg
+2025-06-03 12:01:25,025 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_19.jpg
+2025-06-03 12:01:25,043 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_20.jpg
+2025-06-03 12:01:25,117 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-03 12:01:25,164 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_21.jpg
+2025-06-03 12:01:25,337 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_22.jpg
+2025-06-03 12:01:25,468 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_23.jpg
+2025-06-03 12:01:25,524 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_24.jpg
+2025-06-03 12:01:25,562 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_25.jpg
+2025-06-03 12:01:25,605 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-03 12:01:25,634 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_26.jpg
+2025-06-03 12:01:25,771 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_27.jpg
+2025-06-03 12:01:25,864 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_28.jpg
+2025-06-03 12:01:25,894 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_29.jpg
+2025-06-03 12:01:25,912 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_30.jpg
+2025-06-03 12:01:25,950 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-03 12:01:25,980 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_31.jpg
+2025-06-03 12:01:26,088 | WARNING | overlay.py | Could not place Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:26,124 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_32.jpg
+2025-06-03 12:01:26,224 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_33.jpg
+2025-06-03 12:01:26,263 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_34.jpg
+2025-06-03 12:01:26,285 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_35.jpg
+2025-06-03 12:01:26,329 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-03 12:01:26,361 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_36.jpg
+2025-06-03 12:01:26,498 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_37.jpg
+2025-06-03 12:01:26,595 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_38.jpg
+2025-06-03 12:01:26,625 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_39.jpg
+2025-06-03 12:01:26,645 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_40.jpg
+2025-06-03 12:01:26,682 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-03 12:01:26,709 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_41.jpg
+2025-06-03 12:01:26,845 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_42.jpg
+2025-06-03 12:01:26,961 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:26,972 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_43.jpg
+2025-06-03 12:01:27,009 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_44.jpg
+2025-06-03 12:01:27,025 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_45.jpg
+2025-06-03 12:01:27,072 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-03 12:01:27,100 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_46.jpg
+2025-06-03 12:01:27,252 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_47.jpg
+2025-06-03 12:01:27,352 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_48.jpg
+2025-06-03 12:01:27,382 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_49.jpg
+2025-06-03 12:01:27,403 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_50.jpg
+2025-06-03 12:01:27,453 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-03 12:01:27,494 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_51.jpg
+2025-06-03 12:01:27,659 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_52.jpg
+2025-06-03 12:01:27,778 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_53.jpg
+2025-06-03 12:01:27,821 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_54.jpg
+2025-06-03 12:01:27,848 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_55.jpg
+2025-06-03 12:01:27,885 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-03 12:01:27,915 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_56.jpg
+2025-06-03 12:01:28,047 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:28,057 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_57.jpg
+2025-06-03 12:01:28,159 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_58.jpg
+2025-06-03 12:01:28,187 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_59.jpg
+2025-06-03 12:01:28,201 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_60.jpg
+2025-06-03 12:01:28,242 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-03 12:01:28,285 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_61.jpg
+2025-06-03 12:01:28,441 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_62.jpg
+2025-06-03 12:01:28,555 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_63.jpg
+2025-06-03 12:01:28,608 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_64.jpg
+2025-06-03 12:01:28,642 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_65.jpg
+2025-06-03 12:01:28,684 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-03 12:01:28,709 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_66.jpg
+2025-06-03 12:01:28,848 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:28,855 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_67.jpg
+2025-06-03 12:01:28,961 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:28,968 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_68.jpg
+2025-06-03 12:01:28,996 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_69.jpg
+2025-06-03 12:01:29,012 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_70.jpg
+2025-06-03 12:01:29,068 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-03 12:01:29,096 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_71.jpg
+2025-06-03 12:01:29,242 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_72.jpg
+2025-06-03 12:01:29,332 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:29,339 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_73.jpg
+2025-06-03 12:01:29,368 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_74.jpg
+2025-06-03 12:01:29,381 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_75.jpg
+2025-06-03 12:01:29,424 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-03 12:01:29,449 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_76.jpg
+2025-06-03 12:01:29,580 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_77.jpg
+2025-06-03 12:01:29,666 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:29,673 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_78.jpg
+2025-06-03 12:01:29,699 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_79.jpg
+2025-06-03 12:01:29,711 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_80.jpg
+2025-06-03 12:01:29,756 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-03 12:01:29,786 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_81.jpg
+2025-06-03 12:01:29,930 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_82.jpg
+2025-06-03 12:01:30,032 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_83.jpg
+2025-06-03 12:01:30,065 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_84.jpg
+2025-06-03 12:01:30,082 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_85.jpg
+2025-06-03 12:01:30,140 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-03 12:01:30,188 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_86.jpg
+2025-06-03 12:01:30,365 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_87.jpg
+2025-06-03 12:01:30,494 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_88.jpg
+2025-06-03 12:01:30,550 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_89.jpg
+2025-06-03 12:01:30,592 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_90.jpg
+2025-06-03 12:01:30,630 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-03 12:01:30,664 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_91.jpg
+2025-06-03 12:01:30,817 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_92.jpg
+2025-06-03 12:01:30,920 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:30,931 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_93.jpg
+2025-06-03 12:01:30,968 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_94.jpg
+2025-06-03 12:01:30,987 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_95.jpg
+2025-06-03 12:01:31,019 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-03 12:01:31,045 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_96.jpg
+2025-06-03 12:01:31,213 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:31,219 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_97.jpg
+2025-06-03 12:01:31,313 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0_no_bg.png without overlap after 20 attempts
+2025-06-03 12:01:31,322 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_98.jpg
+2025-06-03 12:01:31,352 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_99.jpg
+2025-06-03 12:01:31,369 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_100.jpg
+2025-06-03 12:01:31,373 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-03 12:01:31,374 | INFO | main.py | Overlaying foregrounds on backgrounds from: data/dataset_001\backgrounds\user_generated
+2025-06-03 12:01:31,376 | ERROR | overlay.py | No background images found in data/dataset_001\backgrounds\user_generated
+2025-06-03 12:01:31,376 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-03 12:01:35,902 | INFO | yolo_to_json.py | COCO JSON saved to data/dataset_001\output\coco_annotations.json
+2025-06-03 12:01:35,903 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-03 12:01:37,317 | INFO | yolo_to_mask.py | Masks generated in: data\dataset_001\output\masks
+2025-06-03 12:01:37,318 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 12:06:59,539 | INFO | main.py | Ensured directory exists: data
+2025-06-03 12:06:59,539 | INFO | main.py | Ensured directory exists: data/dataset_001
+2025-06-03 12:06:59,539 | INFO | main.py | Ensured directory exists: data/dataset_001\input\images
+2025-06-03 12:06:59,540 | INFO | main.py | Ensured directory exists: data/dataset_001\input\labels
+2025-06-03 12:06:59,540 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped
+2025-06-03 12:06:59,540 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped_nobg
+2025-06-03 12:06:59,540 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:06:59,540 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\user_generated
+2025-06-03 12:06:59,541 | INFO | main.py | Ensured directory exists: data/dataset_001\output\composites
+2025-06-03 12:06:59,541 | INFO | main.py | Ensured directory exists: data/dataset_001\output\annotations
+2025-06-03 12:06:59,541 | INFO | main.py | Ensured directory exists: data/dataset_001\output\masks
+2025-06-03 12:06:59,543 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 12:06:59,543 | INFO | main.py | Cropping objects from input images...
+2025-06-03 12:06:59,543 | INFO | cropping_imgs.py | Clearing previous outputs in data/dataset_001\intermediate\cropped...
+2025-06-03 12:06:59,558 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_d_0.jpg
+2025-06-03 12:06:59,559 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_0.jpg
+2025-06-03 12:06:59,560 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_1.jpg
+2025-06-03 12:06:59,561 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_d_0.jpg
+2025-06-03 12:06:59,564 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_d_0.jpg
+2025-06-03 12:06:59,571 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0.jpg
+2025-06-03 12:06:59,576 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_d_0.jpg
+2025-06-03 12:06:59,578 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0.jpg
+2025-06-03 12:06:59,579 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_d_0.jpg
+2025-06-03 12:06:59,584 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_0.jpg
+2025-06-03 12:06:59,585 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1.jpg
+2025-06-03 12:06:59,593 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0.jpg
+2025-06-03 12:06:59,596 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_a_0.jpg
+2025-06-03 12:06:59,597 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_a_0.jpg
+2025-06-03 12:06:59,599 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_a_0.jpg
+2025-06-03 12:06:59,600 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_a_0.jpg
+2025-06-03 12:06:59,602 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_a_0.jpg
+2025-06-03 12:06:59,602 | INFO | main.py | Removing background from cropped images...
+2025-06-03 12:06:59,602 | INFO | bg_removal.py | Clearing previous outputs in data\dataset_001\intermediate\cropped_nobg...
+2025-06-03 12:07:00,804 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_d_0.jpg
+2025-06-03 12:07:01,976 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_0.jpg
+2025-06-03 12:07:02,989 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_1.jpg
+2025-06-03 12:07:04,051 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_d_0.jpg
+2025-06-03 12:07:05,100 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_d_0.jpg
+2025-06-03 12:07:06,225 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0.jpg
+2025-06-03 12:07:07,296 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_d_0.jpg
+2025-06-03 12:07:08,359 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0.jpg
+2025-06-03 12:07:09,465 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_d_0.jpg
+2025-06-03 12:07:10,558 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_0.jpg
+2025-06-03 12:07:11,643 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1.jpg
+2025-06-03 12:07:12,766 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0.jpg
+2025-06-03 12:07:13,860 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_a_0.jpg
+2025-06-03 12:07:14,964 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_a_0.jpg
+2025-06-03 12:07:16,091 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_a_0.jpg
+2025-06-03 12:07:17,190 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_a_0.jpg
+2025-06-03 12:07:18,243 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_a_0.jpg
+2025-06-03 12:07:18,243 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:07:22,841 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 12:07:22,841 | INFO | main.py | Overlaying foregrounds on backgrounds from: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:07:22,852 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-03 12:07:22,892 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_1.jpg
+2025-06-03 12:07:22,963 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_2.jpg
+2025-06-03 12:07:23,021 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_3.jpg
+2025-06-03 12:07:23,063 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_4.jpg
+2025-06-03 12:07:23,075 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_5.jpg
+2025-06-03 12:07:23,087 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-03 12:07:23,095 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_6.jpg
+2025-06-03 12:07:23,134 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_7.jpg
+2025-06-03 12:07:23,167 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_8.jpg
+2025-06-03 12:07:23,175 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_9.jpg
+2025-06-03 12:07:23,178 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_10.jpg
+2025-06-03 12:07:23,191 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-03 12:07:23,197 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_11.jpg
+2025-06-03 12:07:23,237 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_12.jpg
+2025-06-03 12:07:23,261 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_13.jpg
+2025-06-03 12:07:23,268 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_14.jpg
+2025-06-03 12:07:23,272 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_15.jpg
+2025-06-03 12:07:23,287 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-03 12:07:23,295 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_16.jpg
+2025-06-03 12:07:23,337 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_17.jpg
+2025-06-03 12:07:23,367 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_18.jpg
+2025-06-03 12:07:23,375 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_19.jpg
+2025-06-03 12:07:23,380 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_20.jpg
+2025-06-03 12:07:23,402 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-03 12:07:23,416 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_21.jpg
+2025-06-03 12:07:23,469 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_22.jpg
+2025-06-03 12:07:23,504 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_23.jpg
+2025-06-03 12:07:23,520 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_24.jpg
+2025-06-03 12:07:23,532 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_25.jpg
+2025-06-03 12:07:23,545 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-03 12:07:23,555 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_26.jpg
+2025-06-03 12:07:23,598 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_27.jpg
+2025-06-03 12:07:23,630 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_28.jpg
+2025-06-03 12:07:23,638 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_29.jpg
+2025-06-03 12:07:23,643 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_30.jpg
+2025-06-03 12:07:23,658 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-03 12:07:23,668 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_31.jpg
+2025-06-03 12:07:23,710 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_32.jpg
+2025-06-03 12:07:23,741 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_33.jpg
+2025-06-03 12:07:23,753 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_34.jpg
+2025-06-03 12:07:23,760 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_35.jpg
+2025-06-03 12:07:23,773 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-03 12:07:23,783 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_36.jpg
+2025-06-03 12:07:23,833 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_37.jpg
+2025-06-03 12:07:23,859 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_38.jpg
+2025-06-03 12:07:23,867 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_39.jpg
+2025-06-03 12:07:23,873 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_40.jpg
+2025-06-03 12:07:23,884 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-03 12:07:23,892 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_41.jpg
+2025-06-03 12:07:23,930 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_42.jpg
+2025-06-03 12:07:23,960 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_43.jpg
+2025-06-03 12:07:23,967 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_44.jpg
+2025-06-03 12:07:23,971 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_45.jpg
+2025-06-03 12:07:23,984 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-03 12:07:23,993 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_46.jpg
+2025-06-03 12:07:24,043 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_47.jpg
+2025-06-03 12:07:24,072 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_48.jpg
+2025-06-03 12:07:24,081 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_49.jpg
+2025-06-03 12:07:24,086 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_50.jpg
+2025-06-03 12:07:24,102 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-03 12:07:24,116 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_51.jpg
+2025-06-03 12:07:24,161 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_52.jpg
+2025-06-03 12:07:24,195 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_53.jpg
+2025-06-03 12:07:24,206 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_54.jpg
+2025-06-03 12:07:24,214 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_55.jpg
+2025-06-03 12:07:24,226 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-03 12:07:24,233 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_56.jpg
+2025-06-03 12:07:24,273 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_57.jpg
+2025-06-03 12:07:24,302 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_58.jpg
+2025-06-03 12:07:24,310 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_59.jpg
+2025-06-03 12:07:24,314 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_60.jpg
+2025-06-03 12:07:24,328 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-03 12:07:24,342 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_61.jpg
+2025-06-03 12:07:24,383 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_62.jpg
+2025-06-03 12:07:24,422 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_63.jpg
+2025-06-03 12:07:24,437 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_64.jpg
+2025-06-03 12:07:24,447 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_65.jpg
+2025-06-03 12:07:24,461 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-03 12:07:24,469 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_66.jpg
+2025-06-03 12:07:24,513 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_67.jpg
+2025-06-03 12:07:24,540 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_68.jpg
+2025-06-03 12:07:24,548 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_69.jpg
+2025-06-03 12:07:24,551 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_70.jpg
+2025-06-03 12:07:24,565 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-03 12:07:24,571 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_71.jpg
+2025-06-03 12:07:24,607 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_72.jpg
+2025-06-03 12:07:24,632 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_73.jpg
+2025-06-03 12:07:24,639 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_74.jpg
+2025-06-03 12:07:24,642 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_75.jpg
+2025-06-03 12:07:24,655 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-03 12:07:24,662 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_76.jpg
+2025-06-03 12:07:24,707 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_77.jpg
+2025-06-03 12:07:24,737 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_78.jpg
+2025-06-03 12:07:24,746 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_79.jpg
+2025-06-03 12:07:24,750 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_80.jpg
+2025-06-03 12:07:24,763 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-03 12:07:24,773 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_81.jpg
+2025-06-03 12:07:24,816 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_82.jpg
+2025-06-03 12:07:24,848 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_83.jpg
+2025-06-03 12:07:24,856 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_84.jpg
+2025-06-03 12:07:24,862 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_85.jpg
+2025-06-03 12:07:24,882 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-03 12:07:24,894 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_86.jpg
+2025-06-03 12:07:24,949 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_87.jpg
+2025-06-03 12:07:24,987 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_88.jpg
+2025-06-03 12:07:25,004 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_89.jpg
+2025-06-03 12:07:25,016 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_90.jpg
+2025-06-03 12:07:25,029 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-03 12:07:25,039 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_91.jpg
+2025-06-03 12:07:25,081 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_92.jpg
+2025-06-03 12:07:25,113 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_93.jpg
+2025-06-03 12:07:25,121 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_94.jpg
+2025-06-03 12:07:25,126 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_95.jpg
+2025-06-03 12:07:25,136 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-03 12:07:25,143 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_96.jpg
+2025-06-03 12:07:25,187 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_97.jpg
+2025-06-03 12:07:25,217 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_98.jpg
+2025-06-03 12:07:25,223 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_99.jpg
+2025-06-03 12:07:25,227 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_100.jpg
+2025-06-03 12:07:25,227 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-03 12:07:25,228 | INFO | main.py | Overlaying foregrounds on backgrounds from: data/dataset_001\backgrounds\user_generated
+2025-06-03 12:07:25,228 | ERROR | overlay.py | No background images found in data/dataset_001\backgrounds\user_generated
+2025-06-03 12:07:25,228 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-03 12:07:26,621 | INFO | yolo_to_json.py | COCO JSON saved to data/dataset_001\output\coco_annotations.json
+2025-06-03 12:07:26,621 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-03 12:07:27,043 | INFO | yolo_to_mask.py | Masks generated in: data\dataset_001\output\masks
+2025-06-03 12:07:27,043 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 12:08:50,239 | INFO | main.py | Ensured directory exists: data
+2025-06-03 12:08:50,239 | INFO | main.py | Ensured directory exists: data/dataset_001
+2025-06-03 12:08:50,239 | INFO | main.py | Ensured directory exists: data/dataset_001\input\images
+2025-06-03 12:08:50,239 | INFO | main.py | Ensured directory exists: data/dataset_001\input\labels
+2025-06-03 12:08:50,240 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped
+2025-06-03 12:08:50,240 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped_nobg
+2025-06-03 12:08:50,240 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:08:50,240 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\user_generated
+2025-06-03 12:08:50,240 | INFO | main.py | Ensured directory exists: data/dataset_001\output\composites
+2025-06-03 12:08:50,240 | INFO | main.py | Ensured directory exists: data/dataset_001\output\annotations
+2025-06-03 12:08:50,242 | INFO | main.py | Ensured directory exists: data/dataset_001\output\masks
+2025-06-03 12:08:50,242 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 12:08:50,242 | INFO | main.py | Cropping objects from input images...
+2025-06-03 12:08:50,242 | INFO | cropping_imgs.py | Clearing previous outputs in data/dataset_001\intermediate\cropped...
+2025-06-03 12:08:50,255 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_d_0.jpg
+2025-06-03 12:08:50,256 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_0.jpg
+2025-06-03 12:08:50,259 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_1.jpg
+2025-06-03 12:08:50,260 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_d_0.jpg
+2025-06-03 12:08:50,263 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_d_0.jpg
+2025-06-03 12:08:50,271 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0.jpg
+2025-06-03 12:08:50,276 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_d_0.jpg
+2025-06-03 12:08:50,278 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0.jpg
+2025-06-03 12:08:50,280 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_d_0.jpg
+2025-06-03 12:08:50,284 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_0.jpg
+2025-06-03 12:08:50,284 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1.jpg
+2025-06-03 12:08:50,292 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0.jpg
+2025-06-03 12:08:50,296 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_a_0.jpg
+2025-06-03 12:08:50,297 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_a_0.jpg
+2025-06-03 12:08:50,298 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_a_0.jpg
+2025-06-03 12:08:50,300 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_a_0.jpg
+2025-06-03 12:08:50,301 | INFO | cropping_imgs.py | Saved data/dataset_001\intermediate\cropped\Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_a_0.jpg
+2025-06-03 12:08:50,301 | INFO | main.py | Removing background from cropped images...
+2025-06-03 12:08:50,301 | INFO | bg_removal.py | Clearing previous outputs in data\dataset_001\intermediate\cropped_nobg...
+2025-06-03 12:08:51,450 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_d_0.jpg
+2025-06-03 12:08:52,579 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_0.jpg
+2025-06-03 12:08:53,573 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_d_1.jpg
+2025-06-03 12:08:54,533 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_d_0.jpg
+2025-06-03 12:08:55,468 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_d_0.jpg
+2025-06-03 12:08:56,556 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_d_0.jpg
+2025-06-03 12:08:57,580 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_d_0.jpg
+2025-06-03 12:08:58,538 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_d_0.jpg
+2025-06-03 12:08:59,535 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_d_0.jpg
+2025-06-03 12:09:00,481 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_0.jpg
+2025-06-03 12:09:01,426 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_d_1.jpg
+2025-06-03 12:09:02,405 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_d_0.jpg
+2025-06-03 12:09:03,384 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_a_0.jpg
+2025-06-03 12:09:04,314 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_a_0.jpg
+2025-06-03 12:09:05,269 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_a_0.jpg
+2025-06-03 12:09:06,215 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_a_0.jpg
+2025-06-03 12:09:07,157 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_a_0.jpg
+2025-06-03 12:09:07,157 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:09:12,037 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 12:09:12,037 | INFO | main.py | Overlaying foregrounds on backgrounds from: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 12:09:12,047 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-03 12:09:12,069 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_1.jpg
+2025-06-03 12:09:12,131 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_2.jpg
+2025-06-03 12:09:12,182 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_3.jpg
+2025-06-03 12:09:12,211 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_4.jpg
+2025-06-03 12:09:12,220 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_5.jpg
+2025-06-03 12:09:12,231 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-03 12:09:12,237 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_6.jpg
+2025-06-03 12:09:12,272 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_7.jpg
+2025-06-03 12:09:12,297 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_8.jpg
+2025-06-03 12:09:12,304 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_9.jpg
+2025-06-03 12:09:12,308 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_10.jpg
+2025-06-03 12:09:12,319 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-03 12:09:12,325 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_11.jpg
+2025-06-03 12:09:12,359 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_12.jpg
+2025-06-03 12:09:12,382 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_13.jpg
+2025-06-03 12:09:12,388 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_14.jpg
+2025-06-03 12:09:12,391 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_15.jpg
+2025-06-03 12:09:12,404 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-03 12:09:12,411 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_16.jpg
+2025-06-03 12:09:12,446 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_17.jpg
+2025-06-03 12:09:12,471 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_18.jpg
+2025-06-03 12:09:12,478 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_19.jpg
+2025-06-03 12:09:12,481 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_20.jpg
+2025-06-03 12:09:12,502 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-03 12:09:12,514 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_21.jpg
+2025-06-03 12:09:12,559 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_22.jpg
+2025-06-03 12:09:12,588 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_23.jpg
+2025-06-03 12:09:12,602 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_24.jpg
+2025-06-03 12:09:12,613 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_25.jpg
+2025-06-03 12:09:12,624 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-03 12:09:12,633 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_26.jpg
+2025-06-03 12:09:12,671 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_27.jpg
+2025-06-03 12:09:12,696 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_28.jpg
+2025-06-03 12:09:12,703 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_29.jpg
+2025-06-03 12:09:12,708 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_30.jpg
+2025-06-03 12:09:12,720 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-03 12:09:12,727 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_31.jpg
+2025-06-03 12:09:12,765 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_32.jpg
+2025-06-03 12:09:12,789 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_33.jpg
+2025-06-03 12:09:12,798 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_34.jpg
+2025-06-03 12:09:12,804 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_35.jpg
+2025-06-03 12:09:12,815 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-03 12:09:12,823 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_36.jpg
+2025-06-03 12:09:12,861 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_37.jpg
+2025-06-03 12:09:12,886 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_38.jpg
+2025-06-03 12:09:12,896 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_39.jpg
+2025-06-03 12:09:12,901 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_40.jpg
+2025-06-03 12:09:12,913 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-03 12:09:12,919 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_41.jpg
+2025-06-03 12:09:12,954 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_42.jpg
+2025-06-03 12:09:12,981 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_43.jpg
+2025-06-03 12:09:12,989 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_44.jpg
+2025-06-03 12:09:12,993 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_45.jpg
+2025-06-03 12:09:13,004 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-03 12:09:13,012 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_46.jpg
+2025-06-03 12:09:13,047 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_47.jpg
+2025-06-03 12:09:13,071 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_48.jpg
+2025-06-03 12:09:13,078 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_49.jpg
+2025-06-03 12:09:13,083 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_50.jpg
+2025-06-03 12:09:13,096 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-03 12:09:13,106 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_51.jpg
+2025-06-03 12:09:13,146 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_52.jpg
+2025-06-03 12:09:13,176 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_53.jpg
+2025-06-03 12:09:13,187 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_54.jpg
+2025-06-03 12:09:13,195 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_55.jpg
+2025-06-03 12:09:13,206 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-03 12:09:13,213 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_56.jpg
+2025-06-03 12:09:13,249 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_57.jpg
+2025-06-03 12:09:13,272 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_58.jpg
+2025-06-03 12:09:13,279 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_59.jpg
+2025-06-03 12:09:13,283 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_60.jpg
+2025-06-03 12:09:13,296 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-03 12:09:13,309 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_61.jpg
+2025-06-03 12:09:13,349 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_62.jpg
+2025-06-03 12:09:13,378 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_63.jpg
+2025-06-03 12:09:13,392 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_64.jpg
+2025-06-03 12:09:13,403 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_65.jpg
+2025-06-03 12:09:13,414 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-03 12:09:13,421 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_66.jpg
+2025-06-03 12:09:13,461 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_67.jpg
+2025-06-03 12:09:13,485 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_68.jpg
+2025-06-03 12:09:13,494 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_69.jpg
+2025-06-03 12:09:13,498 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_70.jpg
+2025-06-03 12:09:13,511 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-03 12:09:13,519 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_71.jpg
+2025-06-03 12:09:13,556 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_72.jpg
+2025-06-03 12:09:13,581 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_73.jpg
+2025-06-03 12:09:13,587 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_74.jpg
+2025-06-03 12:09:13,590 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_75.jpg
+2025-06-03 12:09:13,601 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-03 12:09:13,607 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_76.jpg
+2025-06-03 12:09:13,643 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_77.jpg
+2025-06-03 12:09:13,666 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_78.jpg
+2025-06-03 12:09:13,672 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_79.jpg
+2025-06-03 12:09:13,676 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_80.jpg
+2025-06-03 12:09:13,689 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-03 12:09:13,696 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_81.jpg
+2025-06-03 12:09:13,733 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_82.jpg
+2025-06-03 12:09:13,757 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_83.jpg
+2025-06-03 12:09:13,765 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_84.jpg
+2025-06-03 12:09:13,770 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_85.jpg
+2025-06-03 12:09:13,785 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-03 12:09:13,798 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_86.jpg
+2025-06-03 12:09:13,839 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_87.jpg
+2025-06-03 12:09:13,868 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_88.jpg
+2025-06-03 12:09:13,879 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_89.jpg
+2025-06-03 12:09:13,888 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_90.jpg
+2025-06-03 12:09:13,901 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-03 12:09:13,908 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_91.jpg
+2025-06-03 12:09:13,943 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_92.jpg
+2025-06-03 12:09:13,966 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_93.jpg
+2025-06-03 12:09:13,974 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_94.jpg
+2025-06-03 12:09:13,978 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_95.jpg
+2025-06-03 12:09:13,988 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-03 12:09:13,994 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_96.jpg
+2025-06-03 12:09:14,028 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_97.jpg
+2025-06-03 12:09:14,052 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_98.jpg
+2025-06-03 12:09:14,058 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_99.jpg
+2025-06-03 12:09:14,061 | INFO | overlay.py | Saved composite: data/dataset_001\output\composites\composite_100.jpg
+2025-06-03 12:09:14,061 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-03 12:09:14,062 | INFO | main.py | Overlaying foregrounds on backgrounds from: data/dataset_001\backgrounds\user_generated
+2025-06-03 12:09:14,062 | ERROR | overlay.py | No background images found in data/dataset_001\backgrounds\user_generated
+2025-06-03 12:09:14,062 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-03 12:09:15,355 | INFO | yolo_to_json.py | COCO JSON saved to data/dataset_001\output\coco_annotations.json
+2025-06-03 12:09:15,355 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-03 12:09:15,726 | INFO | yolo_to_mask.py | Masks generated in: data\dataset_001\output\masks
+2025-06-03 12:09:15,726 | INFO | main.py | Pipeline completed successfully!
