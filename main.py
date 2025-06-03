@@ -20,23 +20,23 @@ CROPPED_NOBG_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped_nobg")
 
 # Background folders
 BACKGROUND_ROOT = os.path.join(DATA_ROOT, "backgrounds")
-WEBSCRAPE_BG_DIR = os.path.join(BACKGROUND_ROOT, "Web_scraping")
-USER_BG_DIR = os.path.join(BACKGROUND_ROOT, "user_generated_bgs")
+WEBSCRAPE_BG_DIR = os.path.join(BACKGROUND_ROOT, "web_scraping")
+USER_BG_DIR = os.path.join(BACKGROUND_ROOT, "user_generated")
 
 # Output folders
 OUTPUT_ROOT = os.path.join(DATA_ROOT, "output")
-COMPOSITES_DIR = os.path.join(OUTPUT_ROOT,"composites")
-ANNOTATIONS_DIR = os.path.join(OUTPUT_ROOT,"annotations")
+COMPOSITES_DIR = os.path.join(OUTPUT_ROOT, "composites")
+ANNOTATIONS_DIR = os.path.join(OUTPUT_ROOT, "annotations")
 COCO_JSON_PATH = os.path.join(OUTPUT_ROOT, "coco_annotations.json")
-MASKS_DIR = os.path.join(OUTPUT_ROOT,"masks")
+MASKS_DIR = os.path.join(OUTPUT_ROOT, "masks")
 
 # Annotation sources
-JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT,"input","json_input")
-XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT,"input","xml_input")
+JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "json_input")
+XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "xml_input")
 
 # Classes
-#CLASS_NAMES = ["apple", "banana", "orange"]
-CLASS_NAMES = ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis', 'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
+CLASS_NAMES = ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis',
+               'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
 CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
 
 # Background Search
@@ -57,10 +57,33 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # -----------------------------
+# Ensure required directories exist
+# -----------------------------
+def ensure_directories():
+    required_dirs = [
+        IMAGES_DIR,
+        LABELS_DIR,
+        CROPPED_DIR,
+        CROPPED_NOBG_DIR,
+        WEBSCRAPE_BG_DIR,
+        USER_BG_DIR,
+        COMPOSITES_DIR,
+        ANNOTATIONS_DIR,
+        MASKS_DIR,
+        os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD)
+    ]
+    for d in required_dirs:
+        os.makedirs(d, exist_ok=True)
+        log.info(f"Ensured directory exists: {d}")
+
+# -----------------------------
 # MAIN PIPELINE
 # -----------------------------
 def main():
     try:
+        # Create all necessary directories
+        ensure_directories()
+
         # Step 1: Convert Annotations (JSON or XML) -> YOLO
         if os.path.exists(JSON_ANNOTATIONS_DIR) and any(f.endswith(".jsonl") for f in os.listdir(JSON_ANNOTATIONS_DIR)):
             log.info("JSON annotations found. Converting to YOLO format...")
@@ -84,8 +107,6 @@ def main():
         download_backgrounds(SEARCH_KEYWORD, NUM_BACKGROUNDS, WEBSCRAPE_BG_DIR)
 
         # Step 5: Overlay foregrounds on backgrounds
-
-        # Use Web-scraped + User-provided backgrounds
         for bg_source in [os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD), USER_BG_DIR]:
             if not os.path.exists(bg_source):
                 log.warning(f"Background folder not found: {bg_source}. Skipping...")

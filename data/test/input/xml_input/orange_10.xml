@@ -1,2 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<annotation><folder>images</folder><filename>orange_10.jpg</filename><size><width>280</width><height>167</height><depth>3</depth></size><object><name>orange</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>51</xmin><ymin>6</ymin><xmax>173</xmax><ymax>129</ymax></bndbox></object><object><name>orange</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>139</xmin><ymin>4</ymin><xmax>275</xmax><ymax>149</ymax></bndbox></object></annotation>
