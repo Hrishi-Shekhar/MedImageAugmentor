@@ -56,11 +56,10 @@ log = logging.getLogger(__name__)
 # -----------------------------
 # SETUP: Ensure folders exist and data is moved if needed
 # -----------------------------
-def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None):
+def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None, original_class_name_file=None, original_test_dir=None):
     required_dirs = [
         "data",
         DATA_ROOT,
-        # CLASS_NAMES,
         IMAGES_DIR,
         LABELS_DIR,
         CROPPED_DIR,
@@ -76,7 +75,7 @@ def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None
         os.makedirs(d, exist_ok=True)
         log.info(f"Ensured directory exists: {d}")
 
-    # Copy images if needed
+    # Copy images
     if not any(Path(IMAGES_DIR).glob("*.[jp][pn]g")) and original_images_dir:
         log.info(f"Copying images from {original_images_dir} to {IMAGES_DIR}")
         for f in os.listdir(original_images_dir):
@@ -84,7 +83,7 @@ def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None
                 shutil.copy(os.path.join(original_images_dir, f), IMAGES_DIR)
         log.info("Images copied.")
 
-    # Copy labels if needed
+    # Copy labels
     if not any(Path(LABELS_DIR).glob("*.txt")) and original_labels_dir:
         log.info(f"Copying labels from {original_labels_dir} to {LABELS_DIR}")
         for f in os.listdir(original_labels_dir):
@@ -92,19 +91,51 @@ def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None
                 shutil.copy(os.path.join(original_labels_dir, f), LABELS_DIR)
         log.info("Labels copied.")
 
+    # Copy class names
+    if original_class_name_file:
+        input_class_names = os.path.join(DATA_ROOT, "input", "class_names.txt")
+        if not os.path.exists(input_class_names):
+            shutil.copy(original_class_name_file, input_class_names)
+            log.info(f"Copied class names to {input_class_names}")
+
+    input_test_dir = os.path.join(DATA_ROOT, "input", "test")
+    if original_test_dir and os.path.exists(original_test_dir):
+        log.info(f"Copying test data from {original_test_dir} to {input_test_dir}")
+        shutil.copytree(original_test_dir, input_test_dir, dirs_exist_ok=True)
+        log.info("Test data copied.")
+
+    # Remove originals after copying
+    if original_images_dir and os.path.exists(original_images_dir):
+        shutil.rmtree(original_images_dir)
+        log.info(f"Removed original images directory: {original_images_dir}")
+
+    if original_labels_dir and os.path.exists(original_labels_dir):
+        shutil.rmtree(original_labels_dir)
+        log.info(f"Removed original labels directory: {original_labels_dir}")
+
+    if original_class_name_file and os.path.exists(original_class_name_file):
+        os.remove(original_class_name_file)
+        log.info(f"Removed original class names file: {original_class_name_file}")
+
+    if original_test_dir and os.path.exists(original_test_dir):
+        shutil.rmtree(original_test_dir)
+        log.info(f"Removed original test directory: {original_test_dir}")
+
 # -----------------------------
 # MAIN PIPELINE
 # -----------------------------
 def main():
     try:
         # Provide these if images/labels are not already in input/
-        original_images_dir = "data/dataset_001/images"
-        original_labels_dir = "data/dataset_001/labels"
-        CLASS_NAMES = "data/dataset_001/class_names"
+        original_images_dir = os.path.join(DATA_ROOT,"images")
+        original_labels_dir = os.path.join(DATA_ROOT,"labels")
+        original_test_dir = os.path.join(DATA_ROOT,"test")
+        original_class_names_file = os.path.join(DATA_ROOT,"class_names.txt")
+        CLASS_NAMES = os.path.join(DATA_ROOT, "input", "class_names.txt")
         CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
 
 
-        setup_and_prepare_dataset(original_images_dir, original_labels_dir)
+        setup_and_prepare_dataset(original_images_dir, original_labels_dir, original_class_names_file, original_test_dir)
 
         # Step 1: Convert annotations
         if os.path.exists(JSON_ANNOTATIONS_DIR) and any(f.endswith(".jsonl") for f in os.listdir(JSON_ANNOTATIONS_DIR)):
