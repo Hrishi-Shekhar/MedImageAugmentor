@@ -1,5 +1,8 @@
 import os
+import shutil
 import logging
+from pathlib import Path
+
 from scripts.cropping_imgs import process_dataset
 from scripts.bg_removal import remove_bg_batch
 from scripts.bg_extraction_web_scraping import download_backgrounds
@@ -18,28 +21,22 @@ LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
 CROPPED_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped")
 CROPPED_NOBG_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped_nobg")
 
-# Background folders
 BACKGROUND_ROOT = os.path.join(DATA_ROOT, "backgrounds")
 WEBSCRAPE_BG_DIR = os.path.join(BACKGROUND_ROOT, "web_scraping")
 USER_BG_DIR = os.path.join(BACKGROUND_ROOT, "user_generated")
 
-# Output folders
 OUTPUT_ROOT = os.path.join(DATA_ROOT, "output")
 COMPOSITES_DIR = os.path.join(OUTPUT_ROOT, "composites")
 ANNOTATIONS_DIR = os.path.join(OUTPUT_ROOT, "annotations")
 COCO_JSON_PATH = os.path.join(OUTPUT_ROOT, "coco_annotations.json")
 MASKS_DIR = os.path.join(OUTPUT_ROOT, "masks")
 
-# Annotation sources
 JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "json_input")
 XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "xml_input")
 
-# Classes
-CLASS_NAMES = ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis',
-               'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
+CLASS_NAMES = ['Ancylostoma Spp', 'Ascaris Lumbricoides', 'Enterobius Vermicularis', 'Fasciola Hepatica', 'Hymenolepis', 'Schistosoma', 'Taenia Sp', 'Trichuris Trichiura']
 CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
 
-# Background Search
 SEARCH_KEYWORD = "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
 NUM_BACKGROUNDS = 20
 
@@ -57,80 +54,89 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # -----------------------------
-# Ensure required directories exist
+# SETUP: Ensure folders exist and data is moved if needed
 # -----------------------------
-def ensure_directories():
-    # Ensure all parent folders up to data/ are created
-    base_dirs = [
+def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None):
+    required_dirs = [
         "data",
-        os.path.join("data", "dataset-1_augmentation"),
-    ]
-    
-    # Add specific required subdirectories
-    required_dirs = base_dirs + [
+        DATA_ROOT,
         IMAGES_DIR,
         LABELS_DIR,
         CROPPED_DIR,
         CROPPED_NOBG_DIR,
-        WEBSCRAPE_BG_DIR,
+        os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD),
         USER_BG_DIR,
         COMPOSITES_DIR,
         ANNOTATIONS_DIR,
-        MASKS_DIR,
-        os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD),
+        MASKS_DIR
     ]
-    
+
     for d in required_dirs:
         os.makedirs(d, exist_ok=True)
         log.info(f"Ensured directory exists: {d}")
 
+    # Copy images if needed
+    if not any(Path(IMAGES_DIR).glob("*.[jp][pn]g")) and original_images_dir:
+        log.info(f"Copying images from {original_images_dir} to {IMAGES_DIR}")
+        for f in os.listdir(original_images_dir):
+            if f.lower().endswith((".jpg", ".jpeg", ".png")):
+                shutil.copy(os.path.join(original_images_dir, f), IMAGES_DIR)
+        log.info("Images copied.")
+
+    # Copy labels if needed
+    if not any(Path(LABELS_DIR).glob("*.txt")) and original_labels_dir:
+        log.info(f"Copying labels from {original_labels_dir} to {LABELS_DIR}")
+        for f in os.listdir(original_labels_dir):
+            if f.lower().endswith(".txt"):
+                shutil.copy(os.path.join(original_labels_dir, f), LABELS_DIR)
+        log.info("Labels copied.")
 
 # -----------------------------
 # MAIN PIPELINE
 # -----------------------------
 def main():
     try:
-        # Create all necessary directories
-        ensure_directories()
+        # Provide these if images/labels are not already in input/
+        original_images_dir = "original_dataset/images"
+        original_labels_dir = "original_dataset/labels"
 
-        # Step 1: Convert Annotations (JSON or XML) -> YOLO
+        setup_and_prepare_dataset(original_images_dir, original_labels_dir)
+
+        # Step 1: Convert annotations
         if os.path.exists(JSON_ANNOTATIONS_DIR) and any(f.endswith(".jsonl") for f in os.listdir(JSON_ANNOTATIONS_DIR)):
-            log.info("JSON annotations found. Converting to YOLO format...")
+            log.info("Converting JSON annotations to YOLO format...")
             convert_json_to_yolo(JSON_ANNOTATIONS_DIR, LABELS_DIR, CLASS_MAP)
         elif os.path.exists(XML_ANNOTATIONS_DIR) and any(f.endswith(".xml") for f in os.listdir(XML_ANNOTATIONS_DIR)):
-            log.info("XML annotations found. Converting to YOLO format...")
+            log.info("Converting XML annotations to YOLO format...")
             convert_pascal_voc_to_yolo(XML_ANNOTATIONS_DIR, LABELS_DIR, CLASS_NAMES)
         else:
             log.warning("No JSON or XML annotations found. Skipping annotation conversion.")
 
-        # Step 2: Crop images based on YOLO annotations
-        log.info("Cropping images based on YOLO annotations...")
+        # Step 2: Crop images
+        log.info("Cropping objects from input images...")
         process_dataset(IMAGES_DIR, LABELS_DIR, CROPPED_DIR, CLASS_NAMES)
 
         # Step 3: Background removal
-        log.info("Removing backgrounds from cropped images...")
+        log.info("Removing background from cropped images...")
         remove_bg_batch(CROPPED_DIR, CROPPED_NOBG_DIR)
 
-        # Step 4: Download backgrounds
-        log.info(f"Downloading {NUM_BACKGROUNDS} background images for search: '{SEARCH_KEYWORD}'")
+        # Step 4: Background download
+        log.info(f"Downloading {NUM_BACKGROUNDS} backgrounds for: {SEARCH_KEYWORD}")
         download_backgrounds(SEARCH_KEYWORD, NUM_BACKGROUNDS, WEBSCRAPE_BG_DIR)
 
-        # Step 5: Overlay foregrounds on backgrounds
+        # Step 5: Overlay
         for bg_source in [os.path.join(WEBSCRAPE_BG_DIR, SEARCH_KEYWORD), USER_BG_DIR]:
-            if not os.path.exists(bg_source):
-                log.warning(f"Background folder not found: {bg_source}. Skipping...")
-                continue
+            if os.path.exists(bg_source):
+                log.info(f"Overlaying foregrounds on backgrounds from: {bg_source}")
+                overlay_foreground_on_background(
+                    foregrounds_dir=CROPPED_NOBG_DIR,
+                    backgrounds_dir=bg_source,
+                    composites_dir=COMPOSITES_DIR,
+                    annotations_dir=ANNOTATIONS_DIR,
+                    class_names=CLASS_NAMES
+                )
 
-            log.info(f"Overlaying cropped foregrounds onto backgrounds in: {bg_source}")
-            overlay_foreground_on_background(
-                foregrounds_dir=CROPPED_NOBG_DIR,
-                backgrounds_dir=bg_source,
-                composites_dir=COMPOSITES_DIR,
-                annotations_dir=ANNOTATIONS_DIR,
-                class_names=CLASS_NAMES
-            )
-
-        # Step 6: Convert output YOLO annotations to COCO format
+        # Step 6: Convert to COCO
         log.info("Converting YOLO annotations to COCO format...")
         convert_dataset_to_coco(
             images_dir=COMPOSITES_DIR,
@@ -140,18 +146,14 @@ def main():
             class_names=CLASS_NAMES
         )
 
-        # Step 7: Convert output YOLO annotations to masks
-        log.info("Converting YOLO annotations to masks...")
-        yolo_to_masks(
-            images_dir=COMPOSITES_DIR,
-            labels_dir=ANNOTATIONS_DIR,
-            masks_dir=MASKS_DIR,
-        )
+        # Step 7: Generate masks
+        log.info("Generating masks from YOLO annotations...")
+        yolo_to_masks(COMPOSITES_DIR, ANNOTATIONS_DIR, MASKS_DIR)
 
         log.info("Pipeline completed successfully!")
 
     except Exception as e:
-        log.exception(f"Pipeline failed with error: {e}")
+        log.exception(f"Pipeline failed: {e}")
 
 # -----------------------------
 # ENTRY POINT

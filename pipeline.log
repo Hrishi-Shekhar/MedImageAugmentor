@@ -2133,3 +2133,31 @@ TypeError: overlay_foreground_on_background() missing 1 required positional argu
 2025-05-31 11:56:38,902 | INFO | main.py | Converting YOLO annotations to masks...
 2025-05-31 11:56:43,633 | INFO | yolo_to_mask.py | Masks generated in: data\dataset-1_augmentation\output\masks
 2025-05-31 11:56:43,634 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 11:31:22,938 | INFO | main.py | Ensured directory exists: data
+2025-06-03 11:31:22,940 | INFO | main.py | Ensured directory exists: data\dataset_001
+2025-06-03 11:31:22,943 | INFO | main.py | Ensured directory exists: data/dataset_001\input\images
+2025-06-03 11:31:22,944 | INFO | main.py | Ensured directory exists: data/dataset_001\input\labels
+2025-06-03 11:31:22,948 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped
+2025-06-03 11:31:22,950 | INFO | main.py | Ensured directory exists: data/dataset_001\intermediate\cropped_nobg
+2025-06-03 11:31:22,953 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\web_scraping
+2025-06-03 11:31:22,955 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\user_generated
+2025-06-03 11:31:22,958 | INFO | main.py | Ensured directory exists: data/dataset_001\output\composites
+2025-06-03 11:31:22,960 | INFO | main.py | Ensured directory exists: data/dataset_001\output\annotations
+2025-06-03 11:31:22,962 | INFO | main.py | Ensured directory exists: data/dataset_001\output\masks
+2025-06-03 11:31:22,964 | INFO | main.py | Ensured directory exists: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 11:31:22,965 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 11:31:22,965 | INFO | main.py | Cropping images based on YOLO annotations...
+2025-06-03 11:31:22,967 | INFO | cropping_imgs.py | Clearing previous outputs in data/dataset_001\intermediate\cropped...
+2025-06-03 11:31:22,969 | INFO | main.py | Removing backgrounds from cropped images...
+2025-06-03 11:31:22,970 | INFO | bg_removal.py | Clearing previous outputs in data\dataset_001\intermediate\cropped_nobg...
+2025-06-03 11:31:22,974 | INFO | main.py | Downloading 20 background images for search: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 11:31:33,204 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 11:31:33,205 | INFO | main.py | Overlaying cropped foregrounds onto backgrounds in: data/dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 11:31:33,207 | ERROR | overlay.py | No foreground images found in data/dataset_001\intermediate\cropped_nobg
+2025-06-03 11:31:33,209 | INFO | main.py | Overlaying cropped foregrounds onto backgrounds in: data/dataset_001\backgrounds\user_generated
+2025-06-03 11:31:33,211 | ERROR | overlay.py | No foreground images found in data/dataset_001\intermediate\cropped_nobg
+2025-06-03 11:31:33,211 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-03 11:31:33,217 | INFO | yolo_to_json.py | COCO JSON saved to data/dataset_001\output\coco_annotations.json
+2025-06-03 11:31:33,218 | INFO | main.py | Converting YOLO annotations to masks...
+2025-06-03 11:31:33,222 | WARNING | yolo_to_mask.py | No images found in data\dataset_001\output\composites
+2025-06-03 11:31:33,223 | INFO | main.py | Pipeline completed successfully!
