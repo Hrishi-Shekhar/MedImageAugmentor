@@ -16,7 +16,7 @@ from scripts.yolo_to_mask import yolo_to_masks
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
-DATA_ROOT = r"C:\Users\hrish\Desktop\dataset_003"
+DATA_ROOT = r"C:\Users\hrish\Desktop\dataset_001"
 
 IMAGES_DIR = os.path.join(DATA_ROOT, "input", "images")
 LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
@@ -209,8 +209,6 @@ def main():
         log.info("Generating masks from YOLO annotations...")
         yolo_to_masks(COMPOSITES_DIR, ANNOTATIONS_DIR, MASKS_DIR)
 
-        log.info("Pipeline completed successfully!")
-
         # Copy original images to composites folder
         for img_file in Path(IMAGES_DIR).glob("*.[jp][pn]g"):
             dst = Path(COMPOSITES_DIR) / f"orig_{img_file.name}"
@@ -234,7 +232,7 @@ def main():
             shutil.copy(mask_file, dst)
         log.info("Original masks copied to masks folder.")
 
-
+        log.info("Pipeline completed successfully!")
 
 
     except Exception as e:

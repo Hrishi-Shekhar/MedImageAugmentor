@@ -9887,3 +9887,266 @@ TypeError: download_backgrounds() got an unexpected keyword argument 'query'
 2025-06-03 18:22:34,834 | INFO | main.py | Original labels copied to annotations folder.
 2025-06-03 18:22:34,886 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\dataset_003\intermediate\orig_masks
 2025-06-03 18:22:35,009 | INFO | main.py | Original masks copied to masks folder.
+2025-06-03 21:10:04,899 | INFO | main.py | Ensured directory exists: data
+2025-06-03 21:10:04,900 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001
+2025-06-03 21:10:04,902 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\input\images
+2025-06-03 21:10:04,903 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\input\labels
+2025-06-03 21:10:04,906 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\intermediate\cropped
+2025-06-03 21:10:04,908 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\intermediate\cropped_nobg
+2025-06-03 21:10:04,910 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 21:10:04,912 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\backgrounds\user_generated
+2025-06-03 21:10:04,916 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\output\composites
+2025-06-03 21:10:04,918 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\output\annotations
+2025-06-03 21:10:04,920 | INFO | main.py | Ensured directory exists: C:\Users\hrish\Desktop\dataset_001\output\masks
+2025-06-03 21:10:04,921 | INFO | main.py | Copying images from C:\Users\hrish\Desktop\dataset_001\images to C:\Users\hrish\Desktop\dataset_001\input\images
+2025-06-03 21:10:05,089 | INFO | main.py | Images copied.
+2025-06-03 21:10:05,090 | INFO | main.py | Copying labels from C:\Users\hrish\Desktop\dataset_001\labels to C:\Users\hrish\Desktop\dataset_001\input\labels
+2025-06-03 21:10:05,399 | INFO | main.py | Labels copied.
+2025-06-03 21:10:05,420 | INFO | main.py | Copied class names to C:\Users\hrish\Desktop\dataset_001\input\class_names.txt
+2025-06-03 21:10:05,422 | INFO | main.py | Copying test data from C:\Users\hrish\Desktop\dataset_001\test to C:\Users\hrish\Desktop\dataset_001\input\test
+2025-06-03 21:10:05,883 | INFO | main.py | Test data copied.
+2025-06-03 21:10:05,893 | INFO | main.py | Removed original images directory: C:\Users\hrish\Desktop\dataset_001\images
+2025-06-03 21:10:05,902 | INFO | main.py | Removed original labels directory: C:\Users\hrish\Desktop\dataset_001\labels
+2025-06-03 21:10:05,904 | INFO | main.py | Removed original class names file: C:\Users\hrish\Desktop\dataset_001\class_names.txt
+2025-06-03 21:10:05,918 | INFO | main.py | Removed original test directory: C:\Users\hrish\Desktop\dataset_001\test
+2025-06-03 21:10:05,919 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-03 21:10:05,920 | INFO | main.py | Cropping objects from input images...
+2025-06-03 21:10:05,920 | INFO | cropping_imgs.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_001\intermediate\cropped...
+2025-06-03 21:10:06,009 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_mask_0.jpg
+2025-06-03 21:10:06,020 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_mask_0.jpg
+2025-06-03 21:10:06,023 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_mask_1.jpg
+2025-06-03 21:10:06,033 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_mask_0.jpg
+2025-06-03 21:10:06,076 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_mask_0.jpg
+2025-06-03 21:10:06,132 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0.jpg
+2025-06-03 21:10:06,174 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_mask_0.jpg
+2025-06-03 21:10:06,211 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0.jpg
+2025-06-03 21:10:06,245 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_mask_0.jpg
+2025-06-03 21:10:06,286 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_0.jpg
+2025-06-03 21:10:06,290 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1.jpg
+2025-06-03 21:10:06,345 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0.jpg
+2025-06-03 21:10:06,385 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_mask_0.jpg
+2025-06-03 21:10:06,396 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_mask_0.jpg
+2025-06-03 21:10:06,427 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_mask_0.jpg
+2025-06-03 21:10:06,439 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_mask_0.jpg
+2025-06-03 21:10:06,449 | INFO | cropping_imgs.py | Saved C:\Users\hrish\Desktop\dataset_001\intermediate\cropped\Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_mask_0.jpg
+2025-06-03 21:10:06,450 | INFO | main.py | Removing background from cropped images...
+2025-06-03 21:10:06,452 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\dataset_001\intermediate\cropped_nobg...
+2025-06-03 21:10:10,323 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--117-_jpg.rf.a7c891ddbc76e3c92ef650b311499c60_mask_0.jpg
+2025-06-03 21:10:14,075 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_mask_0.jpg
+2025-06-03 21:10:17,760 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--121-_jpg.rf.b525f1c5636038c7ca68a87485c6a287_mask_1.jpg
+2025-06-03 21:10:21,448 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--137-_jpg.rf.36b57d4bcd11a1b6e85f9b32c96a7b94_mask_0.jpg
+2025-06-03 21:10:25,092 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--35-_jpg.rf.06239afef490c68f164fc62b47794a46_mask_0.jpg
+2025-06-03 21:10:29,083 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0.jpg
+2025-06-03 21:10:32,727 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--63-_jpg.rf.2879470c656f1febd1e1348fc3d130b8_mask_0.jpg
+2025-06-03 21:10:36,291 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0.jpg
+2025-06-03 21:10:39,960 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--73-_jpg.rf.6662e4fb9a36e037f6deb04621f1ffbe_mask_0.jpg
+2025-06-03 21:10:43,560 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_0.jpg
+2025-06-03 21:10:47,261 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1.jpg
+2025-06-03 21:10:51,094 | INFO | bg_removal.py | Processed: Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0.jpg
+2025-06-03 21:10:54,720 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--16-_jpg.rf.d98a38b559e10f6d289edf5624dab071_mask_0.jpg
+2025-06-03 21:10:58,351 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--33-_jpg.rf.b0ad87243967509619d3361fe7309188_mask_0.jpg
+2025-06-03 21:11:01,983 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--36-_jpg.rf.24d80c8b4f13a9f9850c9947d162ca05_mask_0.jpg
+2025-06-03 21:11:05,617 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--48-_jpg.rf.462af8ab5f83f4b72226fea3e6fd9c48_mask_0.jpg
+2025-06-03 21:11:09,419 | INFO | bg_removal.py | Processed: Ascaris-Lumbricoides--9-_jpg.rf.e56532ce26b5e49b3f2ebe2591a40998_mask_0.jpg
+2025-06-03 21:11:09,420 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 21:11:09,428 | INFO | main.py | Average image dimensions: 593x490
+2025-06-03 21:11:22,911 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-03 21:11:22,942 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_1.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:22,978 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_10.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,012 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_11.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,060 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_12.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,141 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_13.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,177 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_14.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,220 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_15.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,266 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_16.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,299 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_17.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,340 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_18.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,387 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_19.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,428 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_2.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,481 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_20.png: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,519 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_3.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,558 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_4.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,595 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_5.png: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,638 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_6.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,703 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_7.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,743 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_8.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,770 | WARNING | bg_extraction_web_scraping.py | Failed to resize C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.\Image_9.jpg: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-06-03 21:11:23,771 | INFO | bg_extraction_web_scraping.py | Resized all images in 'C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.' to 593x490
+2025-06-03 21:11:23,772 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:\Users\hrish\Desktop\dataset_001\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-03 21:11:23,781 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-03 21:11:23,891 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_1.jpg
+2025-06-03 21:11:24,010 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,070 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:24,078 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_2.jpg
+2025-06-03 21:11:24,185 | WARNING | overlay.py | Could not place Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:24,242 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,250 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_3.jpg
+2025-06-03 21:11:24,362 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_4.jpg
+2025-06-03 21:11:24,403 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_5.jpg
+2025-06-03 21:11:24,411 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-03 21:11:24,436 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_6.jpg
+2025-06-03 21:11:24,507 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,530 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_7.jpg
+2025-06-03 21:11:24,560 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,591 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,597 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_8.jpg
+2025-06-03 21:11:24,619 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_9.jpg
+2025-06-03 21:11:24,630 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_10.jpg
+2025-06-03 21:11:24,641 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-03 21:11:24,661 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_11.jpg
+2025-06-03 21:11:24,729 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,752 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_12.jpg
+2025-06-03 21:11:24,782 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,815 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,820 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_13.jpg
+2025-06-03 21:11:24,842 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_14.jpg
+2025-06-03 21:11:24,855 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_15.jpg
+2025-06-03 21:11:24,873 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-03 21:11:24,898 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_16.jpg
+2025-06-03 21:11:24,969 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:24,996 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_17.jpg
+2025-06-03 21:11:25,058 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:25,068 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_18.jpg
+2025-06-03 21:11:25,095 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_19.jpg
+2025-06-03 21:11:25,111 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_20.jpg
+2025-06-03 21:11:25,167 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-03 21:11:25,215 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_21.jpg
+2025-06-03 21:11:25,342 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_22.jpg
+2025-06-03 21:11:25,439 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_23.jpg
+2025-06-03 21:11:25,487 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_24.jpg
+2025-06-03 21:11:25,526 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_25.jpg
+2025-06-03 21:11:25,543 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-03 21:11:25,570 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_26.jpg
+2025-06-03 21:11:25,634 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:25,662 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_27.jpg
+2025-06-03 21:11:25,737 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:25,748 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_28.jpg
+2025-06-03 21:11:25,784 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_29.jpg
+2025-06-03 21:11:25,803 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_30.jpg
+2025-06-03 21:11:25,819 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-03 21:11:25,853 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_31.jpg
+2025-06-03 21:11:25,922 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:25,950 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_32.jpg
+2025-06-03 21:11:26,011 | WARNING | overlay.py | Could not place Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:26,022 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_33.jpg
+2025-06-03 21:11:26,051 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_34.jpg
+2025-06-03 21:11:26,071 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_35.jpg
+2025-06-03 21:11:26,090 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-03 21:11:26,116 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_36.jpg
+2025-06-03 21:11:26,184 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:26,210 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_37.jpg
+2025-06-03 21:11:26,272 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:26,281 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_38.jpg
+2025-06-03 21:11:26,307 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_39.jpg
+2025-06-03 21:11:26,324 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_40.jpg
+2025-06-03 21:11:26,339 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-03 21:11:26,365 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_41.jpg
+2025-06-03 21:11:26,434 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:26,460 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_42.jpg
+2025-06-03 21:11:26,521 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:26,531 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_43.jpg
+2025-06-03 21:11:26,556 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_44.jpg
+2025-06-03 21:11:26,573 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_45.jpg
+2025-06-03 21:11:26,589 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-03 21:11:26,615 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_46.jpg
+2025-06-03 21:11:26,687 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:26,712 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_47.jpg
+2025-06-03 21:11:26,775 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:26,785 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_48.jpg
+2025-06-03 21:11:26,813 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_49.jpg
+2025-06-03 21:11:26,829 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_50.jpg
+2025-06-03 21:11:26,857 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-03 21:11:26,892 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_51.jpg
+2025-06-03 21:11:27,012 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_52.jpg
+2025-06-03 21:11:27,099 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_53.jpg
+2025-06-03 21:11:27,138 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_54.jpg
+2025-06-03 21:11:27,168 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_55.jpg
+2025-06-03 21:11:27,180 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-03 21:11:27,203 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_56.jpg
+2025-06-03 21:11:27,276 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:27,304 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_57.jpg
+2025-06-03 21:11:27,332 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:27,373 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:27,389 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_58.jpg
+2025-06-03 21:11:27,436 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_59.jpg
+2025-06-03 21:11:27,454 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_60.jpg
+2025-06-03 21:11:27,480 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-03 21:11:27,533 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_61.jpg
+2025-06-03 21:11:27,673 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_62.jpg
+2025-06-03 21:11:27,769 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_63.jpg
+2025-06-03 21:11:27,814 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_64.jpg
+2025-06-03 21:11:27,855 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_65.jpg
+2025-06-03 21:11:27,867 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-03 21:11:27,889 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_66.jpg
+2025-06-03 21:11:27,959 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:27,978 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:27,985 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_67.jpg
+2025-06-03 21:11:28,016 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,048 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,054 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_68.jpg
+2025-06-03 21:11:28,079 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_69.jpg
+2025-06-03 21:11:28,092 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_70.jpg
+2025-06-03 21:11:28,107 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-03 21:11:28,127 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_71.jpg
+2025-06-03 21:11:28,199 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,217 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:28,222 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_72.jpg
+2025-06-03 21:11:28,254 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,287 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,294 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_73.jpg
+2025-06-03 21:11:28,321 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_74.jpg
+2025-06-03 21:11:28,332 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_75.jpg
+2025-06-03 21:11:28,349 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-03 21:11:28,371 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_76.jpg
+2025-06-03 21:11:28,448 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,469 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:28,477 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_77.jpg
+2025-06-03 21:11:28,518 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,555 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,564 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_78.jpg
+2025-06-03 21:11:28,593 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_79.jpg
+2025-06-03 21:11:28,606 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_80.jpg
+2025-06-03 21:11:28,627 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-03 21:11:28,653 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_81.jpg
+2025-06-03 21:11:28,722 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,751 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_82.jpg
+2025-06-03 21:11:28,816 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:28,826 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_83.jpg
+2025-06-03 21:11:28,852 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_84.jpg
+2025-06-03 21:11:28,869 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_85.jpg
+2025-06-03 21:11:28,907 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-03 21:11:28,954 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_86.jpg
+2025-06-03 21:11:29,088 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_87.jpg
+2025-06-03 21:11:29,183 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_88.jpg
+2025-06-03 21:11:29,234 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_89.jpg
+2025-06-03 21:11:29,267 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_90.jpg
+2025-06-03 21:11:29,284 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-03 21:11:29,311 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_91.jpg
+2025-06-03 21:11:29,375 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:29,399 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_92.jpg
+2025-06-03 21:11:29,460 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:29,470 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_93.jpg
+2025-06-03 21:11:29,494 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_94.jpg
+2025-06-03 21:11:29,508 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_95.jpg
+2025-06-03 21:11:29,515 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-03 21:11:29,536 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_96.jpg
+2025-06-03 21:11:29,597 | WARNING | overlay.py | Skipping Ancylostoma-Spp--6-_jpg.rf.80cbe9fa9e0d4f9fe9fa033a0949e666_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:29,615 | WARNING | overlay.py | Could not place Ancylostoma-Spp--68-_jpg.rf.92487af38bb34993d2716b49791b7866_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-03 21:11:29,620 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_97.jpg
+2025-06-03 21:11:29,651 | WARNING | overlay.py | Skipping Ancylostoma-Spp--80-_jpg.rf.e2144c807356c5da7b68926e29a2156a_mask_1_no_bg.png because it is larger than the background.
+2025-06-03 21:11:29,680 | WARNING | overlay.py | Skipping Ancylostoma-Spp--81-_jpg.rf.164d5e790756c11b372decfe16f5799c_mask_0_no_bg.png because it is larger than the background.
+2025-06-03 21:11:29,686 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_98.jpg
+2025-06-03 21:11:29,705 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_99.jpg
+2025-06-03 21:11:29,718 | INFO | overlay.py | Saved composite: C:\Users\hrish\Desktop\dataset_001\output\composites\composite_100.jpg
+2025-06-03 21:11:29,720 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-03 21:11:29,721 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:\Users\hrish\Desktop\dataset_001\backgrounds\user_generated
+2025-06-03 21:11:29,722 | ERROR | overlay.py | No background images found in C:\Users\hrish\Desktop\dataset_001\backgrounds\user_generated
+2025-06-03 21:11:29,723 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-03 21:11:34,007 | INFO | yolo_to_json.py | COCO JSON saved to C:\Users\hrish\Desktop\dataset_001\output\coco_annotations.json
+2025-06-03 21:11:34,008 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-03 21:11:35,284 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\dataset_001\output\masks
+2025-06-03 21:11:35,284 | INFO | main.py | Pipeline completed successfully!
+2025-06-03 21:11:35,325 | INFO | main.py | Original images copied to composites folder.
+2025-06-03 21:11:35,367 | INFO | main.py | Original labels copied to annotations folder.
+2025-06-03 21:11:35,544 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\dataset_001\intermediate\orig_masks
+2025-06-03 21:11:35,908 | INFO | main.py | Original masks copied to masks folder.
