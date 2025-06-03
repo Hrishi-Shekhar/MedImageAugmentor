@@ -59,8 +59,6 @@ def crop_yolo_objects(
     with open(label_path, 'r') as f:
         lines = f.readlines()
 
-    base_name = os.path.splitext(os.path.basename(image_path))[0]
-
     for idx, line in enumerate(lines):
         parts = line.strip().split()
         if len(parts) != 5:
@@ -78,7 +76,7 @@ def crop_yolo_objects(
 
         cropped = img.crop((xmin, ymin, xmax, ymax))
         class_name = class_names[class_id]
-        output_filename = f"{base_name}_{class_name}_{idx}.jpg"
+        output_filename = f"{os.path.splitext(os.path.basename(image_path))[0]}_mask_{idx}.jpg"
         output_path = os.path.join(output_dir, output_filename)
         cropped.save(output_path)
         log.info(f"Saved {output_path}")
