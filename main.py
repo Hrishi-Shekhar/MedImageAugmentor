@@ -14,7 +14,7 @@ from scripts.yolo_to_mask import yolo_to_masks
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
-DATA_ROOT = r"data/dataset-1_augmentation"
+DATA_ROOT = r"data/dataset_001"
 
 IMAGES_DIR = os.path.join(DATA_ROOT, "input", "images")
 LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
@@ -97,8 +97,8 @@ def setup_and_prepare_dataset(original_images_dir=None, original_labels_dir=None
 def main():
     try:
         # Provide these if images/labels are not already in input/
-        original_images_dir = "original_dataset/images"
-        original_labels_dir = "original_dataset/labels"
+        original_images_dir = "data/dataset_001/images"
+        original_labels_dir = "data/dataset_001/labels"
 
         setup_and_prepare_dataset(original_images_dir, original_labels_dir)
 
