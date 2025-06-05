@@ -4,6 +4,7 @@ import logging
 from pathlib import Path
 import numpy as np
 from PIL import Image
+import yaml
 
 from scripts.cropping_imgs import process_dataset
 from scripts.bg_removal import remove_bg_batch
@@ -16,32 +17,27 @@ from scripts.yolo_to_mask import yolo_to_masks
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
-DATA_ROOT = r"C:\Users\hrish\Desktop\dataset_001"
-
-IMAGES_DIR = os.path.join(DATA_ROOT, "input", "images")
-LABELS_DIR = os.path.join(DATA_ROOT, "input", "labels")
-CROPPED_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped")
-CROPPED_NOBG_DIR = os.path.join(DATA_ROOT, "intermediate", "cropped_nobg")
-
-BACKGROUND_ROOT = os.path.join(DATA_ROOT, "backgrounds")
-WEBSCRAPE_BG_DIR = os.path.join(BACKGROUND_ROOT, "web_scraping")
-USER_BG_DIR = os.path.join(BACKGROUND_ROOT, "user_generated")
-
-OUTPUT_ROOT = os.path.join(DATA_ROOT, "output")
-COMPOSITES_DIR = os.path.join(OUTPUT_ROOT, "composites")
-ANNOTATIONS_DIR = os.path.join(OUTPUT_ROOT, "annotations")
-COCO_JSON_PATH = os.path.join(OUTPUT_ROOT, "coco_annotations.json")
-MASKS_DIR = os.path.join(OUTPUT_ROOT, "masks")
-
-JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "json_input")
-XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, "input", "xml_input")
-
-# CLASS_NAMES = os.path.join(DATA_ROOT,"class_names")
-# CLASS_MAP = {name: idx for idx, name in enumerate(CLASS_NAMES)}
-
-SEARCH_KEYWORD = "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
-NUM_BACKGROUNDS = 20
-
+def load_config(path = "config.yaml"):
+    with open(path,'r') as f:
+        return yaml.safe_load(f)
+    
+config = load_config()
+DATA_ROOT = config["data_root"]
+IMAGES_DIR = os.path.join(DATA_ROOT, config["paths"]["input"]["images"])
+LABELS_DIR = os.path.join(DATA_ROOT, config["paths"]["input"]["labels"])
+JSON_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, config["paths"]["input"]["json"])
+XML_ANNOTATIONS_DIR = os.path.join(DATA_ROOT, config["paths"]["input"]["xml"])
+CROPPED_DIR = os.path.join(DATA_ROOT, config["paths"]["intermediate"]["cropped"])
+CROPPED_NOBG_DIR = os.path.join(DATA_ROOT, config["paths"]["intermediate"]["cropped_nobg"])
+WEBSCRAPE_BG_DIR = os.path.join(DATA_ROOT, config["paths"]["backgrounds"]["web"])
+USER_BG_DIR = os.path.join(DATA_ROOT, config["paths"]["backgrounds"]["user"])
+OUTPUT_ROOT = os.path.join(DATA_ROOT, config["paths"]["output"]["root"])
+COMPOSITES_DIR = os.path.join(DATA_ROOT, config["paths"]["output"]["composites"])
+ANNOTATIONS_DIR = os.path.join(DATA_ROOT, config["paths"]["output"]["annotations"])
+COCO_JSON_PATH = os.path.join(DATA_ROOT, config["paths"]["output"]["coco_json"])
+MASKS_DIR = os.path.join(DATA_ROOT, config["paths"]["output"]["masks"])
+SEARCH_KEYWORD = config["search"]["keyword"]
+NUM_BACKGROUNDS = config["search"]["num_backgrounds"]
 # -----------------------------
 # LOGGING SETUP
 # -----------------------------

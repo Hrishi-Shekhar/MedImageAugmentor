@@ -4,8 +4,15 @@ from PIL import Image
 import shutil
 import logging
 from typing import List, Tuple
+import yaml
+
+def load_config(path = "config.yaml"):
+    with open(path,'r') as f:
+        return yaml.safe_load(f)
 
 log = logging.getLogger(__name__)
+
+config = load_config()
 
 def yolo_to_pixel_bbox(
     x_center: float, y_center: float, width: float, height: float,
@@ -28,7 +35,7 @@ def find_mask_for_image(image_filename: str) -> str:
     return f"{name}_superpixels.png"
 
 def crop_using_mask(
-    image_path: str, mask_path: str, output_dir: str, base_name: str
+    image_path: str, mask_path: str, output_dir: str, base_name: str, min_size: Tuple[int,int] = config["cropping"]["min_size"]
 ) -> None:
     image = cv2.imread(image_path)
     mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
@@ -45,13 +52,16 @@ def crop_using_mask(
     for i, contour in enumerate(contours):
         x, y, w, h = cv2.boundingRect(contour)
         cropped_img = image[y:y + h, x:x + w]
+        if cropped_img.shape[0] < min_size[1] or cropped_img[1] < min_size[0]:
+            log.info(f"Skipping small crop ({cropped_img.shape[1]},{cropped_img.shape[0]}) from {image_path}")
+            continue
         output_filename = f"{base_name}_mask_{i}.jpg"
         output_path = os.path.join(output_dir, output_filename)
         cv2.imwrite(output_path, cropped_img)
         log.info(f"Saved {output_path}")
 
 def crop_yolo_objects(
-    image_path: str, label_path: str, output_dir: str, class_names: List[str]
+    image_path: str, label_path: str, output_dir: str, class_names: List[str], min_size: Tuple[int,int] = config['cropping']['min_size']
 ) -> None:
     img = Image.open(image_path)
     img_width, img_height = img.size
@@ -75,6 +85,9 @@ def crop_yolo_objects(
         ymax = min(img_height, ymax)
 
         cropped = img.crop((xmin, ymin, xmax, ymax))
+        if cropped.width < min_size[0] or cropped.height < min_size[1]:
+            log.info(f"Skipping small crop ({cropped.width},{cropped.height}) from {image_path}")
+            continue
         class_name = class_names[class_id]
         output_filename = f"{os.path.splitext(os.path.basename(image_path))[0]}_mask_{idx}.jpg"
         output_path = os.path.join(output_dir, output_filename)

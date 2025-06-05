@@ -1,0 +1,33 @@
+data_root: "C:/Users/hrish/Desktop/dataset_001"
+
+paths:
+  input: 
+    images: "input/images"
+    labels: "input/labels"
+    json: "input/json_input"
+    xml: "input/xml_input"
+    test: "input/test"
+    class_names: "input/class_names.txt"
+  intermediate:
+    cropped: "intermediate/cropped"
+    cropped_nobg: "intermediate/cropped_nobg"
+  backgrounds: 
+    web: "backgrounds/web_scraping"
+    user: "backgrounds/user_generated"
+  output:
+    root: "output"
+    composites: "output/composites"
+    annotations: "output/annotations"
+    coco_json: "output/coco_annotations.json"
+    masks: "output/masks"
+
+search:
+  keyword: "A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy."
+  num_backgrounds: 20
+
+cropping:
+    min_size: [20,20]
+
+bg_removal:
+    min_foreground_pixels: 700
+    min_alpha: 150 

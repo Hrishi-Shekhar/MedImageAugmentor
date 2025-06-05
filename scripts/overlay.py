@@ -41,6 +41,14 @@ def calculate_iou(boxA, boxB):
     iou = interArea / float(boxAArea + boxBArea - interArea)
     return iou
 
+def boxes_overlap(boxA, boxB):
+    return not (
+        boxA[2] <= boxB[0] or
+        boxA[0] >= boxB[2] or
+        boxA[3] <= boxB[1] or
+        boxA[1] >= boxB[3]
+    )
+
 def overlay_foreground_on_background(
     foregrounds_dir: str,
     backgrounds_dir: str,
@@ -93,9 +101,10 @@ def overlay_foreground_on_background(
                 for _ in range(max_attempts):
                     x = random.randint(0, max(bg_width - fg_width, 0))
                     y = random.randint(0, max(bg_height - fg_height, 0))
-                    new_box = (x, y, x + fg_width, y + fg_height)
+                    padding = 10
+                    new_box = (x-padding, y-padding, x + fg_width + padding, y + fg_height + padding)
 
-                    overlap = any(calculate_iou(new_box, box) > 0.1 for box in occupied_boxes)
+                    overlap = any(boxes_overlap(new_box, box) for box in occupied_boxes)
                     if not overlap:
                         occupied_boxes.append(new_box)
                         placed = True
