@@ -22,7 +22,7 @@ def download_backgrounds(keyword, limit, output_dir,width=None,height=None):
             for img_file in downloaded_path.glob("*.[jp][pn]g"):
                 try:
                     img = Image.open(img_file).convert("RGB")
-                    img = img.resize((width, height), Image.ANTIALIAS)
+                    img = img.resize((width, height), Image.Resampling.LANCZOS)
                     img.save(img_file)
                 except Exception as e:
                     log.warning(f"Failed to resize {img_file}: {e}")
