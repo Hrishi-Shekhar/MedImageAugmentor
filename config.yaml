@@ -1,4 +1,4 @@
-data_root: "C:/Users/hrish/Desktop/datasets/dataset_010"
+data_root: "C:/Users/hrish/Desktop/datasets/dataset_011"
 
 paths:
   input: 
@@ -26,8 +26,11 @@ search:
   num_backgrounds: 20
 
 cropping:
-    min_size: [20,20]
+  min_size: [20,20]
 
 bg_removal:
-    min_foreground_pixels: 700
-    min_alpha: 150 
+  min_foreground_pixels: 700
+  min_alpha: 150 
+
+overlay: 
+  no_of_lesions: 4

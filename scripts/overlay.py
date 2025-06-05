@@ -3,6 +3,13 @@ import random
 import logging
 from typing import List
 from PIL import Image
+import yaml
+
+def load_yaml(path = "config.yaml"):
+    with open(path,'r') as f:
+        return yaml.safe_load(f)
+    
+config = load_yaml()
 
 log = logging.getLogger(__name__)
 
@@ -55,7 +62,7 @@ def overlay_foreground_on_background(
     composites_dir: str,
     annotations_dir: str,
     class_names: List[str],
-    lesions_per_image: int = 4,
+    lesions_per_image: int = config['overlay']['no_of_lesions'],
     max_attempts: int = 20,
 ) -> None:
     ensure_dir(composites_dir)

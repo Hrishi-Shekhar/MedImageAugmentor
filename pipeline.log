@@ -26215,3 +26215,915 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:/U
 2025-06-05 16:30:29,268 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\datasets\dataset_010\intermediate\orig_masks
 2025-06-05 16:30:29,368 | INFO | main.py | Original masks copied to masks folder.
 2025-06-05 16:30:29,369 | INFO | main.py | Pipeline completed successfully!
+2025-06-05 17:27:27,619 | INFO | main.py | Ensured directory exists: data
+2025-06-05 17:27:27,619 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011
+2025-06-05 17:27:27,619 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\input/images
+2025-06-05 17:27:27,620 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\input/labels
+2025-06-05 17:27:27,620 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped
+2025-06-05 17:27:27,620 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped_nobg
+2025-06-05 17:27:27,621 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-05 17:27:27,621 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-05 17:27:27,621 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites
+2025-06-05 17:27:27,621 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/annotations
+2025-06-05 17:27:27,623 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/masks
+2025-06-05 17:27:27,623 | INFO | main.py | Copying images from C:/Users/hrish/Desktop/datasets/dataset_011\images to C:/Users/hrish/Desktop/datasets/dataset_011\input/images
+2025-06-05 17:27:27,767 | INFO | main.py | Images copied.
+2025-06-05 17:27:27,767 | INFO | main.py | Copying labels from C:/Users/hrish/Desktop/datasets/dataset_011\labels to C:/Users/hrish/Desktop/datasets/dataset_011\input/labels
+2025-06-05 17:27:27,779 | INFO | main.py | Labels copied.
+2025-06-05 17:27:27,787 | INFO | main.py | Copied class names to C:/Users/hrish/Desktop/datasets/dataset_011\input\class_names.txt
+2025-06-05 17:27:27,787 | INFO | main.py | Copying test data from C:/Users/hrish/Desktop/datasets/dataset_011\test to C:/Users/hrish/Desktop/datasets/dataset_011\input\test
+2025-06-05 17:27:27,852 | INFO | main.py | Test data copied.
+2025-06-05 17:27:27,855 | INFO | main.py | Removed original images directory: C:/Users/hrish/Desktop/datasets/dataset_011\images
+2025-06-05 17:27:27,859 | INFO | main.py | Removed original labels directory: C:/Users/hrish/Desktop/datasets/dataset_011\labels
+2025-06-05 17:27:27,859 | INFO | main.py | Removed original class names file: C:/Users/hrish/Desktop/datasets/dataset_011\class_names.txt
+2025-06-05 17:27:27,862 | INFO | main.py | Removed original test directory: C:/Users/hrish/Desktop/datasets/dataset_011\test
+2025-06-05 17:27:27,862 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-05 17:27:27,862 | INFO | main.py | Cropping objects from input images...
+2025-06-05 17:27:27,863 | INFO | cropping_imgs.py | Clearing previous outputs in C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped...
+2025-06-05 17:27:27,890 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_0.jpg
+2025-06-05 17:27:27,891 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_1.jpg
+2025-06-05 17:27:27,906 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0.jpg
+2025-06-05 17:27:27,921 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_0.jpg
+2025-06-05 17:27:27,921 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_1.jpg
+2025-06-05 17:27:27,937 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0.jpg
+2025-06-05 17:27:27,938 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_1.jpg
+2025-06-05 17:27:27,952 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0.jpg
+2025-06-05 17:27:27,968 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_0.jpg
+2025-06-05 17:27:27,969 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_1.jpg
+2025-06-05 17:27:27,969 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2.jpg
+2025-06-05 17:27:27,984 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0.jpg
+2025-06-05 17:27:27,986 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_1.jpg
+2025-06-05 17:27:27,987 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_2.jpg
+2025-06-05 17:27:28,004 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_0.jpg
+2025-06-05 17:27:28,004 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1.jpg
+2025-06-05 17:27:28,005 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_2.jpg
+2025-06-05 17:27:28,005 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_3.jpg
+2025-06-05 17:27:28,020 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_0.jpg
+2025-06-05 17:27:28,021 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_1.jpg
+2025-06-05 17:27:28,021 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2.jpg
+2025-06-05 17:27:28,022 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_3.jpg
+2025-06-05 17:27:28,023 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_4.jpg
+2025-06-05 17:27:28,037 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0355_jpg.rf.a37b2e7001f7828211fd5af17d692645_mask_0.jpg
+2025-06-05 17:27:28,052 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_0.jpg
+2025-06-05 17:27:28,053 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_1.jpg
+2025-06-05 17:27:28,053 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_2.jpg
+2025-06-05 17:27:28,068 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_0.jpg
+2025-06-05 17:27:28,068 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_1.jpg
+2025-06-05 17:27:28,088 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_0.jpg
+2025-06-05 17:27:28,089 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_1.jpg
+2025-06-05 17:27:28,090 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_2.jpg
+2025-06-05 17:27:28,091 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_3.jpg
+2025-06-05 17:27:28,113 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0.jpg
+2025-06-05 17:27:28,115 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1.jpg
+2025-06-05 17:27:28,117 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_2.jpg
+2025-06-05 17:27:28,137 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_0.jpg
+2025-06-05 17:27:28,138 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_1.jpg
+2025-06-05 17:27:28,140 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2.jpg
+2025-06-05 17:27:28,155 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_0.jpg
+2025-06-05 17:27:28,156 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_1.jpg
+2025-06-05 17:27:28,157 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_2.jpg
+2025-06-05 17:27:28,157 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3.jpg
+2025-06-05 17:27:28,175 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_0.jpg
+2025-06-05 17:27:28,175 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_1.jpg
+2025-06-05 17:27:28,176 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2.jpg
+2025-06-05 17:27:28,192 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_0.jpg
+2025-06-05 17:27:28,193 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_1.jpg
+2025-06-05 17:27:28,194 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2.jpg
+2025-06-05 17:27:28,212 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0377_jpg.rf.f89206d989706ffea6e6c9b4f05a2526_mask_0.jpg
+2025-06-05 17:27:28,231 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_0.jpg
+2025-06-05 17:27:28,231 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_1.jpg
+2025-06-05 17:27:28,232 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2.jpg
+2025-06-05 17:27:28,252 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0379_jpg.rf.4ff1fe85bfba282ac337c1415623b1ce_mask_0.jpg
+2025-06-05 17:27:28,271 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0383_jpg.rf.dc2314ddc39807f3b191a2b350ea88bc_mask_0.jpg
+2025-06-05 17:27:28,287 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_0.jpg
+2025-06-05 17:27:28,287 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_1.jpg
+2025-06-05 17:27:28,288 | INFO | main.py | Removing background from cropped images...
+2025-06-05 17:27:28,288 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\datasets\dataset_011\intermediate\cropped_nobg...
+2025-06-05 17:27:29,698 | INFO | bg_removal.py | Processed: second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_0.jpg
+2025-06-05 17:27:30,831 | INFO | bg_removal.py | Skipped (too small or empty): second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_1.jpg
+2025-06-05 17:27:31,830 | INFO | bg_removal.py | Processed: second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0.jpg
+2025-06-05 17:27:32,836 | INFO | bg_removal.py | Skipped (too small or empty): second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_0.jpg
+2025-06-05 17:27:33,792 | INFO | bg_removal.py | Skipped (too small or empty): second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_1.jpg
+2025-06-05 17:27:34,744 | INFO | bg_removal.py | Processed: second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0.jpg
+2025-06-05 17:27:35,704 | INFO | bg_removal.py | Skipped (too small or empty): second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_1.jpg
+2025-06-05 17:27:36,673 | INFO | bg_removal.py | Processed: second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0.jpg
+2025-06-05 17:27:37,689 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_0.jpg
+2025-06-05 17:27:38,701 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_1.jpg
+2025-06-05 17:27:39,724 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2.jpg
+2025-06-05 17:27:40,734 | INFO | bg_removal.py | Processed: second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0.jpg
+2025-06-05 17:27:41,753 | INFO | bg_removal.py | Skipped (too small or empty): second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_1.jpg
+2025-06-05 17:27:42,765 | INFO | bg_removal.py | Processed: second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_2.jpg
+2025-06-05 17:27:43,766 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_0.jpg
+2025-06-05 17:27:44,776 | INFO | bg_removal.py | Processed: second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1.jpg
+2025-06-05 17:27:45,816 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_2.jpg
+2025-06-05 17:27:46,811 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_3.jpg
+2025-06-05 17:27:47,810 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_0.jpg
+2025-06-05 17:27:48,808 | INFO | bg_removal.py | Processed: second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_1.jpg
+2025-06-05 17:27:49,832 | INFO | bg_removal.py | Processed: second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2.jpg
+2025-06-05 17:27:50,866 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_3.jpg
+2025-06-05 17:27:51,874 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_4.jpg
+2025-06-05 17:27:52,921 | INFO | bg_removal.py | Processed: second-0355_jpg.rf.a37b2e7001f7828211fd5af17d692645_mask_0.jpg
+2025-06-05 17:27:53,961 | INFO | bg_removal.py | Skipped (too small or empty): second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_0.jpg
+2025-06-05 17:27:55,003 | INFO | bg_removal.py | Skipped (too small or empty): second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_1.jpg
+2025-06-05 17:27:55,996 | INFO | bg_removal.py | Skipped (too small or empty): second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_2.jpg
+2025-06-05 17:27:57,005 | INFO | bg_removal.py | Skipped (too small or empty): second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_0.jpg
+2025-06-05 17:27:57,987 | INFO | bg_removal.py | Skipped (too small or empty): second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_1.jpg
+2025-06-05 17:27:58,961 | INFO | bg_removal.py | Processed: second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_0.jpg
+2025-06-05 17:27:59,931 | INFO | bg_removal.py | Skipped (too small or empty): second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_1.jpg
+2025-06-05 17:28:00,910 | INFO | bg_removal.py | Skipped (too small or empty): second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_2.jpg
+2025-06-05 17:28:01,921 | INFO | bg_removal.py | Skipped (too small or empty): second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_3.jpg
+2025-06-05 17:28:02,874 | INFO | bg_removal.py | Processed: second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0.jpg
+2025-06-05 17:28:03,819 | INFO | bg_removal.py | Processed: second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1.jpg
+2025-06-05 17:28:04,810 | INFO | bg_removal.py | Processed: second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_2.jpg
+2025-06-05 17:28:05,772 | INFO | bg_removal.py | Skipped (too small or empty): second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_0.jpg
+2025-06-05 17:28:06,735 | INFO | bg_removal.py | Skipped (too small or empty): second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_1.jpg
+2025-06-05 17:28:07,749 | INFO | bg_removal.py | Processed: second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2.jpg
+2025-06-05 17:28:08,718 | INFO | bg_removal.py | Skipped (too small or empty): second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_0.jpg
+2025-06-05 17:28:09,665 | INFO | bg_removal.py | Skipped (too small or empty): second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_1.jpg
+2025-06-05 17:28:10,627 | INFO | bg_removal.py | Skipped (too small or empty): second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_2.jpg
+2025-06-05 17:28:11,575 | INFO | bg_removal.py | Processed: second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3.jpg
+2025-06-05 17:28:12,577 | INFO | bg_removal.py | Skipped (too small or empty): second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_0.jpg
+2025-06-05 17:28:13,594 | INFO | bg_removal.py | Skipped (too small or empty): second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_1.jpg
+2025-06-05 17:28:14,632 | INFO | bg_removal.py | Processed: second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2.jpg
+2025-06-05 17:28:15,683 | INFO | bg_removal.py | Processed: second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_0.jpg
+2025-06-05 17:28:16,696 | INFO | bg_removal.py | Skipped (too small or empty): second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_1.jpg
+2025-06-05 17:28:17,713 | INFO | bg_removal.py | Processed: second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2.jpg
+2025-06-05 17:28:18,736 | INFO | bg_removal.py | Skipped (too small or empty): second-0377_jpg.rf.f89206d989706ffea6e6c9b4f05a2526_mask_0.jpg
+2025-06-05 17:28:19,898 | INFO | bg_removal.py | Skipped (too small or empty): second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_0.jpg
+2025-06-05 17:28:20,920 | INFO | bg_removal.py | Processed: second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_1.jpg
+2025-06-05 17:28:21,899 | INFO | bg_removal.py | Processed: second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2.jpg
+2025-06-05 17:28:22,898 | INFO | bg_removal.py | Skipped (too small or empty): second-0379_jpg.rf.4ff1fe85bfba282ac337c1415623b1ce_mask_0.jpg
+2025-06-05 17:28:23,880 | INFO | bg_removal.py | Skipped (too small or empty): second-0383_jpg.rf.dc2314ddc39807f3b191a2b350ea88bc_mask_0.jpg
+2025-06-05 17:28:24,854 | INFO | bg_removal.py | Skipped (too small or empty): second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_0.jpg
+2025-06-05 17:28:25,810 | INFO | bg_removal.py | Skipped (too small or empty): second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_1.jpg
+2025-06-05 17:28:25,811 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-05 17:28:25,813 | INFO | main.py | Average image dimensions: 416x416
+2025-06-05 17:28:30,305 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-05 17:28:30,668 | INFO | bg_extraction_web_scraping.py | Resized all images in 'C:\Users\hrish\Desktop\datasets\dataset_011\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.' to 416x416
+2025-06-05 17:28:30,668 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-05 17:28:30,678 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-05 17:28:30,710 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,721 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_1.jpg
+2025-06-05 17:28:30,758 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_2.jpg
+2025-06-05 17:28:30,790 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,792 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_3.jpg
+2025-06-05 17:28:30,820 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,831 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_4.jpg
+2025-06-05 17:28:30,860 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,870 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,872 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_5.jpg
+2025-06-05 17:28:30,890 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,907 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,910 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_6.jpg
+2025-06-05 17:28:30,918 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-05 17:28:30,924 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,925 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_7.jpg
+2025-06-05 17:28:30,930 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_8.jpg
+2025-06-05 17:28:30,934 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,935 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_9.jpg
+2025-06-05 17:28:30,940 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,941 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,943 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_10.jpg
+2025-06-05 17:28:30,947 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,951 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,952 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_11.jpg
+2025-06-05 17:28:30,957 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,962 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,964 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_12.jpg
+2025-06-05 17:28:30,975 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-05 17:28:30,980 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,981 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_13.jpg
+2025-06-05 17:28:30,987 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:30,988 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_14.jpg
+2025-06-05 17:28:30,995 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_15.jpg
+2025-06-05 17:28:31,002 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,003 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_16.jpg
+2025-06-05 17:28:31,008 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,012 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,014 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_17.jpg
+2025-06-05 17:28:31,018 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,022 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,024 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_18.jpg
+2025-06-05 17:28:31,033 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-05 17:28:31,038 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,041 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_19.jpg
+2025-06-05 17:28:31,046 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_20.jpg
+2025-06-05 17:28:31,051 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_21.jpg
+2025-06-05 17:28:31,056 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,059 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_22.jpg
+2025-06-05 17:28:31,063 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,067 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,068 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_23.jpg
+2025-06-05 17:28:31,073 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,077 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,078 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_24.jpg
+2025-06-05 17:28:31,087 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-05 17:28:31,091 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,092 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,093 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_25.jpg
+2025-06-05 17:28:31,099 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_26.jpg
+2025-06-05 17:28:31,103 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,104 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_27.jpg
+2025-06-05 17:28:31,109 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,111 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,112 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_28.jpg
+2025-06-05 17:28:31,117 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,119 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,121 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_29.jpg
+2025-06-05 17:28:31,125 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,129 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,131 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_30.jpg
+2025-06-05 17:28:31,139 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-05 17:28:31,145 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,146 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_31.jpg
+2025-06-05 17:28:31,151 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_32.jpg
+2025-06-05 17:28:31,155 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,156 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_33.jpg
+2025-06-05 17:28:31,161 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,163 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_34.jpg
+2025-06-05 17:28:31,169 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,178 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,181 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_35.jpg
+2025-06-05 17:28:31,187 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,193 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,196 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_36.jpg
+2025-06-05 17:28:31,208 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-05 17:28:31,213 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,215 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,217 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_37.jpg
+2025-06-05 17:28:31,224 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_38.jpg
+2025-06-05 17:28:31,229 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_39.jpg
+2025-06-05 17:28:31,235 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,236 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,238 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_40.jpg
+2025-06-05 17:28:31,243 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,246 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,248 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_41.jpg
+2025-06-05 17:28:31,252 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,258 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,259 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_42.jpg
+2025-06-05 17:28:31,269 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-05 17:28:31,276 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,278 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_43.jpg
+2025-06-05 17:28:31,284 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_44.jpg
+2025-06-05 17:28:31,291 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_45.jpg
+2025-06-05 17:28:31,298 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,301 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_46.jpg
+2025-06-05 17:28:31,307 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,311 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,312 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_47.jpg
+2025-06-05 17:28:31,317 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,322 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,324 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_48.jpg
+2025-06-05 17:28:31,334 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-05 17:28:31,337 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,339 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,341 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_49.jpg
+2025-06-05 17:28:31,345 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,347 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_50.jpg
+2025-06-05 17:28:31,353 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_51.jpg
+2025-06-05 17:28:31,360 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,361 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,362 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_52.jpg
+2025-06-05 17:28:31,367 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,370 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,373 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_53.jpg
+2025-06-05 17:28:31,378 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,381 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,384 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_54.jpg
+2025-06-05 17:28:31,394 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-05 17:28:31,399 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,401 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,404 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_55.jpg
+2025-06-05 17:28:31,410 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_56.jpg
+2025-06-05 17:28:31,416 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,417 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_57.jpg
+2025-06-05 17:28:31,422 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,424 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,426 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_58.jpg
+2025-06-05 17:28:31,433 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,435 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,437 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_59.jpg
+2025-06-05 17:28:31,442 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,446 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,448 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_60.jpg
+2025-06-05 17:28:31,459 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-05 17:28:31,462 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,465 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,467 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_61.jpg
+2025-06-05 17:28:31,473 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_62.jpg
+2025-06-05 17:28:31,478 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,480 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_63.jpg
+2025-06-05 17:28:31,485 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,488 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_64.jpg
+2025-06-05 17:28:31,494 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,497 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,499 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_65.jpg
+2025-06-05 17:28:31,503 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,508 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,509 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_66.jpg
+2025-06-05 17:28:31,519 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-05 17:28:31,522 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,526 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_67.jpg
+2025-06-05 17:28:31,531 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_68.jpg
+2025-06-05 17:28:31,537 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_69.jpg
+2025-06-05 17:28:31,542 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,543 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,545 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_70.jpg
+2025-06-05 17:28:31,552 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,554 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,556 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_71.jpg
+2025-06-05 17:28:31,560 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,564 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,565 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_72.jpg
+2025-06-05 17:28:31,577 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-05 17:28:31,579 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,582 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,583 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_73.jpg
+2025-06-05 17:28:31,588 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,590 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_74.jpg
+2025-06-05 17:28:31,594 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,596 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_75.jpg
+2025-06-05 17:28:31,601 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,602 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,604 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_76.jpg
+2025-06-05 17:28:31,610 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,612 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,614 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_77.jpg
+2025-06-05 17:28:31,619 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,622 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,625 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_78.jpg
+2025-06-05 17:28:31,635 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-05 17:28:31,638 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,640 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,642 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_79.jpg
+2025-06-05 17:28:31,649 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_80.jpg
+2025-06-05 17:28:31,654 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,655 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_81.jpg
+2025-06-05 17:28:31,660 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,661 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,663 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_82.jpg
+2025-06-05 17:28:31,667 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,671 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,673 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_83.jpg
+2025-06-05 17:28:31,677 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,681 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,683 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_84.jpg
+2025-06-05 17:28:31,693 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-05 17:28:31,696 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,698 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,699 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_85.jpg
+2025-06-05 17:28:31,705 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_86.jpg
+2025-06-05 17:28:31,710 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,712 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_87.jpg
+2025-06-05 17:28:31,717 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,718 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,720 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_88.jpg
+2025-06-05 17:28:31,725 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,729 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,731 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_89.jpg
+2025-06-05 17:28:31,735 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,738 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,740 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_90.jpg
+2025-06-05 17:28:31,752 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-05 17:28:31,758 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,759 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_91.jpg
+2025-06-05 17:28:31,763 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,765 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_92.jpg
+2025-06-05 17:28:31,770 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_93.jpg
+2025-06-05 17:28:31,775 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,777 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,778 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_94.jpg
+2025-06-05 17:28:31,781 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,783 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,785 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,787 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_95.jpg
+2025-06-05 17:28:31,792 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,795 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,797 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_96.jpg
+2025-06-05 17:28:31,807 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-05 17:28:31,811 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,813 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,814 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_97.jpg
+2025-06-05 17:28:31,819 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_98.jpg
+2025-06-05 17:28:31,822 | WARNING | overlay.py | Could not place second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,825 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_99.jpg
+2025-06-05 17:28:31,830 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,833 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_100.jpg
+2025-06-05 17:28:31,838 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,841 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,843 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_101.jpg
+2025-06-05 17:28:31,846 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,851 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,852 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_102.jpg
+2025-06-05 17:28:31,862 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-05 17:28:31,865 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,868 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,869 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_103.jpg
+2025-06-05 17:28:31,872 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,874 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_104.jpg
+2025-06-05 17:28:31,878 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,880 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_105.jpg
+2025-06-05 17:28:31,885 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,888 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_106.jpg
+2025-06-05 17:28:31,894 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,897 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,898 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_107.jpg
+2025-06-05 17:28:31,903 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,907 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,909 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_108.jpg
+2025-06-05 17:28:31,919 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-05 17:28:31,923 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,925 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,927 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_109.jpg
+2025-06-05 17:28:31,930 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,932 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_110.jpg
+2025-06-05 17:28:31,935 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,937 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_111.jpg
+2025-06-05 17:28:31,942 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,944 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_112.jpg
+2025-06-05 17:28:31,952 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,957 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,958 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_113.jpg
+2025-06-05 17:28:31,962 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,967 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,968 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_114.jpg
+2025-06-05 17:28:31,978 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-05 17:28:31,982 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,983 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,985 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_115.jpg
+2025-06-05 17:28:31,990 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_116.jpg
+2025-06-05 17:28:31,995 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:31,997 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_117.jpg
+2025-06-05 17:28:32,001 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:32,004 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:32,006 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_118.jpg
+2025-06-05 17:28:32,012 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:32,014 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:32,016 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_119.jpg
+2025-06-05 17:28:32,020 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:32,024 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 17:28:32,026 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_120.jpg
+2025-06-05 17:28:32,026 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-05 17:28:32,027 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-05 17:28:32,027 | ERROR | overlay.py | No background images found in C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-05 17:28:32,027 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-05 17:28:33,600 | INFO | yolo_to_json.py | COCO JSON saved to C:/Users/hrish/Desktop/datasets/dataset_011\output/coco_annotations.json
+2025-06-05 17:28:33,600 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-05 17:28:33,774 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\datasets\dataset_011\output\masks
+2025-06-05 17:28:33,787 | INFO | main.py | Original images copied to composites folder.
+2025-06-05 17:28:33,800 | INFO | main.py | Original labels copied to annotations folder.
+2025-06-05 17:28:33,838 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\datasets\dataset_011\intermediate\orig_masks
+2025-06-05 17:28:34,015 | INFO | main.py | Original masks copied to masks folder.
+2025-06-05 17:28:34,016 | INFO | main.py | Pipeline completed successfully!
+2025-06-05 18:30:47,746 | INFO | main.py | Ensured directory exists: data
+2025-06-05 18:30:47,746 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011
+2025-06-05 18:30:47,746 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\input/images
+2025-06-05 18:30:47,746 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\input/labels
+2025-06-05 18:30:47,747 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped
+2025-06-05 18:30:47,748 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped_nobg
+2025-06-05 18:30:47,748 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-05 18:30:47,748 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-05 18:30:47,748 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites
+2025-06-05 18:30:47,749 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/annotations
+2025-06-05 18:30:47,749 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/masks
+2025-06-05 18:30:47,750 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-05 18:30:47,750 | INFO | main.py | Cropping objects from input images...
+2025-06-05 18:30:47,750 | INFO | cropping_imgs.py | Clearing previous outputs in C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped...
+2025-06-05 18:30:47,793 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_0.jpg
+2025-06-05 18:30:47,794 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_1.jpg
+2025-06-05 18:30:47,796 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0.jpg
+2025-06-05 18:30:47,805 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_0.jpg
+2025-06-05 18:30:47,806 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_1.jpg
+2025-06-05 18:30:47,815 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0.jpg
+2025-06-05 18:30:47,816 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_1.jpg
+2025-06-05 18:30:47,819 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0.jpg
+2025-06-05 18:30:47,822 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_0.jpg
+2025-06-05 18:30:47,822 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_1.jpg
+2025-06-05 18:30:47,823 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2.jpg
+2025-06-05 18:30:47,826 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0.jpg
+2025-06-05 18:30:47,827 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_1.jpg
+2025-06-05 18:30:47,828 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_2.jpg
+2025-06-05 18:30:47,831 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_0.jpg
+2025-06-05 18:30:47,831 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1.jpg
+2025-06-05 18:30:47,832 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_2.jpg
+2025-06-05 18:30:47,833 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_3.jpg
+2025-06-05 18:30:47,835 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_0.jpg
+2025-06-05 18:30:47,836 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_1.jpg
+2025-06-05 18:30:47,837 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2.jpg
+2025-06-05 18:30:47,837 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_3.jpg
+2025-06-05 18:30:47,838 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_4.jpg
+2025-06-05 18:30:47,840 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0355_jpg.rf.a37b2e7001f7828211fd5af17d692645_mask_0.jpg
+2025-06-05 18:30:47,844 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_0.jpg
+2025-06-05 18:30:47,844 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_1.jpg
+2025-06-05 18:30:47,845 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_2.jpg
+2025-06-05 18:30:47,847 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_0.jpg
+2025-06-05 18:30:47,849 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_1.jpg
+2025-06-05 18:30:47,851 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_0.jpg
+2025-06-05 18:30:47,852 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_1.jpg
+2025-06-05 18:30:47,853 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_2.jpg
+2025-06-05 18:30:47,853 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_3.jpg
+2025-06-05 18:30:47,862 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0.jpg
+2025-06-05 18:30:47,863 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1.jpg
+2025-06-05 18:30:47,864 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_2.jpg
+2025-06-05 18:30:47,867 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_0.jpg
+2025-06-05 18:30:47,868 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_1.jpg
+2025-06-05 18:30:47,869 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2.jpg
+2025-06-05 18:30:47,872 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_0.jpg
+2025-06-05 18:30:47,873 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_1.jpg
+2025-06-05 18:30:47,873 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_2.jpg
+2025-06-05 18:30:47,874 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3.jpg
+2025-06-05 18:30:47,884 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_0.jpg
+2025-06-05 18:30:47,885 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_1.jpg
+2025-06-05 18:30:47,885 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2.jpg
+2025-06-05 18:30:47,888 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_0.jpg
+2025-06-05 18:30:47,888 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_1.jpg
+2025-06-05 18:30:47,890 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2.jpg
+2025-06-05 18:30:47,893 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0377_jpg.rf.f89206d989706ffea6e6c9b4f05a2526_mask_0.jpg
+2025-06-05 18:30:47,895 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_0.jpg
+2025-06-05 18:30:47,897 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_1.jpg
+2025-06-05 18:30:47,897 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2.jpg
+2025-06-05 18:30:47,900 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0379_jpg.rf.4ff1fe85bfba282ac337c1415623b1ce_mask_0.jpg
+2025-06-05 18:30:47,903 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0383_jpg.rf.dc2314ddc39807f3b191a2b350ea88bc_mask_0.jpg
+2025-06-05 18:30:47,906 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_0.jpg
+2025-06-05 18:30:47,907 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_1.jpg
+2025-06-05 18:30:47,907 | INFO | main.py | Removing background from cropped images...
+2025-06-05 18:30:47,907 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\datasets\dataset_011\intermediate\cropped_nobg...
+2025-06-05 18:30:49,073 | INFO | bg_removal.py | Processed: second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_0.jpg
+2025-06-05 18:30:50,162 | INFO | bg_removal.py | Skipped (too small or empty): second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_1.jpg
+2025-06-05 18:30:51,196 | INFO | bg_removal.py | Processed: second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0.jpg
+2025-06-05 18:30:52,145 | INFO | bg_removal.py | Skipped (too small or empty): second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_0.jpg
+2025-06-05 18:30:53,095 | INFO | bg_removal.py | Skipped (too small or empty): second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_1.jpg
+2025-06-05 18:30:54,042 | INFO | bg_removal.py | Processed: second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0.jpg
+2025-06-05 18:30:54,998 | INFO | bg_removal.py | Skipped (too small or empty): second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_1.jpg
+2025-06-05 18:30:56,009 | INFO | bg_removal.py | Processed: second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0.jpg
+2025-06-05 18:30:57,015 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_0.jpg
+2025-06-05 18:30:58,016 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_1.jpg
+2025-06-05 18:30:59,069 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2.jpg
+2025-06-05 18:31:00,070 | INFO | bg_removal.py | Processed: second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0.jpg
+2025-06-05 18:31:01,099 | INFO | bg_removal.py | Skipped (too small or empty): second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_1.jpg
+2025-06-05 18:31:02,146 | INFO | bg_removal.py | Processed: second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_2.jpg
+2025-06-05 18:31:03,145 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_0.jpg
+2025-06-05 18:31:04,153 | INFO | bg_removal.py | Processed: second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1.jpg
+2025-06-05 18:31:05,165 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_2.jpg
+2025-06-05 18:31:06,200 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_3.jpg
+2025-06-05 18:31:07,186 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_0.jpg
+2025-06-05 18:31:08,160 | INFO | bg_removal.py | Processed: second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_1.jpg
+2025-06-05 18:31:09,149 | INFO | bg_removal.py | Processed: second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2.jpg
+2025-06-05 18:31:10,166 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_3.jpg
+2025-06-05 18:31:11,187 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_4.jpg
+2025-06-05 18:31:12,178 | INFO | bg_removal.py | Processed: second-0355_jpg.rf.a37b2e7001f7828211fd5af17d692645_mask_0.jpg
+2025-06-05 18:31:13,219 | INFO | bg_removal.py | Skipped (too small or empty): second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_0.jpg
+2025-06-05 18:31:14,247 | INFO | bg_removal.py | Skipped (too small or empty): second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_1.jpg
+2025-06-05 18:31:15,231 | INFO | bg_removal.py | Skipped (too small or empty): second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_2.jpg
+2025-06-05 18:31:16,208 | INFO | bg_removal.py | Skipped (too small or empty): second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_0.jpg
+2025-06-05 18:31:17,205 | INFO | bg_removal.py | Skipped (too small or empty): second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_1.jpg
+2025-06-05 18:31:18,147 | INFO | bg_removal.py | Processed: second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_0.jpg
+2025-06-05 18:31:19,070 | INFO | bg_removal.py | Skipped (too small or empty): second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_1.jpg
+2025-06-05 18:31:20,034 | INFO | bg_removal.py | Skipped (too small or empty): second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_2.jpg
+2025-06-05 18:31:20,979 | INFO | bg_removal.py | Skipped (too small or empty): second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_3.jpg
+2025-06-05 18:31:22,002 | INFO | bg_removal.py | Processed: second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0.jpg
+2025-06-05 18:31:22,934 | INFO | bg_removal.py | Processed: second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1.jpg
+2025-06-05 18:31:23,942 | INFO | bg_removal.py | Processed: second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_2.jpg
+2025-06-05 18:31:24,964 | INFO | bg_removal.py | Skipped (too small or empty): second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_0.jpg
+2025-06-05 18:31:25,917 | INFO | bg_removal.py | Skipped (too small or empty): second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_1.jpg
+2025-06-05 18:31:26,884 | INFO | bg_removal.py | Processed: second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2.jpg
+2025-06-05 18:31:27,821 | INFO | bg_removal.py | Skipped (too small or empty): second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_0.jpg
+2025-06-05 18:31:28,833 | INFO | bg_removal.py | Skipped (too small or empty): second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_1.jpg
+2025-06-05 18:31:29,888 | INFO | bg_removal.py | Skipped (too small or empty): second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_2.jpg
+2025-06-05 18:31:30,896 | INFO | bg_removal.py | Processed: second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3.jpg
+2025-06-05 18:31:31,919 | INFO | bg_removal.py | Skipped (too small or empty): second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_0.jpg
+2025-06-05 18:31:32,927 | INFO | bg_removal.py | Skipped (too small or empty): second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_1.jpg
+2025-06-05 18:31:33,947 | INFO | bg_removal.py | Processed: second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2.jpg
+2025-06-05 18:31:35,022 | INFO | bg_removal.py | Processed: second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_0.jpg
+2025-06-05 18:31:36,033 | INFO | bg_removal.py | Skipped (too small or empty): second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_1.jpg
+2025-06-05 18:31:37,045 | INFO | bg_removal.py | Processed: second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2.jpg
+2025-06-05 18:31:38,057 | INFO | bg_removal.py | Skipped (too small or empty): second-0377_jpg.rf.f89206d989706ffea6e6c9b4f05a2526_mask_0.jpg
+2025-06-05 18:31:39,057 | INFO | bg_removal.py | Skipped (too small or empty): second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_0.jpg
+2025-06-05 18:31:40,031 | INFO | bg_removal.py | Processed: second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_1.jpg
+2025-06-05 18:31:40,974 | INFO | bg_removal.py | Processed: second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2.jpg
+2025-06-05 18:31:41,898 | INFO | bg_removal.py | Skipped (too small or empty): second-0379_jpg.rf.4ff1fe85bfba282ac337c1415623b1ce_mask_0.jpg
+2025-06-05 18:31:42,826 | INFO | bg_removal.py | Skipped (too small or empty): second-0383_jpg.rf.dc2314ddc39807f3b191a2b350ea88bc_mask_0.jpg
+2025-06-05 18:31:43,765 | INFO | bg_removal.py | Skipped (too small or empty): second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_0.jpg
+2025-06-05 18:31:44,723 | INFO | bg_removal.py | Skipped (too small or empty): second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_1.jpg
+2025-06-05 18:31:44,723 | INFO | main.py | Downloading 20 backgrounds for: A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-05 18:31:44,726 | INFO | main.py | Average image dimensions: 416x416
+2025-06-05 18:31:48,937 | INFO | bg_extraction_web_scraping.py | Downloaded 20 backgrounds with keyword: 'A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.'
+2025-06-05 18:31:49,282 | INFO | bg_extraction_web_scraping.py | Resized all images in 'C:\Users\hrish\Desktop\datasets\dataset_011\backgrounds\web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.' to 416x416
+2025-06-05 18:31:49,282 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-05 18:31:49,284 | INFO | overlay.py | Processing background: Image_1.jpg
+2025-06-05 18:31:49,299 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,316 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_1.jpg
+2025-06-05 18:31:49,349 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_2.jpg
+2025-06-05 18:31:49,378 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,379 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_3.jpg
+2025-06-05 18:31:49,403 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,413 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_4.jpg
+2025-06-05 18:31:49,431 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,447 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,449 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_5.jpg
+2025-06-05 18:31:49,467 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,486 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,488 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_6.jpg
+2025-06-05 18:31:49,497 | INFO | overlay.py | Processing background: Image_10.jpg
+2025-06-05 18:31:49,502 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,503 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_7.jpg
+2025-06-05 18:31:49,508 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_8.jpg
+2025-06-05 18:31:49,513 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_9.jpg
+2025-06-05 18:31:49,518 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,521 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_10.jpg
+2025-06-05 18:31:49,525 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,529 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,530 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_11.jpg
+2025-06-05 18:31:49,535 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,538 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,540 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_12.jpg
+2025-06-05 18:31:49,552 | INFO | overlay.py | Processing background: Image_11.jpg
+2025-06-05 18:31:49,555 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,556 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,558 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_13.jpg
+2025-06-05 18:31:49,563 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,564 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_14.jpg
+2025-06-05 18:31:49,568 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,569 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_15.jpg
+2025-06-05 18:31:49,575 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,576 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,578 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_16.jpg
+2025-06-05 18:31:49,583 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,585 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,588 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_17.jpg
+2025-06-05 18:31:49,592 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,596 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,598 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_18.jpg
+2025-06-05 18:31:49,607 | INFO | overlay.py | Processing background: Image_12.jpg
+2025-06-05 18:31:49,610 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,612 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,613 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_19.jpg
+2025-06-05 18:31:49,618 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_20.jpg
+2025-06-05 18:31:49,625 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_21.jpg
+2025-06-05 18:31:49,630 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,632 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,633 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_22.jpg
+2025-06-05 18:31:49,638 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,642 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,643 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_23.jpg
+2025-06-05 18:31:49,647 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,650 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,653 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_24.jpg
+2025-06-05 18:31:49,661 | INFO | overlay.py | Processing background: Image_13.jpg
+2025-06-05 18:31:49,666 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,667 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_25.jpg
+2025-06-05 18:31:49,671 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,673 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_26.jpg
+2025-06-05 18:31:49,679 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_27.jpg
+2025-06-05 18:31:49,684 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,686 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,687 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_28.jpg
+2025-06-05 18:31:49,692 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,696 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,697 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_29.jpg
+2025-06-05 18:31:49,701 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,705 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,707 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_30.jpg
+2025-06-05 18:31:49,716 | INFO | overlay.py | Processing background: Image_14.jpg
+2025-06-05 18:31:49,720 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,721 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,724 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_31.jpg
+2025-06-05 18:31:49,727 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,729 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_32.jpg
+2025-06-05 18:31:49,732 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,735 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_33.jpg
+2025-06-05 18:31:49,740 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,742 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,743 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_34.jpg
+2025-06-05 18:31:49,747 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,751 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,752 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_35.jpg
+2025-06-05 18:31:49,756 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,759 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,760 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_36.jpg
+2025-06-05 18:31:49,770 | INFO | overlay.py | Processing background: Image_15.jpg
+2025-06-05 18:31:49,776 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_37.jpg
+2025-06-05 18:31:49,779 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,781 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_38.jpg
+2025-06-05 18:31:49,786 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_39.jpg
+2025-06-05 18:31:49,790 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,793 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_40.jpg
+2025-06-05 18:31:49,797 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,800 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,802 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_41.jpg
+2025-06-05 18:31:49,806 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,810 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,813 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_42.jpg
+2025-06-05 18:31:49,821 | INFO | overlay.py | Processing background: Image_16.jpg
+2025-06-05 18:31:49,825 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,826 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,828 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_43.jpg
+2025-06-05 18:31:49,832 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,834 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_44.jpg
+2025-06-05 18:31:49,838 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,840 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_45.jpg
+2025-06-05 18:31:49,845 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,847 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,848 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_46.jpg
+2025-06-05 18:31:49,853 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,857 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,859 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_47.jpg
+2025-06-05 18:31:49,863 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,868 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,869 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_48.jpg
+2025-06-05 18:31:49,878 | INFO | overlay.py | Processing background: Image_17.jpg
+2025-06-05 18:31:49,882 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,884 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,885 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_49.jpg
+2025-06-05 18:31:49,888 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,890 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_50.jpg
+2025-06-05 18:31:49,895 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_51.jpg
+2025-06-05 18:31:49,900 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,902 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,903 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_52.jpg
+2025-06-05 18:31:49,908 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,911 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,913 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_53.jpg
+2025-06-05 18:31:49,916 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,920 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,922 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_54.jpg
+2025-06-05 18:31:49,932 | INFO | overlay.py | Processing background: Image_18.jpg
+2025-06-05 18:31:49,935 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,936 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,937 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_55.jpg
+2025-06-05 18:31:49,943 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_56.jpg
+2025-06-05 18:31:49,948 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_57.jpg
+2025-06-05 18:31:49,953 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,955 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_58.jpg
+2025-06-05 18:31:49,959 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,963 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,964 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_59.jpg
+2025-06-05 18:31:49,968 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,972 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,973 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_60.jpg
+2025-06-05 18:31:49,975 | INFO | overlay.py | Processing background: Image_19.jpg
+2025-06-05 18:31:49,978 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,980 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,981 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_61.jpg
+2025-06-05 18:31:49,985 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,986 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_62.jpg
+2025-06-05 18:31:49,990 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,991 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_63.jpg
+2025-06-05 18:31:49,998 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:49,999 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_64.jpg
+2025-06-05 18:31:50,003 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,004 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,007 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,008 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_65.jpg
+2025-06-05 18:31:50,013 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,017 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,018 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_66.jpg
+2025-06-05 18:31:50,028 | INFO | overlay.py | Processing background: Image_2.jpg
+2025-06-05 18:31:50,031 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,032 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,033 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,034 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_67.jpg
+2025-06-05 18:31:50,040 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_68.jpg
+2025-06-05 18:31:50,044 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,045 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_69.jpg
+2025-06-05 18:31:50,050 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,052 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_70.jpg
+2025-06-05 18:31:50,056 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,059 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,061 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_71.jpg
+2025-06-05 18:31:50,065 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,069 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,071 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_72.jpg
+2025-06-05 18:31:50,079 | INFO | overlay.py | Processing background: Image_20.png
+2025-06-05 18:31:50,084 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,086 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_73.jpg
+2025-06-05 18:31:50,091 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_74.jpg
+2025-06-05 18:31:50,097 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,098 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_75.jpg
+2025-06-05 18:31:50,105 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,106 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,107 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_76.jpg
+2025-06-05 18:31:50,113 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,117 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,119 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_77.jpg
+2025-06-05 18:31:50,124 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,129 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,131 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_78.jpg
+2025-06-05 18:31:50,141 | INFO | overlay.py | Processing background: Image_3.jpg
+2025-06-05 18:31:50,145 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,147 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,150 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_79.jpg
+2025-06-05 18:31:50,154 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,156 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_80.jpg
+2025-06-05 18:31:50,161 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_81.jpg
+2025-06-05 18:31:50,168 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,169 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_82.jpg
+2025-06-05 18:31:50,174 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,177 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,178 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_83.jpg
+2025-06-05 18:31:50,183 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,187 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,190 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_84.jpg
+2025-06-05 18:31:50,199 | INFO | overlay.py | Processing background: Image_4.jpg
+2025-06-05 18:31:50,208 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,212 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_85.jpg
+2025-06-05 18:31:50,219 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,222 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_86.jpg
+2025-06-05 18:31:50,231 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,235 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_87.jpg
+2025-06-05 18:31:50,241 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,242 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,244 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_88.jpg
+2025-06-05 18:31:50,252 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,257 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,259 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_89.jpg
+2025-06-05 18:31:50,263 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,267 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,269 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_90.jpg
+2025-06-05 18:31:50,281 | INFO | overlay.py | Processing background: Image_5.png
+2025-06-05 18:31:50,285 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,286 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,287 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_91.jpg
+2025-06-05 18:31:50,293 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_92.jpg
+2025-06-05 18:31:50,298 | WARNING | overlay.py | Could not place second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,301 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_93.jpg
+2025-06-05 18:31:50,305 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,308 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_94.jpg
+2025-06-05 18:31:50,314 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,316 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,319 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_95.jpg
+2025-06-05 18:31:50,324 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,328 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,329 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_96.jpg
+2025-06-05 18:31:50,341 | INFO | overlay.py | Processing background: Image_6.jpg
+2025-06-05 18:31:50,345 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,346 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,347 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_97.jpg
+2025-06-05 18:31:50,351 | WARNING | overlay.py | Could not place second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,352 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_98.jpg
+2025-06-05 18:31:50,358 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_99.jpg
+2025-06-05 18:31:50,364 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,366 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_100.jpg
+2025-06-05 18:31:50,370 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,374 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,375 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_101.jpg
+2025-06-05 18:31:50,379 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,383 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,384 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_102.jpg
+2025-06-05 18:31:50,386 | INFO | overlay.py | Processing background: Image_7.jpg
+2025-06-05 18:31:50,391 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,393 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_103.jpg
+2025-06-05 18:31:50,399 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_104.jpg
+2025-06-05 18:31:50,403 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_105.jpg
+2025-06-05 18:31:50,409 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,410 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,411 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_106.jpg
+2025-06-05 18:31:50,416 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,419 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,420 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_107.jpg
+2025-06-05 18:31:50,424 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,428 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,430 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_108.jpg
+2025-06-05 18:31:50,439 | INFO | overlay.py | Processing background: Image_8.jpg
+2025-06-05 18:31:50,441 | WARNING | overlay.py | Could not place second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,445 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_109.jpg
+2025-06-05 18:31:50,450 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_110.jpg
+2025-06-05 18:31:50,455 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_111.jpg
+2025-06-05 18:31:50,460 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,461 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,462 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_112.jpg
+2025-06-05 18:31:50,467 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,469 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,472 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_113.jpg
+2025-06-05 18:31:50,475 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,479 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,480 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_114.jpg
+2025-06-05 18:31:50,490 | INFO | overlay.py | Processing background: Image_9.jpg
+2025-06-05 18:31:50,494 | WARNING | overlay.py | Could not place second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,495 | WARNING | overlay.py | Could not place second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,496 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_115.jpg
+2025-06-05 18:31:50,500 | WARNING | overlay.py | Could not place second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,502 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_116.jpg
+2025-06-05 18:31:50,507 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_117.jpg
+2025-06-05 18:31:50,512 | WARNING | overlay.py | Could not place second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,514 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_118.jpg
+2025-06-05 18:31:50,518 | WARNING | overlay.py | Could not place second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,520 | WARNING | overlay.py | Could not place second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,522 | WARNING | overlay.py | Could not place second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,523 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_119.jpg
+2025-06-05 18:31:50,527 | WARNING | overlay.py | Could not place second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,530 | WARNING | overlay.py | Could not place second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2_no_bg.png without excessive overlap after 20 attempts
+2025-06-05 18:31:50,533 | INFO | overlay.py | Saved composite: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites\composite_120.jpg
+2025-06-05 18:31:50,533 | INFO | overlay.py | All composites and annotations generated successfully!
+2025-06-05 18:31:50,533 | INFO | main.py | Overlaying foregrounds on backgrounds from: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-05 18:31:50,534 | ERROR | overlay.py | No background images found in C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-05 18:31:50,534 | INFO | main.py | Converting YOLO annotations to COCO format...
+2025-06-05 18:31:52,109 | INFO | yolo_to_json.py | COCO JSON saved to C:/Users/hrish/Desktop/datasets/dataset_011\output/coco_annotations.json
+2025-06-05 18:31:52,109 | INFO | main.py | Generating masks from YOLO annotations...
+2025-06-05 18:31:52,318 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\datasets\dataset_011\output\masks
+2025-06-05 18:31:52,330 | INFO | main.py | Original images copied to composites folder.
+2025-06-05 18:31:52,341 | INFO | main.py | Original labels copied to annotations folder.
+2025-06-05 18:31:52,382 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\datasets\dataset_011\intermediate\orig_masks
+2025-06-05 18:31:52,422 | INFO | main.py | Original masks copied to masks folder.
+2025-06-05 18:31:52,422 | INFO | main.py | Pipeline completed successfully!
