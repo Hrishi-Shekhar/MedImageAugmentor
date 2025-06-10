@@ -27127,3 +27127,98 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:/U
 2025-06-05 18:31:52,382 | INFO | yolo_to_mask.py | Masks generated in: C:\Users\hrish\Desktop\datasets\dataset_011\intermediate\orig_masks
 2025-06-05 18:31:52,422 | INFO | main.py | Original masks copied to masks folder.
 2025-06-05 18:31:52,422 | INFO | main.py | Pipeline completed successfully!
+2025-06-10 11:29:37,490 | INFO | main.py | Ensured directory exists: data
+2025-06-10 11:29:37,494 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011
+2025-06-10 11:29:37,497 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\input/images
+2025-06-10 11:29:37,499 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\input/labels
+2025-06-10 11:29:37,501 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped
+2025-06-10 11:29:37,502 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped_nobg
+2025-06-10 11:29:37,504 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/web_scraping\A high-resolution sterile laboratory background, with subtle gradients and smooth textures, softly illuminated under brightfield microscopy.
+2025-06-10 11:29:37,505 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\backgrounds/user_generated
+2025-06-10 11:29:37,507 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/composites
+2025-06-10 11:29:37,508 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/annotations
+2025-06-10 11:29:37,510 | INFO | main.py | Ensured directory exists: C:/Users/hrish/Desktop/datasets/dataset_011\output/masks
+2025-06-10 11:29:37,517 | WARNING | main.py | No JSON or XML annotations found. Skipping annotation conversion.
+2025-06-10 11:29:37,518 | INFO | main.py | Cropping objects from input images...
+2025-06-10 11:29:37,519 | INFO | cropping_imgs.py | Clearing previous outputs in C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped...
+2025-06-10 11:29:37,736 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_0.jpg
+2025-06-10 11:29:37,739 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_1.jpg
+2025-06-10 11:29:37,775 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0.jpg
+2025-06-10 11:29:37,804 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_0.jpg
+2025-06-10 11:29:37,807 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_1.jpg
+2025-06-10 11:29:37,845 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0.jpg
+2025-06-10 11:29:37,849 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_1.jpg
+2025-06-10 11:29:37,889 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0.jpg
+2025-06-10 11:29:37,926 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_0.jpg
+2025-06-10 11:29:37,930 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_1.jpg
+2025-06-10 11:29:37,934 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2.jpg
+2025-06-10 11:29:37,964 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0.jpg
+2025-06-10 11:29:37,969 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_1.jpg
+2025-06-10 11:29:37,971 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_2.jpg
+2025-06-10 11:29:38,006 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_0.jpg
+2025-06-10 11:29:38,009 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1.jpg
+2025-06-10 11:29:38,011 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_2.jpg
+2025-06-10 11:29:38,014 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_3.jpg
+2025-06-10 11:29:38,046 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_0.jpg
+2025-06-10 11:29:38,051 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_1.jpg
+2025-06-10 11:29:38,054 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2.jpg
+2025-06-10 11:29:38,059 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_3.jpg
+2025-06-10 11:29:38,062 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_4.jpg
+2025-06-10 11:29:38,094 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0355_jpg.rf.a37b2e7001f7828211fd5af17d692645_mask_0.jpg
+2025-06-10 11:29:38,124 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_0.jpg
+2025-06-10 11:29:38,129 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_1.jpg
+2025-06-10 11:29:38,131 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0356_jpg.rf.116550c965d3ea925c423958ba19fb8c_mask_2.jpg
+2025-06-10 11:29:38,164 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_0.jpg
+2025-06-10 11:29:38,167 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0357_jpg.rf.e5f88d9acc4bc48733bb86c521a054b0_mask_1.jpg
+2025-06-10 11:29:38,201 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_0.jpg
+2025-06-10 11:29:38,204 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_1.jpg
+2025-06-10 11:29:38,208 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_2.jpg
+2025-06-10 11:29:38,212 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0360_jpg.rf.e6c4ccc81c8cb94bfea5b39152fc3cd3_mask_3.jpg
+2025-06-10 11:29:38,247 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_0.jpg
+2025-06-10 11:29:38,250 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_1.jpg
+2025-06-10 11:29:38,254 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0370_jpg.rf.35273e395c830831888dc6a0b6847025_mask_2.jpg
+2025-06-10 11:29:38,288 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_0.jpg
+2025-06-10 11:29:38,292 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_1.jpg
+2025-06-10 11:29:38,296 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0371_jpg.rf.7097d6d5a7ebc0fa8ceebdf5aedb53dc_mask_2.jpg
+2025-06-10 11:29:38,336 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_0.jpg
+2025-06-10 11:29:38,339 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_1.jpg
+2025-06-10 11:29:38,344 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_2.jpg
+2025-06-10 11:29:38,348 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0372_jpg.rf.b647eca5e6639dbc5acee84a33103801_mask_3.jpg
+2025-06-10 11:29:38,384 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_0.jpg
+2025-06-10 11:29:38,388 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_1.jpg
+2025-06-10 11:29:38,393 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0375_jpg.rf.5285d9f059947b843a5fb6f66ec86d47_mask_2.jpg
+2025-06-10 11:29:38,428 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_0.jpg
+2025-06-10 11:29:38,432 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_1.jpg
+2025-06-10 11:29:38,435 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0376_jpg.rf.4ddfcc0cd901dbff6c545aafa68e65a9_mask_2.jpg
+2025-06-10 11:29:38,469 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0377_jpg.rf.f89206d989706ffea6e6c9b4f05a2526_mask_0.jpg
+2025-06-10 11:29:38,541 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_0.jpg
+2025-06-10 11:29:38,612 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_1.jpg
+2025-06-10 11:29:38,621 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0378_jpg.rf.051b2622b27d8ca25a4c142f10253e1c_mask_2.jpg
+2025-06-10 11:29:38,667 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0379_jpg.rf.4ff1fe85bfba282ac337c1415623b1ce_mask_0.jpg
+2025-06-10 11:29:38,710 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0383_jpg.rf.dc2314ddc39807f3b191a2b350ea88bc_mask_0.jpg
+2025-06-10 11:29:38,752 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_0.jpg
+2025-06-10 11:29:38,758 | INFO | cropping_imgs.py | Saved C:/Users/hrish/Desktop/datasets/dataset_011\intermediate/cropped\second-0384_jpg.rf.2d63862e6e780016006194ba25ca8d5b_mask_1.jpg
+2025-06-10 11:29:38,759 | INFO | main.py | Removing background from cropped images...
+2025-06-10 11:29:38,760 | INFO | bg_removal.py | Clearing previous outputs in C:\Users\hrish\Desktop\datasets\dataset_011\intermediate\cropped_nobg...
+2025-06-10 11:29:46,170 | INFO | bg_removal.py | Processed: second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_0.jpg
+2025-06-10 11:29:50,716 | INFO | bg_removal.py | Skipped (too small or empty): second-0345_jpg.rf.a6c8bef738887b34a78028fcfded1704_mask_1.jpg
+2025-06-10 11:29:54,702 | INFO | bg_removal.py | Processed: second-0346_jpg.rf.e8489414306f01a2abd52cb7e16e54e7_mask_0.jpg
+2025-06-10 11:29:58,435 | INFO | bg_removal.py | Skipped (too small or empty): second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_0.jpg
+2025-06-10 11:30:02,751 | INFO | bg_removal.py | Skipped (too small or empty): second-0347_jpg.rf.78bc7bcb41d6da5afcc5427aad9c7ca5_mask_1.jpg
+2025-06-10 11:30:07,129 | INFO | bg_removal.py | Processed: second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_0.jpg
+2025-06-10 11:30:11,232 | INFO | bg_removal.py | Skipped (too small or empty): second-0348_jpg.rf.9bf0dfb79c3ac84602b0ccc9c97dea37_mask_1.jpg
+2025-06-10 11:30:15,101 | INFO | bg_removal.py | Processed: second-0349_jpg.rf.178db1cd4df9b41971a7f6cacf978a58_mask_0.jpg
+2025-06-10 11:30:19,580 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_0.jpg
+2025-06-10 11:30:23,908 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_1.jpg
+2025-06-10 11:30:28,376 | INFO | bg_removal.py | Processed: second-0350_jpg.rf.0b6257312ffeb6eedef27390606acdde_mask_2.jpg
+2025-06-10 11:30:32,581 | INFO | bg_removal.py | Processed: second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_0.jpg
+2025-06-10 11:30:36,900 | INFO | bg_removal.py | Skipped (too small or empty): second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_1.jpg
+2025-06-10 11:30:41,034 | INFO | bg_removal.py | Processed: second-0351_jpg.rf.f8011c3374b562e7364620271d5b1aca_mask_2.jpg
+2025-06-10 11:30:45,113 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_0.jpg
+2025-06-10 11:30:49,139 | INFO | bg_removal.py | Processed: second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_1.jpg
+2025-06-10 11:30:53,053 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_2.jpg
+2025-06-10 11:30:56,968 | INFO | bg_removal.py | Skipped (too small or empty): second-0353_jpg.rf.3ed411c83c3a3f0530c700490feed114_mask_3.jpg
+2025-06-10 11:31:00,939 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_0.jpg
+2025-06-10 11:31:04,825 | INFO | bg_removal.py | Processed: second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_1.jpg
+2025-06-10 11:31:08,482 | INFO | bg_removal.py | Processed: second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_2.jpg
+2025-06-10 11:31:12,211 | INFO | bg_removal.py | Skipped (too small or empty): second-0354_jpg.rf.b1f80c7223d4fd04b93cf60bf6643608_mask_3.jpg
