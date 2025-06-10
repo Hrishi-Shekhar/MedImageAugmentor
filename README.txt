@@ -1,6 +1,6 @@
 Image Augmentation Pipeline
 
-A complete data augmentation pipeline for skin cancer images, including:
+A complete data augmentation pipeline for images, including:
 
 1. Cropping images using YOLO annotations or superpixel masks
 
