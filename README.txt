@@ -42,12 +42,14 @@ synthetic-image-augmentation/
 |   ├── bg_extraction_web_scraping.py       # Web Scraping
 │   ├── overlay.py                          # Overlay cropped objects on backgrounds
 |   ├── label_conversion.py                 # Converting json/xml input to yolo format
-|   └── yolo_to_json.py                     # Converting yolo output to json format
+|   ├── yolo_to_json.py                     # Converting yolo output to json format
+|   └── yolo_to_mask.py                     # Converting yolo output to masks
 │
 ├── main.py                                 # Main orchestrator script  
 │
 ├── README.md                               # Project documentation
 ├── pipeline.log                            # Logs of the entire pipeline
+├── config.yaml                             # Config file for central control
 ├── requirements.txt                        # List of dependencies
 └── .gitignore                              # Files/folders to ignore in Git
 
@@ -61,6 +63,10 @@ Getting Started-
 2. Install Dependencies-
 
     pip install -r requirements.txt
+
+3. Run the pipeline-
+
+    python main.py
 
 
 
