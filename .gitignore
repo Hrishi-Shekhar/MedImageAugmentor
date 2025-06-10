@@ -5,6 +5,4 @@ __pycache__/
 yolo_to_bbox.py
 bg_prompt_generation.py
 
-bg_prompt.py
-
 tempCodeRunnerFile.py
