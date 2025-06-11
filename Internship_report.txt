@@ -1,0 +1,78 @@
+Types of segmentation models in medicine-
+1.	MedSAM
+2.	DeepLabV3+
+3.	Classical methods- Thresholding, Region growth, Watershed, Graph cuts, Active Coutours
+4.	U-Net
+5.	V-Net
+6.	Attention U-Net
+7.	nnU-Net
+8.	SegResNet (Nvidia MONAI)
+9.	Transformer based- TransUNet, UNETR
+10.	K-means/Fuzzy C-means Clustering
+11.	Axial-DeepLab
+12.	QuickNAT
+Diffusion models for segmentation
+1.	MedSegDiff/ Med-DDPM
+Multimodal Models-
+1.	GAN-based segmentation
+2.	Multi-input fusion models
+Prompt-based models-
+1.	SAM + Adaptation (MedSAM, MedPrompt)
+2.	RITM (Interactive segmentation via reinforced learning)
+Bayesian Segmentation models-
+1.	Bayesian U-Net
+2.	Probabilistic U-Net
+Siamese Model Architecture-
+A Siamese neural network, also known as a twin neural network, is an artificial neural network that uses the same weights while working in tandem on two different input vectors to compute comparable output vectors.
+The Siamese network architecture is particularly useful for tasks such as face recognition, where known images of people are precomputed and compared to an image from a camera or similar device.
+Made a sample Siamese model trainable on different inputs
+Grad-CAM- 
+Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting important regions in the image for predicting the concept.
+
+Feature Extraction for medical images-
+Investigating use of CNNs for feature extraction on medical images
+Comparing performance of basic ML algorithms like logistic regression and KNN with and without feature extraction and plotting their heatmaps using Grad-CAM to visualise the important features.
+Feature Extraction models used-
+1.	InceptionResNet
+2.	MobileNet
+3.	EfficientNet
+4.	DenseNet
+5.	VGG16
+Observation- The performance of ML algorithms on a simple dataset was highly boosted by applying Feature extraction (FE). For example, Logistic regression without FE gave an accuracy of around 75% and with FE its accuracy boosted up to 95% (even to 99% at times).
+
+Enhancements in FE-
+1.	Using multiple feature extractors
+2.	Using Intermediate layer outputs not just final layers
+3.	Applying dimensionality reduction
+4.	Normalizing extracted features before feeding into classifiers
+5.	Augmenting data before FE
+Made model to compute top 10 most similar images of an input image out of a dataset of images using cosine similarity.
+
+Synthetic-image-augmentation pipeline-
+The model takes a dataset of input images, and based on their labels crops out the important parts, removes their background, generates backgrounds similar to the background of the input images, and then overlays the cropped foregrounds on the newly generated backgrounds, thereby, scaling the dataset.
+
+Cropping the images- The input images are provided with YOLO annotations which specify the important features along with the class of the features. The labelled area is cropped.
+Removing Background-
+Methods for removing background-
+1.	Thresholding
+2.	Color Segmentation
+3.	GrabCut
+4.	DeepLearning (U-Net,SAM)
+5.	Pretrained models – rembg, remove.bg, backgroundremover
+The pipeline uses rembg to remove backgrounds.
+
+Generating Backgrounds- web scraping done using Bing Image Downloader and a self-written prompt is given to generate similar backgrounds.
+
+Overlay- Cropped foregrounds of input images are then overlayed on the generated backgrounds.
+
+Prompt-driven Background Generation pipeline- (Helping Pipeline)
+Takes image as input, removes the foreground from the image, inpaints the remaining image, generates captions for the image using image captioning, passes it to a LLM to refine the caption into a descriptive prompt, which is passed to a text-to-image generation model to generate similar backgrounds.
+
+Models used- 
+1.	GIT (Generative image-to-text transformer)- for image captioning
+2.	GPT4ALL- for prompt refining
+3.	Stable Diffusion- for image generation using prompt
+
+
+
+
